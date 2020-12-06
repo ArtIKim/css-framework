@@ -1,0 +1,183 @@
+// Spaces
+$spaces: 10, 20, 30, 40;
+
+@each $space in $spaces {
+  .m-#{$space} {
+    margin: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .mt-#{$space} {
+    margin-top: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .mr-#{$space} {
+    margin-right: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .mb-#{$space} {
+    margin-bottom: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .ml-#{$space} {
+    margin-left: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .my-#{$space} {
+    margin-top: #{$space}px;
+    margin-bottom: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .mx-#{$space} {
+    margin-left: #{$space}px;
+    margin-right: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .-m-#{$space} {
+    margin: -#{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .-mt-#{$space} {
+    margin-top: -#{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .-mr-#{$space} {
+    margin-right: -#{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .-mb-#{$space} {
+    margin-bottom: -#{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .-ml-#{$space} {
+    margin-left: -#{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .-my-#{$space} {
+    margin-top: -#{$space}px;
+    margin-bottom: -#{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .-mx-#{$space} {
+    margin-left: -#{$space}px;
+    margin-right: -#{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .p-#{$space} {
+    padding: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .pr-#{$space} {
+    padding-right: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .pb-#{$space} {
+    padding-bottom: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .pl-#{$space} {
+    padding-left: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .py-#{$space} {
+    padding-top: #{$space}px;
+    padding-bottom: #{$space}px;
+  }
+}
+
+@each $space in $spaces {
+  .px-#{$space} {
+    padding-left: #{$space}px;
+    padding-right: #{$space}px;
+  }
+}
+
+// Grid
+$columns: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+$grid-widths: 100, 200, 300, 400, 500;
+$grid-gaps: 10, 20, 30, 40, 50;
+
+@each $column in $columns {
+  @each $width in $grid-widths {
+    .grid-cols-#{$column}-#{$width} {
+      grid-template-columns: repeat(auto-fit, minmax(#{$width}px, #{$column}fr));
+    }
+  }
+}
+
+@each $gap in $grid-gaps {
+  .grid-gap-#{$gap} {
+    grid-gap: #{$gap}px;
+  }
+}
+
+// Width
+$widths: 360, 480, 567, 680, 991, 1100, 1200;
+
+@each $width in $widths {
+  .w-#{$width} {
+    max-width: #{$width}px;
+  }
+}
+
+// Positions
+$positions: static, fixed, absolute, relative, sticky;
+
+@each $posotion in $positions {
+  .#{$posotion} {
+    position: #{$posotion};
+  }
+}
+
+// Font Size
+$font-sizes: 12, 14, 16, 18, 20, 25, 30, 36;
+
+@each $font-size in $font-sizes {
+  .font-size-#{$font-size} {
+    font-size: #{$font-size}px;
+  }
+}
+
+// Font Weight
+$font-weights: 100, 300, 400, 500, 600, 700, 800, 900;
+
+@each $font-weight in $font-weights {
+  .font-weight-#{$font-weight} {
+    font-weight: #{$font-weight};
+  }
+}
