@@ -3,6 +3,7 @@
   --clr-seconadary: #000;
 }
 
+/*Reset*/
 * {
   margin: 0;
   padding: 0;
@@ -16,20 +17,85 @@ body {
 }
 
 input:focus,
+select:focus,
+textarea:focus,
 button:focus {
-  outline: var(--clr-primary);
-  -webkit-box-shadow: var(--clr-primary);
-          box-shadow: var(--clr-primary);
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  outline: none;
+}
+
+b,
+strong {
+  font-weight: bolder;
+  font-size: inherit;
+  color: inherit;
 }
 
 a {
   color: var(--clr-primary);
 }
 
-.h-1, .pseudo {
-  height: 100%;
+/*Font Sizes*/
+.font-size-16 {
+  font-size: 16px;
 }
 
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/*Font Weights*/
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+/*Ledings*/
+.line-height-25 {
+  line-height: 25;
+}
+
+.line-height-32 {
+  line-height: 32;
+}
+
+.line-height-40 {
+  line-height: 40;
+}
+
+/*Spaces*/
 .mx-auto {
   margin: 0 auto;
 }
@@ -378,6 +444,7 @@ a {
   padding-right: 40px;
 }
 
+/*Blocks*/
 .inline {
   display: inline;
 }
@@ -386,10 +453,50 @@ a {
   display: inline-block;
 }
 
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .block {
   display: block;
 }
 
+/*Widths*/
+.w-1 {
+  width: 100%;
+}
+
+.w-360 {
+  max-width: 360px;
+}
+
+.w-480 {
+  max-width: 480px;
+}
+
+.w-567 {
+  max-width: 567px;
+}
+
+.w-680 {
+  max-width: 680px;
+}
+
+.w-991 {
+  max-width: 991px;
+}
+
+.w-1100 {
+  max-width: 1100px;
+}
+
+.w-1200 {
+  max-width: 1200px;
+}
+
+/*Flex*/
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,314 +550,305 @@ a {
           flex: none;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-}
-
-.grid-cols-none {
-  -ms-grid-columns: none;
-      grid-template-columns: none;
-}
-
+/*Grid*/
 .grid-cols-1-100 {
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  -ms-grid-columns: minmax(100px, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .grid-cols-1-200 {
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: minmax(200px, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid-cols-1-300 {
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: minmax(300px, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-cols-1-400 {
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-columns: minmax(400px, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .grid-cols-1-500 {
-  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  -ms-grid-columns: minmax(500px, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .grid-cols-2-100 {
-  -ms-grid-columns: (minmax(100px, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  -ms-grid-columns: minmax(100px, 2fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
 }
 
 .grid-cols-2-200 {
-  -ms-grid-columns: (minmax(200px, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  -ms-grid-columns: minmax(200px, 2fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
 }
 
 .grid-cols-2-300 {
-  -ms-grid-columns: (minmax(300px, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  -ms-grid-columns: minmax(300px, 2fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
 }
 
 .grid-cols-2-400 {
-  -ms-grid-columns: (minmax(400px, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  -ms-grid-columns: minmax(400px, 2fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
 }
 
 .grid-cols-2-500 {
-  -ms-grid-columns: (minmax(500px, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+  -ms-grid-columns: minmax(500px, 2fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
 }
 
 .grid-cols-3-100 {
-  -ms-grid-columns: (minmax(100px, 3fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+  -ms-grid-columns: minmax(100px, 3fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
 }
 
 .grid-cols-3-200 {
-  -ms-grid-columns: (minmax(200px, 3fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+  -ms-grid-columns: minmax(200px, 3fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
 }
 
 .grid-cols-3-300 {
-  -ms-grid-columns: (minmax(300px, 3fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  -ms-grid-columns: minmax(300px, 3fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
 }
 
 .grid-cols-3-400 {
-  -ms-grid-columns: (minmax(400px, 3fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+  -ms-grid-columns: minmax(400px, 3fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
 }
 
 .grid-cols-3-500 {
-  -ms-grid-columns: (minmax(500px, 3fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 3fr));
+  -ms-grid-columns: minmax(500px, 3fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 3fr));
 }
 
 .grid-cols-4-100 {
-  -ms-grid-columns: (minmax(100px, 4fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 4fr));
+  -ms-grid-columns: minmax(100px, 4fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 4fr));
 }
 
 .grid-cols-4-200 {
-  -ms-grid-columns: (minmax(200px, 4fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+  -ms-grid-columns: minmax(200px, 4fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
 }
 
 .grid-cols-4-300 {
-  -ms-grid-columns: (minmax(300px, 4fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+  -ms-grid-columns: minmax(300px, 4fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
 }
 
 .grid-cols-4-400 {
-  -ms-grid-columns: (minmax(400px, 4fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));
+  -ms-grid-columns: minmax(400px, 4fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));
 }
 
 .grid-cols-4-500 {
-  -ms-grid-columns: (minmax(500px, 4fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 4fr));
+  -ms-grid-columns: minmax(500px, 4fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 4fr));
 }
 
 .grid-cols-5-100 {
-  -ms-grid-columns: (minmax(100px, 5fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 5fr));
+  -ms-grid-columns: minmax(100px, 5fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 5fr));
 }
 
 .grid-cols-5-200 {
-  -ms-grid-columns: (minmax(200px, 5fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
+  -ms-grid-columns: minmax(200px, 5fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
 }
 
 .grid-cols-5-300 {
-  -ms-grid-columns: (minmax(300px, 5fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 5fr));
+  -ms-grid-columns: minmax(300px, 5fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 5fr));
 }
 
 .grid-cols-5-400 {
-  -ms-grid-columns: (minmax(400px, 5fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
+  -ms-grid-columns: minmax(400px, 5fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
 }
 
 .grid-cols-5-500 {
-  -ms-grid-columns: (minmax(500px, 5fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 5fr));
+  -ms-grid-columns: minmax(500px, 5fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 5fr));
 }
 
 .grid-cols-6-100 {
-  -ms-grid-columns: (minmax(100px, 6fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 6fr));
+  -ms-grid-columns: minmax(100px, 6fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 6fr));
 }
 
 .grid-cols-6-200 {
-  -ms-grid-columns: (minmax(200px, 6fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 6fr));
+  -ms-grid-columns: minmax(200px, 6fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 6fr));
 }
 
 .grid-cols-6-300 {
-  -ms-grid-columns: (minmax(300px, 6fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 6fr));
+  -ms-grid-columns: minmax(300px, 6fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 6fr));
 }
 
 .grid-cols-6-400 {
-  -ms-grid-columns: (minmax(400px, 6fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 6fr));
+  -ms-grid-columns: minmax(400px, 6fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 6fr));
 }
 
 .grid-cols-6-500 {
-  -ms-grid-columns: (minmax(500px, 6fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 6fr));
+  -ms-grid-columns: minmax(500px, 6fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 6fr));
 }
 
 .grid-cols-7-100 {
-  -ms-grid-columns: (minmax(100px, 7fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 7fr));
+  -ms-grid-columns: minmax(100px, 7fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 7fr));
 }
 
 .grid-cols-7-200 {
-  -ms-grid-columns: (minmax(200px, 7fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 7fr));
+  -ms-grid-columns: minmax(200px, 7fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 7fr));
 }
 
 .grid-cols-7-300 {
-  -ms-grid-columns: (minmax(300px, 7fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 7fr));
+  -ms-grid-columns: minmax(300px, 7fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 7fr));
 }
 
 .grid-cols-7-400 {
-  -ms-grid-columns: (minmax(400px, 7fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 7fr));
+  -ms-grid-columns: minmax(400px, 7fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 7fr));
 }
 
 .grid-cols-7-500 {
-  -ms-grid-columns: (minmax(500px, 7fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 7fr));
+  -ms-grid-columns: minmax(500px, 7fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 7fr));
 }
 
 .grid-cols-8-100 {
-  -ms-grid-columns: (minmax(100px, 8fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 8fr));
+  -ms-grid-columns: minmax(100px, 8fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 8fr));
 }
 
 .grid-cols-8-200 {
-  -ms-grid-columns: (minmax(200px, 8fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 8fr));
+  -ms-grid-columns: minmax(200px, 8fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 8fr));
 }
 
 .grid-cols-8-300 {
-  -ms-grid-columns: (minmax(300px, 8fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 8fr));
+  -ms-grid-columns: minmax(300px, 8fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 8fr));
 }
 
 .grid-cols-8-400 {
-  -ms-grid-columns: (minmax(400px, 8fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 8fr));
+  -ms-grid-columns: minmax(400px, 8fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 8fr));
 }
 
 .grid-cols-8-500 {
-  -ms-grid-columns: (minmax(500px, 8fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 8fr));
+  -ms-grid-columns: minmax(500px, 8fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 8fr));
 }
 
 .grid-cols-9-100 {
-  -ms-grid-columns: (minmax(100px, 9fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 9fr));
+  -ms-grid-columns: minmax(100px, 9fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 9fr));
 }
 
 .grid-cols-9-200 {
-  -ms-grid-columns: (minmax(200px, 9fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 9fr));
+  -ms-grid-columns: minmax(200px, 9fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 9fr));
 }
 
 .grid-cols-9-300 {
-  -ms-grid-columns: (minmax(300px, 9fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 9fr));
+  -ms-grid-columns: minmax(300px, 9fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 9fr));
 }
 
 .grid-cols-9-400 {
-  -ms-grid-columns: (minmax(400px, 9fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 9fr));
+  -ms-grid-columns: minmax(400px, 9fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 9fr));
 }
 
 .grid-cols-9-500 {
-  -ms-grid-columns: (minmax(500px, 9fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 9fr));
+  -ms-grid-columns: minmax(500px, 9fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 9fr));
 }
 
 .grid-cols-10-100 {
-  -ms-grid-columns: (minmax(100px, 10fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 10fr));
+  -ms-grid-columns: minmax(100px, 10fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 10fr));
 }
 
 .grid-cols-10-200 {
-  -ms-grid-columns: (minmax(200px, 10fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 10fr));
+  -ms-grid-columns: minmax(200px, 10fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 10fr));
 }
 
 .grid-cols-10-300 {
-  -ms-grid-columns: (minmax(300px, 10fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 10fr));
+  -ms-grid-columns: minmax(300px, 10fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 10fr));
 }
 
 .grid-cols-10-400 {
-  -ms-grid-columns: (minmax(400px, 10fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 10fr));
+  -ms-grid-columns: minmax(400px, 10fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 10fr));
 }
 
 .grid-cols-10-500 {
-  -ms-grid-columns: (minmax(500px, 10fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 10fr));
+  -ms-grid-columns: minmax(500px, 10fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 10fr));
 }
 
 .grid-cols-11-100 {
-  -ms-grid-columns: (minmax(100px, 11fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 11fr));
+  -ms-grid-columns: minmax(100px, 11fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 11fr));
 }
 
 .grid-cols-11-200 {
-  -ms-grid-columns: (minmax(200px, 11fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 11fr));
+  -ms-grid-columns: minmax(200px, 11fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 11fr));
 }
 
 .grid-cols-11-300 {
-  -ms-grid-columns: (minmax(300px, 11fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 11fr));
+  -ms-grid-columns: minmax(300px, 11fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 11fr));
 }
 
 .grid-cols-11-400 {
-  -ms-grid-columns: (minmax(400px, 11fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 11fr));
+  -ms-grid-columns: minmax(400px, 11fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 11fr));
 }
 
 .grid-cols-11-500 {
-  -ms-grid-columns: (minmax(500px, 11fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 11fr));
+  -ms-grid-columns: minmax(500px, 11fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 11fr));
 }
 
 .grid-cols-12-100 {
-  -ms-grid-columns: (minmax(100px, 12fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 12fr));
+  -ms-grid-columns: minmax(100px, 12fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(100px, 12fr));
 }
 
 .grid-cols-12-200 {
-  -ms-grid-columns: (minmax(200px, 12fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 12fr));
+  -ms-grid-columns: minmax(200px, 12fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 12fr));
 }
 
 .grid-cols-12-300 {
-  -ms-grid-columns: (minmax(300px, 12fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 12fr));
+  -ms-grid-columns: minmax(300px, 12fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 12fr));
 }
 
 .grid-cols-12-400 {
-  -ms-grid-columns: (minmax(400px, 12fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 12fr));
+  -ms-grid-columns: minmax(400px, 12fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 12fr));
 }
 
 .grid-cols-12-500 {
-  -ms-grid-columns: (minmax(500px, 12fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 12fr));
+  -ms-grid-columns: minmax(500px, 12fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(500px, 12fr));
 }
 
 .grid-gap-10 {
@@ -773,38 +871,7 @@ a {
   grid-gap: 50px;
 }
 
-.w-1, .pseudo {
-  width: 100%;
-}
-
-.w-360 {
-  max-width: 360px;
-}
-
-.w-480 {
-  max-width: 480px;
-}
-
-.w-567 {
-  max-width: 567px;
-}
-
-.w-680 {
-  max-width: 680px;
-}
-
-.w-991 {
-  max-width: 991px;
-}
-
-.w-1100 {
-  max-width: 1100px;
-}
-
-.w-1200 {
-  max-width: 1200px;
-}
-
+/*Positions*/
 .static {
   position: static;
 }
@@ -813,7 +880,7 @@ a {
   position: fixed;
 }
 
-.absolute, .pseudo {
+.absolute {
   position: absolute;
 }
 
@@ -826,87 +893,621 @@ a {
   position: sticky;
 }
 
-.top-0, .pseudo {
-  top: 0;
+/*Custom*/
+/*Slick*/
+.slick-dots {
+  list-style: none;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin: 0;
 }
 
-.right-0 {
-  right: 0;
+.slick-dots li {
+  margin: 10px;
+  border: 1px solid var(--clr-primary);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
 
-.bottom-0 {
-  bottom: 0;
+.slick-dots li.slick-active {
+  background-color: var(--clr-primary);
 }
 
-.left-0, .pseudo {
-  left: 0;
+.slick-dots li button {
+  font-size: 0;
+  border: unset;
 }
 
-.font-size-12 {
-  font-size: 12px;
+/*Scroll to Top*/
+.scroll-to-top {
+  position: fixed;
+  bottom: -100px;
+  right: 30px;
+  -webkit-transition: bottom 300ms ease-in;
+  transition: bottom 300ms ease-in;
+  z-index: 10;
 }
 
-.font-size-14 {
-  font-size: 14px;
+.scroll-to-top.show {
+  bottom: 30px;
+  -webkit-transition: bottom 300ms ease-in;
+  transition: bottom 300ms ease-in;
 }
 
-.font-size-16 {
+.scroll-to-top a {
+  display: block;
+  width: 40px;
+}
+
+/*Accordion*/
+.accordion-section {
+  margin-bottom: 15px;
+}
+
+.accordion-section:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-section a {
+  font-size: 24px;
+  color: var(--clr-secondary);
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(78, 78, 78, 0.2);
+  padding: 8px 0;
+}
+
+.accordion-section-content {
+  display: none;
+  padding: 20px 0;
   font-size: 16px;
 }
 
-.font-size-18 {
-  font-size: 18px;
+.accordion-section-title {
+  position: relative;
 }
 
-.font-size-20 {
-  font-size: 20px;
+.accordion-section-title .arrows {
+  display: block;
+  position: absolute;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  width: 20px;
+  height: 20px;
 }
 
-.font-size-25 {
-  font-size: 25px;
+.accordion-section-title .arrow-props {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.font-size-30 {
-  font-size: 30px;
+.accordion-section-title .arrow-down {
+  position: relative;
 }
 
-.font-size-36 {
-  font-size: 36px;
+.accordion-section-title .arrow-down::before, .accordion-section-title .arrow-down::after {
+  content: "";
+  position: absolute;
 }
 
-.font-weight-100 {
-  font-weight: 100;
+.accordion-section-title .arrow-down::after {
+  height: 100%;
+  width: 2px;
+  background-color: var(--clr-primary);
 }
 
-.font-weight-300 {
-  font-weight: 300;
+.accordion-section-title .arrow-down::before {
+  height: 2px;
+  width: 100%;
+  background-color: var(--clr-primary);
 }
 
-.font-weight-400 {
-  font-weight: 400;
+.accordion-section-title .arrow-up {
+  position: relative;
+  display: none;
 }
 
-.font-weight-500 {
-  font-weight: 500p;
+.accordion-section-title .arrow-up::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--clr-primary);
 }
 
-.font-weight-600 {
-  font-weight: 600;
+.accordion-section-title.active .arrow-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.font-weight-700 {
-  font-weight: 700;
+.accordion-section-title.active .arrow-down {
+  display: none;
 }
 
-.font-weight-800 {
+/*Search*/
+.search-box {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  display: block;
+  margin-left: auto;
+  width: 20px;
+  padding: 3px 0 2px 0;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.search-box:-webkit-autofill {
+  background-color: var(--clr-secondary) !important;
+  -webkit-box-shadow: 0 0 0 30px var(--clr-secondary) inset !important;
+  color: #fff;
+}
+
+.search-box.expand {
+  width: 100%;
+  padding: 3px 25px 2px 0px;
+}
+
+.search-button {
+  width: 20px;
+  height: 20px;
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.search-button-wrapper {
+  width: 20px;
+  height: 38px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-button-wrapper::after {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: "\f002";
+  color: #fff;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  line-height: 20px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Social Media*/
+.social__media ul {
+  margin: 0;
+}
+
+.social__media ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__media ul li a {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0.5;
+}
+
+.social__media ul li a:hover {
+  opacity: 1;
+}
+
+.social__media ul li a:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+.social__media ul li a i {
+  color: var(--clr-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-size: 14px;
+}
+
+.social__media ul li a i::before {
+  position: absolute;
+}
+
+/*Baner*/
+.banner {
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .banner__content {
+    height: 238px;
+  }
+}
+
+.banner__content img {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .banner__content img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+.banner__content--text {
+  font-size: 38px;
+  font-family: PFBold;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  line-height: 45px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media (max-width: 1200px) {
+  .banner__content--text {
+    font-size: 25px;
+    line-height: 30px;
+    top: 50%;
+  }
+}
+
+.banner__content--moduler {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 680px) {
+  .banner__content--moduler {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.banner__content--moduler-icon {
+  max-width: 240px;
+  width: 100%;
+}
+
+@media (max-width: 1500px) {
+  .banner__content--moduler-icon {
+    max-width: 150px;
+  }
+}
+
+.banner__content--moduler-title {
+  font-family: PFBold;
+  font-size: 21px;
+  color: #fff;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 680px) {
+  .banner__content--moduler-title {
+    text-shadow: 1px 1px black;
+  }
+}
+
+.banner__content .booster .banner__content--moduler-title {
+  margin-left: -88px;
+}
+
+@media (max-width: 1500px) {
+  .banner__content .booster .banner__content--moduler-title {
+    margin-left: 0;
+  }
+}
+
+.banner__content-sm {
+  height: 193px;
+}
+
+.banner__content-sm > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.banner__content-sm--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.banner__content-sm--icon {
+  width: 84px;
+  height: 84px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin: 0 0 25px 0;
+}
+
+.banner__content-sm--title {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.banner__content-sm--title.lg {
+  font-family: PFBold;
+  font-size: 38px;
+  line-height: 15px;
+}
+
+@media (max-width: 680px) {
+  .banner__content-sm--title.lg {
+    font-size: 15px;
+    font-family: PFRegular;
+  }
+}
+
+.banner__wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner__wave svg {
+  width: 100%;
+}
+
+.banner__wave svg .a,
+.banner__wave svg .b {
+  -webkit-transition: all 900ms ease-in;
+  transition: all 900ms ease-in;
+}
+
+/*Slider*/
+.slider__content {
+  max-width: 723px;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  right: 340px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.3);
+  text-align: right;
+  padding: 40px 80px;
+  z-index: 2;
+}
+
+.slider__content .button__main {
+  width: 215px;
+  height: 43px;
+  margin-left: auto;
+}
+
+.slider__title {
+  font-size: 40px;
+  color: var(--clr-tertiary-1);
   font-weight: 800;
 }
 
-.font-weight-900 {
-  font-weight: 900;
+.slider__text {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 20px 0;
+  color: var(--clr-tertiary-1);
 }
 
-.pseudo {
-  content: "";
+.slider__bullets {
+  width: 41px !important;
+  height: 7px !important;
+  border: transparent;
+  border-radius: 5px;
+  background: unset !important;
+  background-color: unset !important;
+  background: #fff !important;
+}
+
+.slider__bullets.av {
+  background-color: unset !important;
+  background: -webkit-gradient(linear, left top, right top, from(#1ec2dc), to(#2584f1)) !important;
+  background: linear-gradient(to right, #1ec2dc 0%, #2584f1 100%) !important;
+}
+
+/*Tabs*/
+.tabs {
+  padding: 70px 0 100px;
+}
+
+.tabs__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 15px 0;
+  border-bottom: 2px solid var(--clr-primary);
+  position: relative;
+}
+
+@media (max-width: 680px) {
+  .tabs__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.tabs__menu a {
+  text-decoration: none;
+}
+
+.tabs__menu a:hover {
+  color: var(--clr-secondary);
+}
+
+@media (max-width: 680px) {
+  .tabs__menu a:hover {
+    color: #fff;
+  }
+}
+
+.tabs__arrow {
+  position: absolute;
+  bottom: -20px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.tabs__button {
+  font-size: 20px;
+  font-family: PFBold;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--clr-secondary);
+  opacity: 0.3;
+}
+
+@media (max-width: 680px) {
+  .tabs__button {
+    font-size: 15px;
+    background-color: var(--clr-primary);
+    color: #fff;
+  }
+}
+
+.tabs__button--active {
+  font-size: 26px;
+  opacity: 1;
+}
+
+@media (max-width: 680px) {
+  .tabs__button--active {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content--active {
+  display: block;
+}
+
+.tabs__content-container {
+  margin: 20px 0 0 0;
+}
+
+@media (max-width: 1023px) {
+  .tabs__content-container {
+    min-height: unset !important;
+  }
 }
 /*# sourceMappingURL=format.css.map */

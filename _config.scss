@@ -1,10 +1,38 @@
+// Root
 :root {
-  --clr-primary: #fff;
-  --clr-seconadary: #000;
+	--clr-primary: #fff;
+	--clr-seconadary: #000;
 }
 
+// Font Family
 $font-family: "Open Sans";
 
-$font-size: 16px;
+// Font Sizes
+$font-size-primary: 16px;
+$font-sizes: 16, 18, 20;
 
-$line-height: 25px;
+// Font Weights
+$font-weights: 100, 300, 400, 500, 600, 700, 800, 900;
+
+// Leding
+$leding-primary: 25px;
+$ledings: 25, 32, 40;
+
+// Spaces
+$spaces: 10, 20, 30, 40;
+
+// Blocks
+$blocks: inline, inline-block, inline-flex, block;
+
+// Widths
+$widths: 360, 480, 567, 680, 991, 1100, 1200;
+
+// Flex
+
+// Grid
+$columns: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+$grid-widths: 100, 200, 300, 400, 500;
+$grid-gaps: 10, 20, 30, 40, 50;
+
+// Positions
+$positions: static, fixed, absolute, relative, sticky;
