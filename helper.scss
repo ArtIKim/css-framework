@@ -1,230 +1,251 @@
 @import "config";
 
+/*Colors*/
+// @each $color in $colors {
+//   $i: index($colors, $color);
+//   .color-#{$i} {
+//     color: #{$color};
+//   }
+// }
+
+@each $name, $color in $colors {
+  .color-#{$name} {
+    color: $color;
+  }
+}
+
+/*Fonts*/
+@each $name, $font in $fonts {
+  .font-#{$name} {
+    font-family: $font;
+  }
+}
+
 /*Font Sizes*/
 @each $font-size in $font-sizes {
-	.font-size-#{$font-size} {
-		font-size: #{$font-size}px;
-	}
+  .font-size-#{$font-size} {
+    font-size: #{$font-size}px;
+  }
 }
 
 /*Font Weights*/
 @each $font-weight in $font-weights {
-	.font-weight-#{$font-weight} {
-		font-weight: #{$font-weight};
-	}
+  .font-weight-#{$font-weight} {
+    font-weight: #{$font-weight};
+  }
 }
 
 /*Ledings*/
 @each $leding in $ledings {
-	.line-height-#{$leding} {
-		line-height: #{$leding};
-	}
+  .line-height-#{$leding} {
+    line-height: #{$leding}px;
+  }
 }
 
 /*Spaces*/
 .mx-auto {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 @each $space in $spaces {
-	.m-#{$space} {
-		margin: #{$space}px;
-	}
+  .m-#{$space} {
+    margin: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.mt-#{$space} {
-		margin-top: #{$space}px;
-	}
+  .mt-#{$space} {
+    margin-top: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.mr-#{$space} {
-		margin-right: #{$space}px;
-	}
+  .mr-#{$space} {
+    margin-right: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.mb-#{$space} {
-		margin-bottom: #{$space}px;
-	}
+  .mb-#{$space} {
+    margin-bottom: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.ml-#{$space} {
-		margin-left: #{$space}px;
-	}
+  .ml-#{$space} {
+    margin-left: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.my-#{$space} {
-		margin-top: #{$space}px;
-		margin-bottom: #{$space}px;
-	}
+  .my-#{$space} {
+    margin-top: #{$space}px;
+    margin-bottom: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.mx-#{$space} {
-		margin-left: #{$space}px;
-		margin-right: #{$space}px;
-	}
+  .mx-#{$space} {
+    margin-left: #{$space}px;
+    margin-right: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.-m-#{$space} {
-		margin: -#{$space}px;
-	}
+  .-m-#{$space} {
+    margin: -#{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.-mt-#{$space} {
-		margin-top: -#{$space}px;
-	}
+  .-mt-#{$space} {
+    margin-top: -#{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.-mr-#{$space} {
-		margin-right: -#{$space}px;
-	}
+  .-mr-#{$space} {
+    margin-right: -#{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.-mb-#{$space} {
-		margin-bottom: -#{$space}px;
-	}
+  .-mb-#{$space} {
+    margin-bottom: -#{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.-ml-#{$space} {
-		margin-left: -#{$space}px;
-	}
+  .-ml-#{$space} {
+    margin-left: -#{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.-my-#{$space} {
-		margin-top: -#{$space}px;
-		margin-bottom: -#{$space}px;
-	}
+  .-my-#{$space} {
+    margin-top: -#{$space}px;
+    margin-bottom: -#{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.-mx-#{$space} {
-		margin-left: -#{$space}px;
-		margin-right: -#{$space}px;
-	}
+  .-mx-#{$space} {
+    margin-left: -#{$space}px;
+    margin-right: -#{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.p-#{$space} {
-		padding: #{$space}px;
-	}
+  .p-#{$space} {
+    padding: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.pr-#{$space} {
-		padding-right: #{$space}px;
-	}
+  .pr-#{$space} {
+    padding-right: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.pb-#{$space} {
-		padding-bottom: #{$space}px;
-	}
+  .pb-#{$space} {
+    padding-bottom: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.pl-#{$space} {
-		padding-left: #{$space}px;
-	}
+  .pl-#{$space} {
+    padding-left: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.py-#{$space} {
-		padding-top: #{$space}px;
-		padding-bottom: #{$space}px;
-	}
+  .py-#{$space} {
+    padding-top: #{$space}px;
+    padding-bottom: #{$space}px;
+  }
 }
 
 @each $space in $spaces {
-	.px-#{$space} {
-		padding-left: #{$space}px;
-		padding-right: #{$space}px;
-	}
+  .px-#{$space} {
+    padding-left: #{$space}px;
+    padding-right: #{$space}px;
+  }
 }
 
 /*Blocks*/
 @each $block in $blocks {
-	.#{$block} {
-		display: #{$block};
-	}
+  .#{$block} {
+    display: #{$block};
+  }
 }
 
 /*Widths*/
 .w-1 {
-	width: 100%;
+  width: 100%;
 }
 
 @each $width in $widths {
-	.w-#{$width} {
-		max-width: #{$width}px;
-	}
+  .w-#{$width} {
+    max-width: #{$width}px;
+  }
 }
 
 /*Flex*/
 .flex {
-	display: flex;
+  display: flex;
 }
 
 .justify-center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .justify-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .align-center {
-	align-items: center;
+  align-items: center;
 }
 
 .flex-wrap {
-	flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .flex-1 {
-	flex: 1 1 0%;
+  flex: 1 1 0%;
 }
 
 .flex-auto {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .flex-initial {
-	flex: 0 1 auto;
+  flex: 0 1 auto;
 }
 
 .flex-none {
-	flex: none;
+  flex: none;
 }
 
 /*Grid*/
 @each $column in $columns {
-	@each $width in $grid-widths {
-		.grid-cols-#{$column}-#{$width} {
-			grid-template-columns: repeat(auto-fit, minmax(#{$width}px, #{$column}fr));
-		}
-	}
+  @each $width in $grid-widths {
+    .grid-cols-#{$column}-#{$width} {
+      grid-template-columns: repeat(auto-fit, minmax(#{$width}px, #{$column}fr));
+    }
+  }
 }
 
 @each $gap in $grid-gaps {
-	.grid-gap-#{$gap} {
-		grid-gap: #{$gap}px;
-	}
+  .grid-gap-#{$gap} {
+    grid-gap: #{$gap}px;
+  }
 }
 
 /*Positions*/
 @each $posotion in $positions {
-	.#{$posotion} {
-		position: #{$posotion};
-	}
+  .#{$posotion} {
+    position: #{$posotion};
+  }
 }

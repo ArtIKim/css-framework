@@ -1,19 +1,7 @@
-:root {
-  --clr-primary: #fff;
-  --clr-seconadary: #000;
-}
-
 /*Reset*/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
-  color: var(--clr-primary);
-}
-
-body {
-  font-size: 16px;
-  line-height: 25px;
 }
 
 input:focus,
@@ -30,6 +18,10 @@ strong {
   font-weight: bolder;
   font-size: inherit;
   color: inherit;
+}
+
+span {
+  font-size: inherit;
 }
 
 a {
