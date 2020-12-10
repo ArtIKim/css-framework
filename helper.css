@@ -11,6 +11,10 @@
   color: "#ff556";
 }
 
+.color-4 {
+  color: "#ff556";
+}
+
 /*Fonts*/
 .font-primary {
   font-family: "Open Sans, sans serif";
@@ -35,10 +39,6 @@
 
 .font-size-20 {
   font-size: 20px;
-}
-
-.font-size-30 {
-  font-size: 30px;
 }
 
 /*Font Weights*/
