@@ -1,14 +1,14 @@
 /*Reset*/
 * {
-  margin: 0;
-  padding: 0;
-  //   font-family: $font-family;
-  //   color: var(--clr-primary);
+  //   @extend .m-0;
+  //   @extend .p-0;
+  //   @extend .box-border;
+  //   @extend .font-primary;
+  //   @extend .color-primary;
 }
 
 body {
-  //   font-size: $font-size-primary;
-  //   line-height: $leding-primary;
+  //   @extend .font-primary;
 }
 
 input,
@@ -16,22 +16,22 @@ select,
 textarea,
 button {
   &:focus {
-    box-shadow: unset !important;
-    outline: none;
+    // @extend .shadow-none;
+    // @extend .outline-none;
   }
 }
 
 b,
 strong {
-  font-weight: bolder;
-  font-size: inherit;
-  color: inherit;
+  //   @extend .font-bold;
+  //   @extend .text-inherit;
+  //   @extend .text-color-inherit;
 }
 
 span {
-  font-size: inherit;
+  //   @extend .text-inherit;
 }
 
 a {
-  color: var(--clr-primary);
+  //   @extend .color-primary;
 }

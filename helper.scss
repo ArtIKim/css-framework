@@ -1,251 +1,155 @@
 @import "config";
 
-/*Colors*/
-// @each $color in $colors {
-//   $i: index($colors, $color);
-//   .color-#{$i} {
-//     color: #{$color};
-//   }
-// }
-
-@each $name, $color in $colors {
-	.color-#{$name} {
-		color: $color;
-	}
-}
-
-/*Fonts*/
-@each $name, $font in $fonts {
-	.font-#{$name} {
-		font-family: $font;
-	}
+/*Font Families*/
+@each $name, $font-family in $font-families {
+  .font-family-#{$name} {
+    font-family: $font-family;
+  }
 }
 
 /*Font Sizes*/
-@each $font-size in $font-sizes {
-	.font-size-#{$font-size} {
-		font-size: #{$font-size}px;
-	}
+@each $name, $font-size in $font-sizes {
+  .font-size-#{$name} {
+    font-size: $font-size;
+  }
 }
 
 /*Font Weights*/
-@each $font-weight in $font-weights {
-	.font-weight-#{$font-weight} {
-		font-weight: #{$font-weight};
-	}
+@each $name, $font-weight in $font-weights {
+  .font-weight-#{$name} {
+    font-weight: $font-weight;
+  }
 }
 
-/*Ledings*/
-@each $leding in $ledings {
-	.line-height-#{$leding} {
-		line-height: #{$leding}px;
-	}
+/*Font Styles*/
+@each $name, $font-style in $font-styles {
+  .font-style-#{$name} {
+    font-style: $font-style;
+  }
 }
 
-/*Spaces*/
-.mx-auto {
-	margin: 0 auto;
+/*Letter Spacing*/
+@each $name, $letter-spacing in $letter-spacings {
+  .letter-spacing-#{$name} {
+    letter-spacing: $letter-spacing;
+    margin-left: -$letter-spacing;
+  }
 }
 
-@each $space in $spaces {
-	.m-#{$space} {
-		margin: #{$space}px;
-	}
+/*Line Heights*/
+@each $name, $line-height in $line-heights {
+  .line-height-#{$name} {
+    line-height: $line-height;
+  }
 }
 
-@each $space in $spaces {
-	.mt-#{$space} {
-		margin-top: #{$space}px;
-	}
+/*Colors*/
+@each $name, $text-color in $text-colors {
+  .color-#{$name} {
+    color: $text-color;
+  }
 }
 
-@each $space in $spaces {
-	.mr-#{$space} {
-		margin-right: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.mb-#{$space} {
-		margin-bottom: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.ml-#{$space} {
-		margin-left: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.my-#{$space} {
-		margin-top: #{$space}px;
-		margin-bottom: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.mx-#{$space} {
-		margin-left: #{$space}px;
-		margin-right: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.-m-#{$space} {
-		margin: -#{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.-mt-#{$space} {
-		margin-top: -#{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.-mr-#{$space} {
-		margin-right: -#{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.-mb-#{$space} {
-		margin-bottom: -#{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.-ml-#{$space} {
-		margin-left: -#{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.-my-#{$space} {
-		margin-top: -#{$space}px;
-		margin-bottom: -#{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.-mx-#{$space} {
-		margin-left: -#{$space}px;
-		margin-right: -#{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.p-#{$space} {
-		padding: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.pr-#{$space} {
-		padding-right: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.pb-#{$space} {
-		padding-bottom: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.pl-#{$space} {
-		padding-left: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.py-#{$space} {
-		padding-top: #{$space}px;
-		padding-bottom: #{$space}px;
-	}
-}
-
-@each $space in $spaces {
-	.px-#{$space} {
-		padding-left: #{$space}px;
-		padding-right: #{$space}px;
-	}
-}
-
-/*Blocks*/
-@each $block in $blocks {
-	.#{$block} {
-		display: #{$block};
-	}
+/*Background Colors*/
+@each $name, $background-color in $background-colors {
+  .bg-color-#{$name} {
+    color: $background-color;
+  }
 }
 
 /*Widths*/
-.w-1 {
-	width: 100%;
+@each $name, $width in $widths {
+  .w-#{$name} {
+    width: #{$width};
+  }
 }
 
-@each $width in $widths {
-	.w-#{$width} {
-		max-width: #{$width}px;
-	}
+/*Max Widths*/
+@each $name, $max-width in $max-widths {
+  .max-w-#{$name} {
+    max-width: #{$max-width};
+  }
 }
 
-/*Flex*/
-.flex {
-	display: flex;
+/*Heights*/
+@each $name, $height in $heights {
+  .h-#{$name} {
+    height: #{$height};
+  }
 }
 
-.justify-center {
-	justify-content: center;
-}
+/*Spacing*/
+// @each $name, $spacing in $spacing-main {
+//   .m-#{$name} {
+//     margin: #{$spacing};
+//   }
+//   .my-#{$name} {
+//     margin-top: #{$spacing};
+//     margin-bottom: #{$spacing};
+//   }
+//   .mx-#{$name} {
+//     margin-left: #{$spacing};
+//     margin-right: #{$spacing};
+//   }
+//   .mt-#{$name} {
+//     margin-top: #{$spacing};
+//   }
+//   .mr-#{$name} {
+//     margin-right: #{$spacing};
+//   }
+//   .mb-#{$name} {
+//     margin-bottom: #{$spacing};
+//   }
+//   .ml-#{$name} {
+//     margin-left: #{$spacing};
+//   }
+// }
 
-.justify-between {
-	justify-content: space-between;
-}
-
-.align-center {
-	align-items: center;
-}
-
-.flex-wrap {
-	flex-wrap: wrap;
-}
-
-.flex-1 {
-	flex: 1 1 0%;
-}
-
-.flex-auto {
-	flex: 1 1 auto;
-}
-
-.flex-initial {
-	flex: 0 1 auto;
-}
-
-.flex-none {
-	flex: none;
-}
-
-/*Grid*/
-@each $column in $columns {
-	@each $width in $grid-widths {
-		.grid-cols-#{$column}-#{$width} {
-			grid-template-columns: repeat(auto-fit, minmax(#{$width}px, #{$column}fr));
-		}
-	}
-}
-
-@each $gap in $grid-gaps {
-	.grid-gap-#{$gap} {
-		grid-gap: #{$gap}px;
-	}
-}
-
-/*Positions*/
-@each $posotion in $positions {
-	.#{$posotion} {
-		position: #{$posotion};
-	}
-}
+// @each $name, $spacing in $spacings {
+//   .m-#{$name} {
+//     margin: #{$spacing};
+//   }
+//   .mx-#{$name} {
+//     margin-left: #{$spacing};
+//     margin-right: #{$spacing};
+//   }
+//   .-m-#{$name} {
+//     margin: -#{$spacing};
+//   }
+//   .my-#{$name} {
+//     margin-top: #{$spacing};
+//     margin-bottom: #{$spacing};
+//   }
+//   .-my-#{$name} {
+//     margin-top: -#{$spacing};
+//     margin-bottom: -#{$spacing};
+//   }
+//   .-mx-#{$name} {
+//     margin-left: -#{$spacing};
+//     margin-right: -#{$spacing};
+//   }
+//   .mt-#{$name} {
+//     margin-top: #{$spacing};
+//   }
+//   .-mt-#{$name} {
+//     margin-top: -#{$spacing};
+//   }
+//   .mr-#{$name} {
+//     margin-right: #{$spacing};
+//   }
+//   .-mr-#{$name} {
+//     margin-right: -#{$spacing};
+//   }
+//   .mb-#{$name} {
+//     margin-bottom: #{$spacing};
+//   }
+//   .-mb-#{$name} {
+//     margin-bottom: -#{$spacing};
+//   }
+//   .ml-#{$name} {
+//     margin-left: #{$spacing};
+//   }
+//   .-ml-#{$name} {
+//     margin-left: -#{$spacing};
+//   }
+// }

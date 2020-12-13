@@ -1,0 +1,104 @@
+
+Config
+
+//antialised
+
+//rem
+
+
+// @each $color in $colors {
+    //   $i: index($colors, $color);
+    //   .color-#{$i} {
+    //     color: #{$color};
+    //   }
+    // }
+
+
+// // Blocks
+// $blocks: inline, inline-block, inline-flex, block;
+
+
+// // Flex - grow shrink etc - gap
+
+// // Grid
+// $columns: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+// $grid-widths: 100, 200, 300, 400, 500;
+// $grid-gaps: 10, 20, 30, 40, 50;
+
+// // Positions - top right bottom left
+// $positions: static, fixed, absolute, relative, sticky;
+
+Helper
+
+// /*Ledings*/
+// @each $leding in $ledings {
+//   .line-height-#{$leding} {
+//     line-height: #{$leding}px;
+//   }
+// }
+
+// /*Blocks*/
+// @each $block in $blocks {
+//   .#{$block} {
+//     display: #{$block};
+//   }
+// }
+
+// /*Flex*/
+// .flex {
+//   display: flex;
+// }
+
+// .justify-center {
+//   justify-content: center;
+// }
+
+// .justify-between {
+//   justify-content: space-between;
+// }
+
+// .align-center {
+//   align-items: center;
+// }
+
+// .flex-wrap {
+//   flex-wrap: wrap;
+// }
+
+// .flex-1 {
+//   flex: 1 1 0%;
+// }
+
+// .flex-auto {
+//   flex: 1 1 auto;
+// }
+
+// .flex-initial {
+//   flex: 0 1 auto;
+// }
+
+// .flex-none {
+//   flex: none;
+// }
+
+// /*Grid*/
+// @each $column in $columns {
+//   @each $width in $grid-widths {
+//     .grid-cols-#{$column}-#{$width} {
+//       grid-template-columns: repeat(auto-fit, minmax(#{$width}px, #{$column}fr));
+//     }
+//   }
+// }
+
+// @each $gap in $grid-gaps {
+//   .grid-gap-#{$gap} {
+//     grid-gap: #{$gap}px;
+//   }
+// }
+
+// /*Positions*/
+// @each $posotion in $positions {
+//   .#{$posotion} {
+//     position: #{$posotion};
+//   }
+// }
