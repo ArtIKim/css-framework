@@ -50,6 +50,20 @@
   }
 }
 
+/*Text Decorations*/
+@each $name, $text-decoration in $text-decorations {
+  .#{$name} {
+    text-decoration: $text-decoration;
+  }
+}
+
+/*Text Transforms*/
+@each $name, $text-transform in $text-transforms {
+  .#{$name} {
+    text-transform: $text-transform;
+  }
+}
+
 /*Background Colors*/
 @each $name, $background-color in $background-colors {
   .bg-color-#{$name} {

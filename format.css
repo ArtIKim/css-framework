@@ -80,6 +80,36 @@
   color: #fff;
 }
 
+/*Text Decorations*/
+.underline {
+  text-decoration: underline;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+/*Text Transforms*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.normal-case {
+  text-transform: normal;
+}
+
 /*Background Colors*/
 .bg-color-1 {
   color: #fff;
