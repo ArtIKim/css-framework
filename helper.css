@@ -1,27 +1,38 @@
 /*Font Families*/
-.font-family-1 {
+.font-open {
   font-family: "Open Sans, sans serif";
 }
 
-.font-family-2 {
+.font-roboto {
   font-family: "Roboto, sans serif";
 }
 
-/*Font Sizes*/
-.font-size-14 {
-  font-size: 14px;
+.font-mono {
+  font-family: "Monospace, sans serif";
 }
 
-.font-size-16 {
-  font-size: 16px;
+/*Font Sizes*/
+.text-xs {
+  font-size: 0.75rem;
+  line-height: calc(0.75rem + 0.25rem);
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: calc(0.875rem + 0.25rem);
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: calc(2.25rem + 0.25rem);
 }
 
 /*Font Weights*/
-.font-weight-100 {
+.font-100 {
   font-weight: 100;
 }
 
-.font-weight-300 {
+.font-300 {
   font-weight: 300;
 }
 

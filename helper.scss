@@ -2,21 +2,22 @@
 
 /*Font Families*/
 @each $name, $font-family in $font-families {
-  .font-family-#{$name} {
+  .font-#{$name} {
     font-family: $font-family;
   }
 }
 
 /*Font Sizes*/
-@each $name, $font-size in $font-sizes {
-  .font-size-#{$name} {
-    font-size: $font-size;
+@each $name, $text in $texts {
+  .text-#{$name} {
+    font-size: $text;
+    line-height: calc(#{$text} + 0.25rem);
   }
 }
 
 /*Font Weights*/
 @each $name, $font-weight in $font-weights {
-  .font-weight-#{$name} {
+  .font-#{$name} {
     font-weight: $font-weight;
   }
 }
