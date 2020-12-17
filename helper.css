@@ -17,9 +17,79 @@
   line-height: calc(0.75rem + 0.25rem);
 }
 
+@media (max-width: 640px) {
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: calc(0.75rem + 0.25rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: calc(0.75rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: calc(0.75rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1280px) {
+  .xl\:text-xs {
+    font-size: 0.75rem;
+    line-height: calc(0.75rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1536px) {
+  .xl2\:text-xs {
+    font-size: 0.75rem;
+    line-height: calc(0.75rem + 0.25rem);
+  }
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: calc(0.875rem + 0.25rem);
+}
+
+@media (max-width: 640px) {
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: calc(0.875rem + 0.25rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: calc(0.875rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: calc(0.875rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1280px) {
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: calc(0.875rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1536px) {
+  .xl2\:text-sm {
+    font-size: 0.875rem;
+    line-height: calc(0.875rem + 0.25rem);
+  }
 }
 
 .text-4xl {
@@ -27,13 +97,108 @@
   line-height: calc(2.25rem + 0.25rem);
 }
 
+@media (max-width: 640px) {
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: calc(2.25rem + 0.25rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: calc(2.25rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: calc(2.25rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1280px) {
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: calc(2.25rem + 0.25rem);
+  }
+}
+
+@media (max-width: 1536px) {
+  .xl2\:text-4xl {
+    font-size: 2.25rem;
+    line-height: calc(2.25rem + 0.25rem);
+  }
+}
+
 /*Font Weights*/
 .font-100 {
   font-weight: 100;
 }
 
+@media (max-width: 640px) {
+  .sm\:font-100 {
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  .md\:font-100 {
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lg\:font-100 {
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 1280px) {
+  .xl\:font-100 {
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 1536px) {
+  .xl2\:font-100 {
+    font-weight: 100;
+  }
+}
+
 .font-300 {
   font-weight: 300;
+}
+
+@media (max-width: 640px) {
+  .sm\:font-300 {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 768px) {
+  .md\:font-300 {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lg\:font-300 {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1280px) {
+  .xl\:font-300 {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1536px) {
+  .xl2\:font-300 {
+    font-weight: 300;
+  }
 }
 
 /*Font Styles*/

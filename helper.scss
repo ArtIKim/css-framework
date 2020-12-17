@@ -13,12 +13,29 @@
     font-size: $text;
     line-height: calc(#{$text} + 0.25rem);
   }
+
+  @each $name1, $break in $media {
+    @media (max-width: $break) {
+      .#{$name1}\:text-#{$name} {
+        font-size: $text;
+        line-height: calc(#{$text} + 0.25rem);
+      }
+    }
+  }
 }
 
 /*Font Weights*/
 @each $name, $font-weight in $font-weights {
   .font-#{$name} {
     font-weight: $font-weight;
+  }
+
+  @each $name1, $break in $media {
+    @media (max-width: $break) {
+      .#{$name1}\:font-#{$name} {
+        font-weight: $font-weight;
+      }
+    }
   }
 }
 

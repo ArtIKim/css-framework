@@ -1,11 +1,20 @@
-// Font Families -- .font-open
+// Media -- <div cass="sm:text-xs"></div>
+$media: (
+  "sm": "640px",
+  "md": "768px",
+  "lg": "1024px",
+  "xl": "1280px",
+  "xl2": "1536px",
+);
+
+// Font Families -- <div cass="font-open"></div>
 $font-families: (
   "open": "Open Sans, sans serif",
   "roboto": "Roboto, sans serif",
   "mono": "Monospace, sans serif",
 );
 
-// Font Sizes -- .text-xs
+// Font Sizes -- <div cass="text-xs"></div>
 $texts: (
   "xs": 0.75rem /* 12px */,
   "sm": 0.875rem /* 14px */,
