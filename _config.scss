@@ -1,9 +1,9 @@
-// Media -- <div cass="sm:text-xs"></div>
+// Media - Deskotp First -- <div cass="sm:text-xs"></div>
 $media: (
   "sm": "640px",
-  "md": "768px",
-  "lg": "1024px",
-  "xl": "1280px",
+  "md": "767px",
+  "lg": "1023px",
+  "xl": "1279px",
   "xl2": "1536px",
 );
 
@@ -21,48 +21,56 @@ $texts: (
   "4xl": 2.25rem /* 36px */,
 );
 
-// Font Weights -- .font-100
+// Font Weights -- <div cass="font-thin"></div>
 $font-weights: (
-  "100": 100,
-  "300": 300,
+  "thin": 100,
+  "extralight": 200,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "extrabold": 800,
+  "black": 900,
 );
 
-// Font Style
+// Font Style -- <div cass="font-italic"></div>
 $font-styles: (
-  "italic": "italic",
-  "normal": "normal",
-  "inherit": "inherit",
+  "italic": italic,
+  "normal": normal,
+  "inherit": inherit,
 );
 
-// Letter Spacing
+// Letter Spacing -- <div cass="letter-spacing-1"></div>
 $letter-spacings: (
   "1": 1px,
   "2": 2px,
   "3": 3px,
+  "10": 10px,
 );
 
-// Line Heights
+// Line Heights -- <div cass="line-height-25"></div>
 $line-heights: (
   "25": 25px,
   "30": 30px,
   "42": 42px,
 );
 
-// Colors
+// Colors -- <div cass="text-main"></div>
 $text-colors: (
-  "1": #fff,
-  "2": #fff,
-  "3": #fff,
+  "main": #001aaa,
+  "white": #fff,
+  "black": #000,
 );
 
-// Text Decorations
+// Text Decorations -- <div cass="underline"></div>
 $text-decorations: (
   "underline": underline,
   "no-underline": none,
   "line-through": line-through,
 );
 
-// Text Transforms
+// Text Transforms -- <div cass="uppercase"></div>
 $text-transforms: (
   "uppercase": uppercase,
   "lowercase": lowercase,
@@ -70,14 +78,14 @@ $text-transforms: (
   "normal-case": normal,
 );
 
-// Background Colors
+// Background Colors -- <div cass="bg-main"></div>
 $background-colors: (
-  "1": #fff,
-  "2": #fff,
-  "3": #fff,
+  "main": #001aaa,
+  "white": #fff,
+  "black": #000,
 );
 
-// Widts
+// Widths
 $widths: (
   "screen": "100vw",
   "auto": "auto",
@@ -113,9 +121,9 @@ $widths: (
 // Max Widths
 $max-widths: (
   "full": "100%",
-  "1000": "1000px",
-  "1200": "1200px",
-  "1600": "1600px",
+  "62\\.5": "62.5rem" /* 1000px */,
+  "75": "75rem" /* 1200px */,
+  "100": "100rem" /* 1600px */,
 );
 
 // Heights
@@ -182,3 +190,26 @@ $heights: (
 //   "36": "9rem",
 //   "40": "10rem",
 // );
+
+// Display -- <div cass="block"></div>
+$display: (
+  "block": block,
+  "inline": inline,
+  "inline-block": inline-block,
+  "flex": flex,
+  "grid": grid,
+);
+
+// Flex -- <div cass="flex-1"></div>
+$flex: (
+  "1": 1 1 0%,
+  "auto": 1 1 auto,
+  "initial": 0 1 auto,
+  "none": none,
+);
+
+// Flex Directions -- <div cass="flex-col"></div>
+$flex-directions: (
+  "col": column,
+  "row": row,
+);
