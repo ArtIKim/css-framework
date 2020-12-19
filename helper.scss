@@ -266,6 +266,38 @@
   }
 }
 
+/*Border Styles*/
+@each $name, $value in $border-styles {
+  .border-#{$name} {
+    border-style: #{$value};
+  }
+
+  @each $name1, $break in $media {
+    @media (max-width: $break) {
+      .#{$name1}\:border-#{$name} {
+        border-style: #{$value};
+      }
+    }
+  }
+}
+
+/*Border Direction Styles*/
+@each $name, $value in $border-styles {
+  @each $name2, $value2 in $border-directions {
+    .border-#{$name2}-#{$name} {
+      border-#{$value2}-style: #{$value};
+    }
+
+    @each $name1, $break in $media {
+      @media (max-width: $break) {
+        .#{$name1}\:border-#{$name2}-#{$name} {
+          border-#{$value2}-style: #{$value} !important;
+        }
+      }
+    }
+  }
+}
+
 /*Borders Withith Values*/
 @each $name, $value in $border-directions {
   @each $name2, $value2 in $border-values {
@@ -275,8 +307,8 @@
 
     @each $name1, $break in $media {
       @media (max-width: $break) {
-        .border-#{$name}-#{$name2} {
-          border-#{$value}-width: #{$value2};
+        .#{$name1}\:border-#{$name}-#{$name2} {
+          border-#{$value}-width: #{$value2} !important;
         }
       }
     }
@@ -287,8 +319,7 @@
 @each $name, $value in $border-colors {
   @each $name2, $value2 in $border-opacity {
     .border-#{$name}-#{$name2} {
-      //   border-color: rgba(#{$value}, #{$value2});
-      border-color: #{$value} #{$value2};
+      border-color: RGBA(#{$value}, #{$value2});
     }
   }
 
@@ -300,21 +331,6 @@
   //     }
   //   }
 }
-
-/*Border Opacity*/
-// @each $name, $value in $border-opacity {
-//   .border-opacity-#{$name} {
-//     border-color: rgba(inherit, inherit, inherit, #{$value});
-//   }
-
-//   @each $name1, $break in $media {
-//     @media (max-width: $break) {
-//       .#{$name1}\:border-opacity-#{$name} {
-//         border-color: rgba(inherit, inherit, inherit, #{$value});
-//       }
-//     }
-//   }
-// }
 
 /*Display*/
 @each $name, $value in $display {

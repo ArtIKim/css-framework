@@ -200,17 +200,27 @@ $borders: (
   "border-8": 8px,
 );
 
+// Border Styles -- <div cass="border"></div>
+$border-styles: (
+  "solid": solid,
+  "dashed": dashed,
+  "dotted": dotted,
+  "double": double,
+  "none": none,
+);
+
 // Border Direction -- <div cass="border border-t"></div>
 $border-directions: (
   "t": top,
   "r": right,
   "b": bottom,
-  "left": left,
+  "l": left,
 );
 
 // Border Values -- <div cass="border border-t-0"></div>
 $border-values: (
   "0": 0px,
+  "1": 1px,
   "2": 2px,
   "4": 4px,
   "8": 8px,
@@ -219,11 +229,12 @@ $border-values: (
 
 // Border Colors -- <div cass="border border-t-1 border-white"></div>
 $border-colors: (
-  "main": (
-    "red": 100,
-    "green": 100,
-    "blue": 100,
-  ),
+  // "main": (
+  //   "red": 100,
+  //   "green": 100,
+  //   "blue": 100,
+  // ),
+  "main": #16498a,
   //   "main": rgba(50, 57, 178, 0)
 );
 
