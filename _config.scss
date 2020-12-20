@@ -1,4 +1,4 @@
-// Media - Deskotp First -- <div cass="sm:text-xs"></div>
+// Media - Deskotp First -- <div cass="sm:text-xs"></div> || REF
 $media: (
   "sm": "640px",
   "md": "767px",
@@ -14,7 +14,7 @@ $font-families: (
   "mono": "Monospace, sans serif",
 );
 
-// Font Sizes -- <div cass="text-xs"></div>
+// Font Sizes -- <div cass="text-xs"></div> || REF
 $texts: (
   "xs": 0.75rem /* 12px */,
   "sm": 0.875rem /* 14px */,
@@ -63,19 +63,19 @@ $text-colors: (
   "black": #000,
 );
 
-// Text Decorations -- <div cass="underline"></div>
+// Text Decorations -- <div cass="text-underline"></div>
 $text-decorations: (
-  "underline": underline,
-  "no-underline": none,
-  "line-through": line-through,
+  "text-underline": underline,
+  "text-no-underline": none,
+  "text-line-through": line-through,
 );
 
-// Text Transforms -- <div cass="uppercase"></div>
+// Text Transforms -- <div cass="text-uppercase"></div>
 $text-transforms: (
-  "uppercase": uppercase,
-  "lowercase": lowercase,
-  "capitalize": capitalize,
-  "normal-case": normal,
+  "text-uppercase": uppercase,
+  "text-lowercase": lowercase,
+  "text-capitalize": capitalize,
+  "text-normal-case": normal,
 );
 
 // Background Colors -- <div cass="bg-main"></div>
@@ -85,7 +85,7 @@ $background-colors: (
   "black": #000,
 );
 
-// Widths
+// Widths || REF
 $widths: (
   "screen": "100vw",
   "auto": "auto",
@@ -118,7 +118,7 @@ $widths: (
   "11\\/12": "91.666667%",
 );
 
-// Max Widths
+// Max Widths || REF
 $max-widths: (
   "full": "100%",
   "62\\.5": "62.5rem" /* 1000px */,
@@ -126,7 +126,7 @@ $max-widths: (
   "100": "100rem" /* 1600px */,
 );
 
-// Heights
+// Heights || REF
 $heights: (
   "screen": "100vh",
   "auto": "auto",
@@ -227,23 +227,39 @@ $border-values: (
   "10": 10px,
 );
 
-// Border Colors -- <div cass="border border-t-1 border-white"></div>
+// Border Colors -- <div cass="border border-t-1 border-white"></div> || REF
 $border-colors: (
-  // "main": (
-  //   "red": 100,
-  //   "green": 100,
-  //   "blue": 100,
-  // ),
-  "main": #16498a,
-  //   "main": rgba(50, 57, 178, 0)
+  "main-0": "rgba(100, 100, 100, 0)",
+  "main-5": "rgba(100, 100, 100, 0.05)",
+  "main-10": "rgba(100, 100, 100, 0.1)",
+  "main-100": "rgba(100, 100, 100, 100)",
 );
 
 // Border Opacity -- <div cass="border border-t-1 border-white border-opacity-0"></div>
-$border-opacity: (
-  "0": 0,
-  "5": 0.05,
-  "10": 0.1,
+// $border-opacity: (
+//   "0": 0,
+//   "5": 0.05,
+//   "10": 0.1,
+// );
+
+// Border Radius -- <div cass="border-radius-0"></div>
+$border-radius: (
+  "0": 0px,
+  "1": 1px,
+  "2": 2px,
+  "4": 4px,
+  "8": 8px,
+  "10": 10px,
 );
+
+// Border Radius Positions -- <div cass="border-radius-tr-0"></div> || REF
+// $border-radius-positions: (
+//   "tr-0": 0px,
+//   "tr-1": 1px,
+//   "tl-0": 0px,
+//   "br-0": 0px,
+//   "bl-0": 0px,
+// );
 
 // Display -- <div cass="block"></div>
 $display: (
@@ -304,3 +320,7 @@ $flex-align-self: (
   "align-self-center": center,
   "align-self-stretch": stretch,
 );
+
+// Grid Spaces -- <div cass="space-x-2"></div>
+
+// Box Shodows -- <div cass="space-x-2"></div>
