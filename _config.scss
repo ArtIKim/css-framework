@@ -48,6 +48,14 @@ $font-styles: (
 	"inherit": inherit,
 );
 
+// Text Positions -- <div cass="text-center"></div>
+$text-positions: (
+	"center": center,
+	"left": left,
+	"right": right,
+	"justify": justify,
+);
+
 // Letter Spacing -- <div cass="letter-spacing-1"></div>
 $letter-spacings: (
 	"1": 1px,
@@ -336,3 +344,5 @@ $flex-align-self: (
 // Box Shodows -- <div cass=""></div>
 
 // Transform -- <div cass=""></div>
+
+// Hover -- <div cass=""></div>

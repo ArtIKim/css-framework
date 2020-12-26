@@ -17,35 +17,35 @@
   line-height: calc(0.75rem + 0.25rem);
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: calc(0.75rem + 0.25rem);
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: calc(0.75rem + 0.25rem);
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: calc(0.75rem + 0.25rem);
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: calc(0.75rem + 0.25rem);
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-xs {
     font-size: 0.75rem;
     line-height: calc(0.75rem + 0.25rem);
@@ -57,35 +57,35 @@
   line-height: calc(0.875rem + 0.25rem);
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: calc(0.875rem + 0.25rem);
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: calc(0.875rem + 0.25rem);
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: calc(0.875rem + 0.25rem);
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-sm {
     font-size: 0.875rem;
     line-height: calc(0.875rem + 0.25rem);
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-sm {
     font-size: 0.875rem;
     line-height: calc(0.875rem + 0.25rem);
@@ -97,35 +97,35 @@
   line-height: calc(2.25rem + 0.25rem);
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: calc(2.25rem + 0.25rem);
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: calc(2.25rem + 0.25rem);
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: calc(2.25rem + 0.25rem);
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-4xl {
     font-size: 2.25rem;
     line-height: calc(2.25rem + 0.25rem);
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-4xl {
     font-size: 2.25rem;
     line-height: calc(2.25rem + 0.25rem);
@@ -137,31 +137,31 @@
   font-weight: 100;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-thin {
     font-weight: 100;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-thin {
     font-weight: 100;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-thin {
     font-weight: 100;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-thin {
     font-weight: 100;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-thin {
     font-weight: 100;
   }
@@ -171,31 +171,31 @@
   font-weight: 200;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-extralight {
     font-weight: 200;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-extralight {
     font-weight: 200;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-extralight {
     font-weight: 200;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-extralight {
     font-weight: 200;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-extralight {
     font-weight: 200;
   }
@@ -205,31 +205,31 @@
   font-weight: 300;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-light {
     font-weight: 300;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-light {
     font-weight: 300;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-light {
     font-weight: 300;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-light {
     font-weight: 300;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-light {
     font-weight: 300;
   }
@@ -239,31 +239,31 @@
   font-weight: 400;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-normal {
     font-weight: 400;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-normal {
     font-weight: 400;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-normal {
     font-weight: 400;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-normal {
     font-weight: 400;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-normal {
     font-weight: 400;
   }
@@ -273,31 +273,31 @@
   font-weight: 500;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-medium {
     font-weight: 500;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-medium {
     font-weight: 500;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-medium {
     font-weight: 500;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-medium {
     font-weight: 500;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-medium {
     font-weight: 500;
   }
@@ -307,31 +307,31 @@
   font-weight: 600;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-semibold {
     font-weight: 600;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-semibold {
     font-weight: 600;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-semibold {
     font-weight: 600;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-semibold {
     font-weight: 600;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-semibold {
     font-weight: 600;
   }
@@ -341,31 +341,31 @@
   font-weight: 700;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-bold {
     font-weight: 700;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-bold {
     font-weight: 700;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-bold {
     font-weight: 700;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-bold {
     font-weight: 700;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-bold {
     font-weight: 700;
   }
@@ -375,31 +375,31 @@
   font-weight: 800;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-extrabold {
     font-weight: 800;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-extrabold {
     font-weight: 800;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-extrabold {
     font-weight: 800;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-extrabold {
     font-weight: 800;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-extrabold {
     font-weight: 800;
   }
@@ -409,31 +409,31 @@
   font-weight: 900;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-black {
     font-weight: 900;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-black {
     font-weight: 900;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-black {
     font-weight: 900;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-black {
     font-weight: 900;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-black {
     font-weight: 900;
   }
@@ -444,31 +444,31 @@
   font-style: italic;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-italic {
     font-style: italic;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-italic {
     font-style: italic;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-italic {
     font-style: italic;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-italic {
     font-style: italic;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-italic {
     font-style: italic;
   }
@@ -478,31 +478,31 @@
   font-style: normal;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-normal {
     font-style: normal;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-normal {
     font-style: normal;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-normal {
     font-style: normal;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-normal {
     font-style: normal;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-normal {
     font-style: normal;
   }
@@ -512,33 +512,170 @@
   font-style: inherit;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:font-inherit {
     font-style: inherit;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:font-inherit {
     font-style: inherit;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:font-inherit {
     font-style: inherit;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:font-inherit {
     font-style: inherit;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:font-inherit {
     font-style: inherit;
+  }
+}
+
+/*Text Positions*/
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 767px) {
+  .md\:text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1023px) {
+  .lg\:text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1279px) {
+  .xl\:text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1536px) {
+  .xl-2\:text-center {
+    text-align: center;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .sm\:text-left {
+    text-align: left;
+  }
+}
+
+@media (min-width: 767px) {
+  .md\:text-left {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1023px) {
+  .lg\:text-left {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1279px) {
+  .xl\:text-left {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1536px) {
+  .xl-2\:text-left {
+    text-align: left;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (min-width: 640px) {
+  .sm\:text-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 767px) {
+  .md\:text-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1023px) {
+  .lg\:text-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1279px) {
+  .xl\:text-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1536px) {
+  .xl-2\:text-right {
+    text-align: right;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media (min-width: 640px) {
+  .sm\:text-justify {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 767px) {
+  .md\:text-justify {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1023px) {
+  .lg\:text-justify {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1279px) {
+  .xl\:text-justify {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1536px) {
+  .xl-2\:text-justify {
+    text-align: justify;
   }
 }
 
@@ -547,31 +684,31 @@
   letter-spacing: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:letter-spacing-1 {
     letter-spacing: 1px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:letter-spacing-1 {
     letter-spacing: 1px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:letter-spacing-1 {
     letter-spacing: 1px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:letter-spacing-1 {
     letter-spacing: 1px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:letter-spacing-1 {
     letter-spacing: 1px;
   }
@@ -581,31 +718,31 @@
   letter-spacing: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:letter-spacing-2 {
     letter-spacing: 2px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:letter-spacing-2 {
     letter-spacing: 2px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:letter-spacing-2 {
     letter-spacing: 2px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:letter-spacing-2 {
     letter-spacing: 2px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:letter-spacing-2 {
     letter-spacing: 2px;
   }
@@ -615,31 +752,31 @@
   letter-spacing: 3px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:letter-spacing-3 {
     letter-spacing: 3px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:letter-spacing-3 {
     letter-spacing: 3px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:letter-spacing-3 {
     letter-spacing: 3px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:letter-spacing-3 {
     letter-spacing: 3px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:letter-spacing-3 {
     letter-spacing: 3px;
   }
@@ -650,31 +787,31 @@
   line-height: 25px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:line-height-25 {
     line-height: 25px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:line-height-25 {
     line-height: 25px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:line-height-25 {
     line-height: 25px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:line-height-25 {
     line-height: 25px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:line-height-25 {
     line-height: 25px;
   }
@@ -684,31 +821,31 @@
   line-height: 30px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:line-height-30 {
     line-height: 30px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:line-height-30 {
     line-height: 30px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:line-height-30 {
     line-height: 30px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:line-height-30 {
     line-height: 30px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:line-height-30 {
     line-height: 30px;
   }
@@ -718,31 +855,31 @@
   line-height: 42px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:line-height-42 {
     line-height: 42px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:line-height-42 {
     line-height: 42px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:line-height-42 {
     line-height: 42px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:line-height-42 {
     line-height: 42px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:line-height-42 {
     line-height: 42px;
   }
@@ -753,31 +890,31 @@
   color: #001aaa;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-main {
     color: #001aaa !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-main {
     color: #001aaa !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-main {
     color: #001aaa !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-main {
     color: #001aaa !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-main {
     color: #001aaa !important;
   }
@@ -787,31 +924,31 @@
   color: #fff;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-white {
     color: #fff !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-white {
     color: #fff !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-white {
     color: #fff !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-white {
     color: #fff !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-white {
     color: #fff !important;
   }
@@ -821,31 +958,31 @@
   color: #000;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-black {
     color: #000 !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-black {
     color: #000 !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-black {
     color: #000 !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-black {
     color: #000 !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-black {
     color: #000 !important;
   }
@@ -857,35 +994,35 @@
   text-decoration: underline;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-underline {
     -webkit-text-decoration: underline;
     text-decoration: underline;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-underline {
     -webkit-text-decoration: underline;
     text-decoration: underline;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-underline {
     -webkit-text-decoration: underline;
     text-decoration: underline;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-underline {
     -webkit-text-decoration: underline;
     text-decoration: underline;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-underline {
     -webkit-text-decoration: underline;
     text-decoration: underline;
@@ -897,35 +1034,35 @@
   text-decoration: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-no-underline {
     -webkit-text-decoration: none;
     text-decoration: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-no-underline {
     -webkit-text-decoration: none;
     text-decoration: none;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-no-underline {
     -webkit-text-decoration: none;
     text-decoration: none;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-no-underline {
     -webkit-text-decoration: none;
     text-decoration: none;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-no-underline {
     -webkit-text-decoration: none;
     text-decoration: none;
@@ -937,35 +1074,35 @@
   text-decoration: line-through;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-line-through {
     -webkit-text-decoration: line-through;
     text-decoration: line-through;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-line-through {
     -webkit-text-decoration: line-through;
     text-decoration: line-through;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-line-through {
     -webkit-text-decoration: line-through;
     text-decoration: line-through;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-line-through {
     -webkit-text-decoration: line-through;
     text-decoration: line-through;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-line-through {
     -webkit-text-decoration: line-through;
     text-decoration: line-through;
@@ -977,31 +1114,31 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-uppercase {
     text-transform: uppercase;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-uppercase {
     text-transform: uppercase;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-uppercase {
     text-transform: uppercase;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-uppercase {
     text-transform: uppercase;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-uppercase {
     text-transform: uppercase;
   }
@@ -1011,31 +1148,31 @@
   text-transform: lowercase;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-lowercase {
     text-transform: lowercase;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-lowercase {
     text-transform: lowercase;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-lowercase {
     text-transform: lowercase;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-lowercase {
     text-transform: lowercase;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-lowercase {
     text-transform: lowercase;
   }
@@ -1045,31 +1182,31 @@
   text-transform: capitalize;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-capitalize {
     text-transform: capitalize;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-capitalize {
     text-transform: capitalize;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-capitalize {
     text-transform: capitalize;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-capitalize {
     text-transform: capitalize;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-capitalize {
     text-transform: capitalize;
   }
@@ -1079,31 +1216,31 @@
   text-transform: normal;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:text-normal-case {
     text-transform: normal;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:text-normal-case {
     text-transform: normal;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:text-normal-case {
     text-transform: normal;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:text-normal-case {
     text-transform: normal;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:text-normal-case {
     text-transform: normal;
   }
@@ -1114,31 +1251,31 @@
   background-color: #001aaa;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:bg-main {
     background-color: #001aaa !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:bg-main {
     background-color: #001aaa !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:bg-main {
     background-color: #001aaa !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:bg-main {
     background-color: #001aaa !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:bg-main {
     background-color: #001aaa !important;
   }
@@ -1148,31 +1285,31 @@
   background-color: #fff;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:bg-white {
     background-color: #fff !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:bg-white {
     background-color: #fff !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:bg-white {
     background-color: #fff !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:bg-white {
     background-color: #fff !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:bg-white {
     background-color: #fff !important;
   }
@@ -1182,31 +1319,31 @@
   background-color: #000;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:bg-black {
     background-color: #000 !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:bg-black {
     background-color: #000 !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:bg-black {
     background-color: #000 !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:bg-black {
     background-color: #000 !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:bg-black {
     background-color: #000 !important;
   }
@@ -1221,31 +1358,31 @@
   border-width: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border {
     border-width: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border {
     border-width: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border {
     border-width: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border {
     border-width: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border {
     border-width: 1px !important;
   }
@@ -1255,31 +1392,31 @@
   border-width: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-0 {
     border-width: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-0 {
     border-width: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-0 {
     border-width: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-0 {
     border-width: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-0 {
     border-width: 0px !important;
   }
@@ -1289,31 +1426,31 @@
   border-width: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-2 {
     border-width: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-2 {
     border-width: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-2 {
     border-width: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-2 {
     border-width: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-2 {
     border-width: 2px !important;
   }
@@ -1323,31 +1460,31 @@
   border-width: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-4 {
     border-width: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-4 {
     border-width: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-4 {
     border-width: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-4 {
     border-width: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-4 {
     border-width: 4px !important;
   }
@@ -1357,31 +1494,31 @@
   border-width: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-8 {
     border-width: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-8 {
     border-width: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-8 {
     border-width: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-8 {
     border-width: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-8 {
     border-width: 8px !important;
   }
@@ -1392,31 +1529,31 @@
   border-style: solid;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-solid {
     border-style: solid;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-solid {
     border-style: solid;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-solid {
     border-style: solid;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-solid {
     border-style: solid;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-solid {
     border-style: solid;
   }
@@ -1426,31 +1563,31 @@
   border-style: dashed;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-dashed {
     border-style: dashed;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-dashed {
     border-style: dashed;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-dashed {
     border-style: dashed;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-dashed {
     border-style: dashed;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-dashed {
     border-style: dashed;
   }
@@ -1460,31 +1597,31 @@
   border-style: dotted;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-dotted {
     border-style: dotted;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-dotted {
     border-style: dotted;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-dotted {
     border-style: dotted;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-dotted {
     border-style: dotted;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-dotted {
     border-style: dotted;
   }
@@ -1494,31 +1631,31 @@
   border-style: double;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-double {
     border-style: double;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-double {
     border-style: double;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-double {
     border-style: double;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-double {
     border-style: double;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-double {
     border-style: double;
   }
@@ -1528,31 +1665,31 @@
   border-style: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-none {
     border-style: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-none {
     border-style: none;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-none {
     border-style: none;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-none {
     border-style: none;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-none {
     border-style: none;
   }
@@ -1563,31 +1700,31 @@
   border-top-style: solid;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-solid {
     border-top-style: solid !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-solid {
     border-top-style: solid !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-solid {
     border-top-style: solid !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-solid {
     border-top-style: solid !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-solid {
     border-top-style: solid !important;
   }
@@ -1597,31 +1734,31 @@
   border-right-style: solid;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-solid {
     border-right-style: solid !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-solid {
     border-right-style: solid !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-solid {
     border-right-style: solid !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-solid {
     border-right-style: solid !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-solid {
     border-right-style: solid !important;
   }
@@ -1631,31 +1768,31 @@
   border-bottom-style: solid;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-solid {
     border-bottom-style: solid !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-solid {
     border-bottom-style: solid !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-solid {
     border-bottom-style: solid !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-solid {
     border-bottom-style: solid !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-solid {
     border-bottom-style: solid !important;
   }
@@ -1665,31 +1802,31 @@
   border-left-style: solid;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-solid {
     border-left-style: solid !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-solid {
     border-left-style: solid !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-solid {
     border-left-style: solid !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-solid {
     border-left-style: solid !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-solid {
     border-left-style: solid !important;
   }
@@ -1699,31 +1836,31 @@
   border-top-style: dashed;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-dashed {
     border-top-style: dashed !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-dashed {
     border-top-style: dashed !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-dashed {
     border-top-style: dashed !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-dashed {
     border-top-style: dashed !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-dashed {
     border-top-style: dashed !important;
   }
@@ -1733,31 +1870,31 @@
   border-right-style: dashed;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-dashed {
     border-right-style: dashed !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-dashed {
     border-right-style: dashed !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-dashed {
     border-right-style: dashed !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-dashed {
     border-right-style: dashed !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-dashed {
     border-right-style: dashed !important;
   }
@@ -1767,31 +1904,31 @@
   border-bottom-style: dashed;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-dashed {
     border-bottom-style: dashed !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-dashed {
     border-bottom-style: dashed !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-dashed {
     border-bottom-style: dashed !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-dashed {
     border-bottom-style: dashed !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-dashed {
     border-bottom-style: dashed !important;
   }
@@ -1801,31 +1938,31 @@
   border-left-style: dashed;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-dashed {
     border-left-style: dashed !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-dashed {
     border-left-style: dashed !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-dashed {
     border-left-style: dashed !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-dashed {
     border-left-style: dashed !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-dashed {
     border-left-style: dashed !important;
   }
@@ -1835,31 +1972,31 @@
   border-top-style: dotted;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-dotted {
     border-top-style: dotted !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-dotted {
     border-top-style: dotted !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-dotted {
     border-top-style: dotted !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-dotted {
     border-top-style: dotted !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-dotted {
     border-top-style: dotted !important;
   }
@@ -1869,31 +2006,31 @@
   border-right-style: dotted;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-dotted {
     border-right-style: dotted !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-dotted {
     border-right-style: dotted !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-dotted {
     border-right-style: dotted !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-dotted {
     border-right-style: dotted !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-dotted {
     border-right-style: dotted !important;
   }
@@ -1903,31 +2040,31 @@
   border-bottom-style: dotted;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-dotted {
     border-bottom-style: dotted !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-dotted {
     border-bottom-style: dotted !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-dotted {
     border-bottom-style: dotted !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-dotted {
     border-bottom-style: dotted !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-dotted {
     border-bottom-style: dotted !important;
   }
@@ -1937,31 +2074,31 @@
   border-left-style: dotted;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-dotted {
     border-left-style: dotted !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-dotted {
     border-left-style: dotted !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-dotted {
     border-left-style: dotted !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-dotted {
     border-left-style: dotted !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-dotted {
     border-left-style: dotted !important;
   }
@@ -1971,31 +2108,31 @@
   border-top-style: double;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-double {
     border-top-style: double !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-double {
     border-top-style: double !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-double {
     border-top-style: double !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-double {
     border-top-style: double !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-double {
     border-top-style: double !important;
   }
@@ -2005,31 +2142,31 @@
   border-right-style: double;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-double {
     border-right-style: double !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-double {
     border-right-style: double !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-double {
     border-right-style: double !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-double {
     border-right-style: double !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-double {
     border-right-style: double !important;
   }
@@ -2039,31 +2176,31 @@
   border-bottom-style: double;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-double {
     border-bottom-style: double !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-double {
     border-bottom-style: double !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-double {
     border-bottom-style: double !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-double {
     border-bottom-style: double !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-double {
     border-bottom-style: double !important;
   }
@@ -2073,31 +2210,31 @@
   border-left-style: double;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-double {
     border-left-style: double !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-double {
     border-left-style: double !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-double {
     border-left-style: double !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-double {
     border-left-style: double !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-double {
     border-left-style: double !important;
   }
@@ -2107,31 +2244,31 @@
   border-top-style: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-none {
     border-top-style: none !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-none {
     border-top-style: none !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-none {
     border-top-style: none !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-none {
     border-top-style: none !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-none {
     border-top-style: none !important;
   }
@@ -2141,31 +2278,31 @@
   border-right-style: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-none {
     border-right-style: none !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-none {
     border-right-style: none !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-none {
     border-right-style: none !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-none {
     border-right-style: none !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-none {
     border-right-style: none !important;
   }
@@ -2175,31 +2312,31 @@
   border-bottom-style: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-none {
     border-bottom-style: none !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-none {
     border-bottom-style: none !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-none {
     border-bottom-style: none !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-none {
     border-bottom-style: none !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-none {
     border-bottom-style: none !important;
   }
@@ -2209,31 +2346,31 @@
   border-left-style: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-none {
     border-left-style: none !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-none {
     border-left-style: none !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-none {
     border-left-style: none !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-none {
     border-left-style: none !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-none {
     border-left-style: none !important;
   }
@@ -2244,31 +2381,31 @@
   border-top-width: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-0 {
     border-top-width: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-0 {
     border-top-width: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-0 {
     border-top-width: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-0 {
     border-top-width: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-0 {
     border-top-width: 0px !important;
   }
@@ -2278,31 +2415,31 @@
   border-top-width: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-1 {
     border-top-width: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-1 {
     border-top-width: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-1 {
     border-top-width: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-1 {
     border-top-width: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-1 {
     border-top-width: 1px !important;
   }
@@ -2312,31 +2449,31 @@
   border-top-width: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-2 {
     border-top-width: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-2 {
     border-top-width: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-2 {
     border-top-width: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-2 {
     border-top-width: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-2 {
     border-top-width: 2px !important;
   }
@@ -2346,31 +2483,31 @@
   border-top-width: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-4 {
     border-top-width: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-4 {
     border-top-width: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-4 {
     border-top-width: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-4 {
     border-top-width: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-4 {
     border-top-width: 4px !important;
   }
@@ -2380,31 +2517,31 @@
   border-top-width: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-8 {
     border-top-width: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-8 {
     border-top-width: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-8 {
     border-top-width: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-8 {
     border-top-width: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-8 {
     border-top-width: 8px !important;
   }
@@ -2414,31 +2551,31 @@
   border-top-width: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-t-10 {
     border-top-width: 10px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-t-10 {
     border-top-width: 10px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-t-10 {
     border-top-width: 10px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-t-10 {
     border-top-width: 10px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-t-10 {
     border-top-width: 10px !important;
   }
@@ -2448,31 +2585,31 @@
   border-right-width: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-0 {
     border-right-width: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-0 {
     border-right-width: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-0 {
     border-right-width: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-0 {
     border-right-width: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-0 {
     border-right-width: 0px !important;
   }
@@ -2482,31 +2619,31 @@
   border-right-width: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-1 {
     border-right-width: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-1 {
     border-right-width: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-1 {
     border-right-width: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-1 {
     border-right-width: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-1 {
     border-right-width: 1px !important;
   }
@@ -2516,31 +2653,31 @@
   border-right-width: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-2 {
     border-right-width: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-2 {
     border-right-width: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-2 {
     border-right-width: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-2 {
     border-right-width: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-2 {
     border-right-width: 2px !important;
   }
@@ -2550,31 +2687,31 @@
   border-right-width: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-4 {
     border-right-width: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-4 {
     border-right-width: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-4 {
     border-right-width: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-4 {
     border-right-width: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-4 {
     border-right-width: 4px !important;
   }
@@ -2584,31 +2721,31 @@
   border-right-width: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-8 {
     border-right-width: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-8 {
     border-right-width: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-8 {
     border-right-width: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-8 {
     border-right-width: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-8 {
     border-right-width: 8px !important;
   }
@@ -2618,31 +2755,31 @@
   border-right-width: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-r-10 {
     border-right-width: 10px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-r-10 {
     border-right-width: 10px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-r-10 {
     border-right-width: 10px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-r-10 {
     border-right-width: 10px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-r-10 {
     border-right-width: 10px !important;
   }
@@ -2652,31 +2789,31 @@
   border-bottom-width: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-0 {
     border-bottom-width: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-0 {
     border-bottom-width: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-0 {
     border-bottom-width: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-0 {
     border-bottom-width: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-0 {
     border-bottom-width: 0px !important;
   }
@@ -2686,31 +2823,31 @@
   border-bottom-width: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-1 {
     border-bottom-width: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-1 {
     border-bottom-width: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-1 {
     border-bottom-width: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-1 {
     border-bottom-width: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-1 {
     border-bottom-width: 1px !important;
   }
@@ -2720,31 +2857,31 @@
   border-bottom-width: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-2 {
     border-bottom-width: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-2 {
     border-bottom-width: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-2 {
     border-bottom-width: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-2 {
     border-bottom-width: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-2 {
     border-bottom-width: 2px !important;
   }
@@ -2754,31 +2891,31 @@
   border-bottom-width: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-4 {
     border-bottom-width: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-4 {
     border-bottom-width: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-4 {
     border-bottom-width: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-4 {
     border-bottom-width: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-4 {
     border-bottom-width: 4px !important;
   }
@@ -2788,31 +2925,31 @@
   border-bottom-width: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-8 {
     border-bottom-width: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-8 {
     border-bottom-width: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-8 {
     border-bottom-width: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-8 {
     border-bottom-width: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-8 {
     border-bottom-width: 8px !important;
   }
@@ -2822,31 +2959,31 @@
   border-bottom-width: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-b-10 {
     border-bottom-width: 10px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-b-10 {
     border-bottom-width: 10px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-b-10 {
     border-bottom-width: 10px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-b-10 {
     border-bottom-width: 10px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-b-10 {
     border-bottom-width: 10px !important;
   }
@@ -2856,31 +2993,31 @@
   border-left-width: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-0 {
     border-left-width: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-0 {
     border-left-width: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-0 {
     border-left-width: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-0 {
     border-left-width: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-0 {
     border-left-width: 0px !important;
   }
@@ -2890,31 +3027,31 @@
   border-left-width: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-1 {
     border-left-width: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-1 {
     border-left-width: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-1 {
     border-left-width: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-1 {
     border-left-width: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-1 {
     border-left-width: 1px !important;
   }
@@ -2924,31 +3061,31 @@
   border-left-width: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-2 {
     border-left-width: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-2 {
     border-left-width: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-2 {
     border-left-width: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-2 {
     border-left-width: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-2 {
     border-left-width: 2px !important;
   }
@@ -2958,31 +3095,31 @@
   border-left-width: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-4 {
     border-left-width: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-4 {
     border-left-width: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-4 {
     border-left-width: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-4 {
     border-left-width: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-4 {
     border-left-width: 4px !important;
   }
@@ -2992,31 +3129,31 @@
   border-left-width: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-8 {
     border-left-width: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-8 {
     border-left-width: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-8 {
     border-left-width: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-8 {
     border-left-width: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-8 {
     border-left-width: 8px !important;
   }
@@ -3026,31 +3163,31 @@
   border-left-width: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-l-10 {
     border-left-width: 10px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-l-10 {
     border-left-width: 10px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-l-10 {
     border-left-width: 10px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-l-10 {
     border-left-width: 10px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-l-10 {
     border-left-width: 10px !important;
   }
@@ -3062,31 +3199,31 @@
   border-radius: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-radius-0 {
     border-radius: 0px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-radius-0 {
     border-radius: 0px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-radius-0 {
     border-radius: 0px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-radius-0 {
     border-radius: 0px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-radius-0 {
     border-radius: 0px;
   }
@@ -3096,31 +3233,31 @@
   border-radius: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-radius-1 {
     border-radius: 1px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-radius-1 {
     border-radius: 1px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-radius-1 {
     border-radius: 1px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-radius-1 {
     border-radius: 1px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-radius-1 {
     border-radius: 1px;
   }
@@ -3130,31 +3267,31 @@
   border-radius: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-radius-2 {
     border-radius: 2px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-radius-2 {
     border-radius: 2px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-radius-2 {
     border-radius: 2px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-radius-2 {
     border-radius: 2px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-radius-2 {
     border-radius: 2px;
   }
@@ -3164,31 +3301,31 @@
   border-radius: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-radius-4 {
     border-radius: 4px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-radius-4 {
     border-radius: 4px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-radius-4 {
     border-radius: 4px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-radius-4 {
     border-radius: 4px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-radius-4 {
     border-radius: 4px;
   }
@@ -3198,31 +3335,31 @@
   border-radius: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-radius-8 {
     border-radius: 8px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-radius-8 {
     border-radius: 8px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-radius-8 {
     border-radius: 8px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-radius-8 {
     border-radius: 8px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-radius-8 {
     border-radius: 8px;
   }
@@ -3232,31 +3369,31 @@
   border-radius: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-radius-10 {
     border-radius: 10px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-radius-10 {
     border-radius: 10px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-radius-10 {
     border-radius: 10px;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-radius-10 {
     border-radius: 10px;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-radius-10 {
     border-radius: 10px;
   }
@@ -3267,31 +3404,31 @@
   border-top-right-radius: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tr-radius-0 {
     border-top-right-radius: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tr-radius-0 {
     border-top-right-radius: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tr-radius-0 {
     border-top-right-radius: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tr-radius-0 {
     border-top-right-radius: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tr-radius-0 {
     border-top-right-radius: 0px !important;
   }
@@ -3301,31 +3438,31 @@
   border-top-right-radius: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tr-radius-1 {
     border-top-right-radius: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tr-radius-1 {
     border-top-right-radius: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tr-radius-1 {
     border-top-right-radius: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tr-radius-1 {
     border-top-right-radius: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tr-radius-1 {
     border-top-right-radius: 1px !important;
   }
@@ -3335,31 +3472,31 @@
   border-top-right-radius: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tr-radius-2 {
     border-top-right-radius: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tr-radius-2 {
     border-top-right-radius: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tr-radius-2 {
     border-top-right-radius: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tr-radius-2 {
     border-top-right-radius: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tr-radius-2 {
     border-top-right-radius: 2px !important;
   }
@@ -3369,31 +3506,31 @@
   border-top-right-radius: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tr-radius-4 {
     border-top-right-radius: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tr-radius-4 {
     border-top-right-radius: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tr-radius-4 {
     border-top-right-radius: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tr-radius-4 {
     border-top-right-radius: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tr-radius-4 {
     border-top-right-radius: 4px !important;
   }
@@ -3403,31 +3540,31 @@
   border-top-right-radius: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tr-radius-8 {
     border-top-right-radius: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tr-radius-8 {
     border-top-right-radius: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tr-radius-8 {
     border-top-right-radius: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tr-radius-8 {
     border-top-right-radius: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tr-radius-8 {
     border-top-right-radius: 8px !important;
   }
@@ -3437,31 +3574,31 @@
   border-top-right-radius: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tr-radius-10 {
     border-top-right-radius: 10px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tr-radius-10 {
     border-top-right-radius: 10px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tr-radius-10 {
     border-top-right-radius: 10px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tr-radius-10 {
     border-top-right-radius: 10px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tr-radius-10 {
     border-top-right-radius: 10px !important;
   }
@@ -3471,31 +3608,31 @@
   border-top-left-radius: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tl-radius-0 {
     border-top-left-radius: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tl-radius-0 {
     border-top-left-radius: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tl-radius-0 {
     border-top-left-radius: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tl-radius-0 {
     border-top-left-radius: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tl-radius-0 {
     border-top-left-radius: 0px !important;
   }
@@ -3505,31 +3642,31 @@
   border-top-left-radius: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tl-radius-1 {
     border-top-left-radius: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tl-radius-1 {
     border-top-left-radius: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tl-radius-1 {
     border-top-left-radius: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tl-radius-1 {
     border-top-left-radius: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tl-radius-1 {
     border-top-left-radius: 1px !important;
   }
@@ -3539,31 +3676,31 @@
   border-top-left-radius: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tl-radius-2 {
     border-top-left-radius: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tl-radius-2 {
     border-top-left-radius: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tl-radius-2 {
     border-top-left-radius: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tl-radius-2 {
     border-top-left-radius: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tl-radius-2 {
     border-top-left-radius: 2px !important;
   }
@@ -3573,31 +3710,31 @@
   border-top-left-radius: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tl-radius-4 {
     border-top-left-radius: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tl-radius-4 {
     border-top-left-radius: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tl-radius-4 {
     border-top-left-radius: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tl-radius-4 {
     border-top-left-radius: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tl-radius-4 {
     border-top-left-radius: 4px !important;
   }
@@ -3607,31 +3744,31 @@
   border-top-left-radius: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tl-radius-8 {
     border-top-left-radius: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tl-radius-8 {
     border-top-left-radius: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tl-radius-8 {
     border-top-left-radius: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tl-radius-8 {
     border-top-left-radius: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tl-radius-8 {
     border-top-left-radius: 8px !important;
   }
@@ -3641,31 +3778,31 @@
   border-top-left-radius: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-tl-radius-10 {
     border-top-left-radius: 10px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-tl-radius-10 {
     border-top-left-radius: 10px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-tl-radius-10 {
     border-top-left-radius: 10px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-tl-radius-10 {
     border-top-left-radius: 10px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-tl-radius-10 {
     border-top-left-radius: 10px !important;
   }
@@ -3675,31 +3812,31 @@
   border-bottom-right-radius: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-br-radius-0 {
     border-bottom-right-radius: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-br-radius-0 {
     border-bottom-right-radius: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-br-radius-0 {
     border-bottom-right-radius: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-br-radius-0 {
     border-bottom-right-radius: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-br-radius-0 {
     border-bottom-right-radius: 0px !important;
   }
@@ -3709,31 +3846,31 @@
   border-bottom-right-radius: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-br-radius-1 {
     border-bottom-right-radius: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-br-radius-1 {
     border-bottom-right-radius: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-br-radius-1 {
     border-bottom-right-radius: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-br-radius-1 {
     border-bottom-right-radius: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-br-radius-1 {
     border-bottom-right-radius: 1px !important;
   }
@@ -3743,31 +3880,31 @@
   border-bottom-right-radius: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-br-radius-2 {
     border-bottom-right-radius: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-br-radius-2 {
     border-bottom-right-radius: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-br-radius-2 {
     border-bottom-right-radius: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-br-radius-2 {
     border-bottom-right-radius: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-br-radius-2 {
     border-bottom-right-radius: 2px !important;
   }
@@ -3777,31 +3914,31 @@
   border-bottom-right-radius: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-br-radius-4 {
     border-bottom-right-radius: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-br-radius-4 {
     border-bottom-right-radius: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-br-radius-4 {
     border-bottom-right-radius: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-br-radius-4 {
     border-bottom-right-radius: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-br-radius-4 {
     border-bottom-right-radius: 4px !important;
   }
@@ -3811,31 +3948,31 @@
   border-bottom-right-radius: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-br-radius-8 {
     border-bottom-right-radius: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-br-radius-8 {
     border-bottom-right-radius: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-br-radius-8 {
     border-bottom-right-radius: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-br-radius-8 {
     border-bottom-right-radius: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-br-radius-8 {
     border-bottom-right-radius: 8px !important;
   }
@@ -3845,31 +3982,31 @@
   border-bottom-right-radius: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-br-radius-10 {
     border-bottom-right-radius: 10px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-br-radius-10 {
     border-bottom-right-radius: 10px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-br-radius-10 {
     border-bottom-right-radius: 10px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-br-radius-10 {
     border-bottom-right-radius: 10px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-br-radius-10 {
     border-bottom-right-radius: 10px !important;
   }
@@ -3879,31 +4016,31 @@
   border-bottom-left-radius: 0px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-bl-radius-0 {
     border-bottom-left-radius: 0px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-bl-radius-0 {
     border-bottom-left-radius: 0px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-bl-radius-0 {
     border-bottom-left-radius: 0px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-bl-radius-0 {
     border-bottom-left-radius: 0px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-bl-radius-0 {
     border-bottom-left-radius: 0px !important;
   }
@@ -3913,31 +4050,31 @@
   border-bottom-left-radius: 1px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-bl-radius-1 {
     border-bottom-left-radius: 1px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-bl-radius-1 {
     border-bottom-left-radius: 1px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-bl-radius-1 {
     border-bottom-left-radius: 1px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-bl-radius-1 {
     border-bottom-left-radius: 1px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-bl-radius-1 {
     border-bottom-left-radius: 1px !important;
   }
@@ -3947,31 +4084,31 @@
   border-bottom-left-radius: 2px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-bl-radius-2 {
     border-bottom-left-radius: 2px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-bl-radius-2 {
     border-bottom-left-radius: 2px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-bl-radius-2 {
     border-bottom-left-radius: 2px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-bl-radius-2 {
     border-bottom-left-radius: 2px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-bl-radius-2 {
     border-bottom-left-radius: 2px !important;
   }
@@ -3981,31 +4118,31 @@
   border-bottom-left-radius: 4px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-bl-radius-4 {
     border-bottom-left-radius: 4px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-bl-radius-4 {
     border-bottom-left-radius: 4px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-bl-radius-4 {
     border-bottom-left-radius: 4px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-bl-radius-4 {
     border-bottom-left-radius: 4px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-bl-radius-4 {
     border-bottom-left-radius: 4px !important;
   }
@@ -4015,31 +4152,31 @@
   border-bottom-left-radius: 8px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-bl-radius-8 {
     border-bottom-left-radius: 8px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-bl-radius-8 {
     border-bottom-left-radius: 8px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-bl-radius-8 {
     border-bottom-left-radius: 8px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-bl-radius-8 {
     border-bottom-left-radius: 8px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-bl-radius-8 {
     border-bottom-left-radius: 8px !important;
   }
@@ -4049,31 +4186,31 @@
   border-bottom-left-radius: 10px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:border-bl-radius-10 {
     border-bottom-left-radius: 10px !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:border-bl-radius-10 {
     border-bottom-left-radius: 10px !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:border-bl-radius-10 {
     border-bottom-left-radius: 10px !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:border-bl-radius-10 {
     border-bottom-left-radius: 10px !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:border-bl-radius-10 {
     border-bottom-left-radius: 10px !important;
   }
@@ -4084,31 +4221,31 @@
   position: relative;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:relative {
     position: relative;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:relative {
     position: relative;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:relative {
     position: relative;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:relative {
     position: relative;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:relative {
     position: relative;
   }
@@ -4118,31 +4255,31 @@
   position: absolute;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:absolute {
     position: absolute;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:absolute {
     position: absolute;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:absolute {
     position: absolute;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:absolute {
     position: absolute;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:absolute {
     position: absolute;
   }
@@ -4152,31 +4289,31 @@
   position: static;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:static {
     position: static;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:static {
     position: static;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:static {
     position: static;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:static {
     position: static;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:static {
     position: static;
   }
@@ -4187,35 +4324,35 @@
   position: sticky;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:sticky {
     position: -webkit-sticky;
     position: sticky;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:sticky {
     position: -webkit-sticky;
     position: sticky;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:sticky {
     position: -webkit-sticky;
     position: sticky;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:sticky {
     position: -webkit-sticky;
     position: sticky;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -4227,31 +4364,31 @@
   display: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:hidden {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:hidden {
     display: none;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:hidden {
     display: none;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:hidden {
     display: none;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:hidden {
     display: none;
   }
@@ -4261,31 +4398,31 @@
   display: block;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:block {
     display: block;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:block {
     display: block;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:block {
     display: block;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:block {
     display: block;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:block {
     display: block;
   }
@@ -4295,31 +4432,31 @@
   display: inline;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:inline {
     display: inline;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:inline {
     display: inline;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:inline {
     display: inline;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:inline {
     display: inline;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:inline {
     display: inline;
   }
@@ -4329,31 +4466,31 @@
   display: inline-block;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:inline-block {
     display: inline-block;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:inline-block {
     display: inline-block;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:inline-block {
     display: inline-block;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:inline-block {
     display: inline-block;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:inline-block {
     display: inline-block;
   }
@@ -4365,7 +4502,7 @@
   display: flex;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4373,7 +4510,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4381,7 +4518,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4389,7 +4526,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4397,7 +4534,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4410,35 +4547,35 @@
   display: grid;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:grid {
     display: -ms-grid;
     display: grid;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:grid {
     display: -ms-grid;
     display: grid;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:grid {
     display: -ms-grid;
     display: grid;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:grid {
     display: -ms-grid;
     display: grid;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:grid {
     display: -ms-grid;
     display: grid;
@@ -4452,7 +4589,7 @@
           flex: 1 1 0%;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:flex-1 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0%;
@@ -4460,7 +4597,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:flex-1 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0%;
@@ -4468,7 +4605,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:flex-1 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0%;
@@ -4476,7 +4613,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:flex-1 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0%;
@@ -4484,7 +4621,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:flex-1 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0%;
@@ -4498,7 +4635,7 @@
           flex: 1 1 auto;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:flex-auto {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -4506,7 +4643,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:flex-auto {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -4514,7 +4651,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:flex-auto {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -4522,7 +4659,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:flex-auto {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -4530,7 +4667,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:flex-auto {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -4544,7 +4681,7 @@
           flex: 0 1 auto;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:flex-initial {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
@@ -4552,7 +4689,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:flex-initial {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
@@ -4560,7 +4697,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:flex-initial {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
@@ -4568,7 +4705,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:flex-initial {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
@@ -4576,7 +4713,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:flex-initial {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
@@ -4590,7 +4727,7 @@
           flex: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:flex-none {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -4598,7 +4735,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:flex-none {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -4606,7 +4743,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:flex-none {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -4614,7 +4751,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:flex-none {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -4622,7 +4759,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:flex-none {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -4638,7 +4775,7 @@
           flex-direction: column;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:flex-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4647,7 +4784,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:flex-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4656,7 +4793,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:flex-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4665,7 +4802,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:flex-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4674,7 +4811,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:flex-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4690,7 +4827,7 @@
           flex-direction: row;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4699,7 +4836,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4708,7 +4845,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4717,7 +4854,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4726,7 +4863,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4742,7 +4879,7 @@
           justify-content: flex-start;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -4750,7 +4887,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -4758,7 +4895,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -4766,7 +4903,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -4774,7 +4911,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -4788,7 +4925,7 @@
           justify-content: flex-end;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-end {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -4796,7 +4933,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-end {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -4804,7 +4941,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-end {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -4812,7 +4949,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-end {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -4820,7 +4957,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-end {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -4834,7 +4971,7 @@
           justify-content: center;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4842,7 +4979,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4850,7 +4987,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4858,7 +4995,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4866,7 +5003,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4880,7 +5017,7 @@
           justify-content: space-between;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-between {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4888,7 +5025,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-between {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4896,7 +5033,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-between {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4904,7 +5041,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-between {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4912,7 +5049,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-between {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4925,35 +5062,35 @@
       justify-content: space-around;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-around {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-around {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-around {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-around {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-around {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -4966,7 +5103,7 @@
           justify-content: space-evenly;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-evenly {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -4974,7 +5111,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-evenly {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -4982,7 +5119,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-evenly {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -4990,7 +5127,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-evenly {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -4998,7 +5135,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-evenly {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -5013,7 +5150,7 @@
           align-items: flex-start;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:items-start {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -5021,7 +5158,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:items-start {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -5029,7 +5166,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:items-start {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -5037,7 +5174,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:items-start {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -5045,7 +5182,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:items-start {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -5059,7 +5196,7 @@
           align-items: flex-end;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:items-end {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -5067,7 +5204,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:items-end {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -5075,7 +5212,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:items-end {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -5083,7 +5220,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:items-end {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -5091,7 +5228,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:items-end {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -5105,7 +5242,7 @@
           align-items: center;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:items-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -5113,7 +5250,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:items-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -5121,7 +5258,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:items-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -5129,7 +5266,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:items-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -5137,7 +5274,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:items-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -5151,7 +5288,7 @@
           align-items: baseline;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:items-baseline {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -5159,7 +5296,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:items-baseline {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -5167,7 +5304,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:items-baseline {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -5175,7 +5312,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:items-baseline {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -5183,7 +5320,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:items-baseline {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -5197,7 +5334,7 @@
           align-items: stretch;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:items-stretch {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -5205,7 +5342,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:items-stretch {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -5213,7 +5350,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:items-stretch {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -5221,7 +5358,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:items-stretch {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -5229,7 +5366,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:items-stretch {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -5243,35 +5380,35 @@
       justify-self: auto;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-self-auto {
     -ms-grid-column-align: auto !important;
         justify-self: auto !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-self-auto {
     -ms-grid-column-align: auto !important;
         justify-self: auto !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-self-auto {
     -ms-grid-column-align: auto !important;
         justify-self: auto !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-self-auto {
     -ms-grid-column-align: auto !important;
         justify-self: auto !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-self-auto {
     -ms-grid-column-align: auto !important;
         justify-self: auto !important;
@@ -5283,35 +5420,35 @@
       justify-self: start;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-self-start {
     -ms-grid-column-align: start !important;
         justify-self: start !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-self-start {
     -ms-grid-column-align: start !important;
         justify-self: start !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-self-start {
     -ms-grid-column-align: start !important;
         justify-self: start !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-self-start {
     -ms-grid-column-align: start !important;
         justify-self: start !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-self-start {
     -ms-grid-column-align: start !important;
         justify-self: start !important;
@@ -5323,35 +5460,35 @@
       justify-self: end;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-self-end {
     -ms-grid-column-align: end !important;
         justify-self: end !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-self-end {
     -ms-grid-column-align: end !important;
         justify-self: end !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-self-end {
     -ms-grid-column-align: end !important;
         justify-self: end !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-self-end {
     -ms-grid-column-align: end !important;
         justify-self: end !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-self-end {
     -ms-grid-column-align: end !important;
         justify-self: end !important;
@@ -5363,35 +5500,35 @@
       justify-self: center;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-self-center {
     -ms-grid-column-align: center !important;
         justify-self: center !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-self-center {
     -ms-grid-column-align: center !important;
         justify-self: center !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-self-center {
     -ms-grid-column-align: center !important;
         justify-self: center !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-self-center {
     -ms-grid-column-align: center !important;
         justify-self: center !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-self-center {
     -ms-grid-column-align: center !important;
         justify-self: center !important;
@@ -5403,35 +5540,35 @@
       justify-self: stretch;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:justify-self-stretch {
     -ms-grid-column-align: stretch !important;
         justify-self: stretch !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:justify-self-stretch {
     -ms-grid-column-align: stretch !important;
         justify-self: stretch !important;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:justify-self-stretch {
     -ms-grid-column-align: stretch !important;
         justify-self: stretch !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:justify-self-stretch {
     -ms-grid-column-align: stretch !important;
         justify-self: stretch !important;
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:justify-self-stretch {
     -ms-grid-column-align: stretch !important;
         justify-self: stretch !important;
@@ -5445,7 +5582,7 @@
       align-self: auto;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:align-self-auto {
     -ms-flex-item-align: auto !important;
         -ms-grid-row-align: auto !important;
@@ -5453,7 +5590,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:align-self-auto {
     -ms-flex-item-align: auto !important;
         -ms-grid-row-align: auto !important;
@@ -5461,7 +5598,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:align-self-auto {
     -ms-flex-item-align: auto !important;
         -ms-grid-row-align: auto !important;
@@ -5469,7 +5606,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:align-self-auto {
     -ms-flex-item-align: auto !important;
         -ms-grid-row-align: auto !important;
@@ -5477,7 +5614,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:align-self-auto {
     -ms-flex-item-align: auto !important;
         -ms-grid-row-align: auto !important;
@@ -5491,7 +5628,7 @@
       align-self: start;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:align-self-start {
     -ms-flex-item-align: start !important;
         -ms-grid-row-align: start !important;
@@ -5499,7 +5636,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:align-self-start {
     -ms-flex-item-align: start !important;
         -ms-grid-row-align: start !important;
@@ -5507,7 +5644,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:align-self-start {
     -ms-flex-item-align: start !important;
         -ms-grid-row-align: start !important;
@@ -5515,7 +5652,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:align-self-start {
     -ms-flex-item-align: start !important;
         -ms-grid-row-align: start !important;
@@ -5523,7 +5660,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:align-self-start {
     -ms-flex-item-align: start !important;
         -ms-grid-row-align: start !important;
@@ -5537,7 +5674,7 @@
       align-self: end;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:align-self-end {
     -ms-flex-item-align: end !important;
         -ms-grid-row-align: end !important;
@@ -5545,7 +5682,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:align-self-end {
     -ms-flex-item-align: end !important;
         -ms-grid-row-align: end !important;
@@ -5553,7 +5690,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:align-self-end {
     -ms-flex-item-align: end !important;
         -ms-grid-row-align: end !important;
@@ -5561,7 +5698,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:align-self-end {
     -ms-flex-item-align: end !important;
         -ms-grid-row-align: end !important;
@@ -5569,7 +5706,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:align-self-end {
     -ms-flex-item-align: end !important;
         -ms-grid-row-align: end !important;
@@ -5583,7 +5720,7 @@
       align-self: center;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:align-self-center {
     -ms-flex-item-align: center !important;
         -ms-grid-row-align: center !important;
@@ -5591,7 +5728,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:align-self-center {
     -ms-flex-item-align: center !important;
         -ms-grid-row-align: center !important;
@@ -5599,7 +5736,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:align-self-center {
     -ms-flex-item-align: center !important;
         -ms-grid-row-align: center !important;
@@ -5607,7 +5744,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:align-self-center {
     -ms-flex-item-align: center !important;
         -ms-grid-row-align: center !important;
@@ -5615,7 +5752,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:align-self-center {
     -ms-flex-item-align: center !important;
         -ms-grid-row-align: center !important;
@@ -5629,7 +5766,7 @@
       align-self: stretch;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .sm\:align-self-stretch {
     -ms-flex-item-align: stretch !important;
         -ms-grid-row-align: stretch !important;
@@ -5637,7 +5774,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .md\:align-self-stretch {
     -ms-flex-item-align: stretch !important;
         -ms-grid-row-align: stretch !important;
@@ -5645,7 +5782,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1023px) {
   .lg\:align-self-stretch {
     -ms-flex-item-align: stretch !important;
         -ms-grid-row-align: stretch !important;
@@ -5653,7 +5790,7 @@
   }
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1279px) {
   .xl\:align-self-stretch {
     -ms-flex-item-align: stretch !important;
         -ms-grid-row-align: stretch !important;
@@ -5661,7 +5798,7 @@
   }
 }
 
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
   .xl-2\:align-self-stretch {
     -ms-flex-item-align: stretch !important;
         -ms-grid-row-align: stretch !important;
