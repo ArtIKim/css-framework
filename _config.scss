@@ -1,163 +1,169 @@
 // Media - Deskotp First -- <div cass="sm:text-xs"></div> || REF
 $media: (
-  "sm": "640px",
-  "md": "767px",
-  "lg": "1023px",
-  "xl": "1279px",
-  "xl-2": "1536px",
+	"sm": "640px",
+	"md": "767px",
+	"lg": "1023px",
+	"xl": "1279px",
+	"xl-2": "1536px",
 );
 
 // Font Families -- <div cass="font-open"></div>
 $font-families: (
-  "open": "Open Sans, sans serif",
-  "roboto": "Roboto, sans serif",
-  "mono": "Monospace, sans serif",
+	"open": "Open Sans, sans serif",
+	"roboto": "Roboto, sans serif",
+	"mono": "Monospace, sans serif",
 );
 
 // Font Sizes -- <div cass="text-xs"></div> || REF
 $texts: (
-  "xs": 0.75rem /* 12px */,
-  "sm": 0.875rem /* 14px */,
-  "4xl": 2.25rem /* 36px */,
+	"xs": 0.75rem /* 12px */,
+	"sm": 0.875rem /* 14px */,
+	"4xl": 2.25rem /* 36px */,
 );
+
+// Font Sizes With Clamps -- <div cass="text-"></div> || REF
+// $text-clamps: (
+// 	"xs": 0.75rem /* 12px */,
+// 	"sm": 0.875rem /* 14px */,
+// 	"4xl": 2.25rem /* 36px */,
+// );
 
 // Font Weights -- <div cass="font-thin"></div>
 $font-weights: (
-  "thin": 100,
-  "extralight": 200,
-  "light": 300,
-  "normal": 400,
-  "medium": 500,
-  "semibold": 600,
-  "bold": 700,
-  "extrabold": 800,
-  "black": 900,
+	"thin": 100,
+	"extralight": 200,
+	"light": 300,
+	"normal": 400,
+	"medium": 500,
+	"semibold": 600,
+	"bold": 700,
+	"extrabold": 800,
+	"black": 900,
 );
 
 // Font Style -- <div cass="font-italic"></div>
 $font-styles: (
-  "italic": italic,
-  "normal": normal,
-  "inherit": inherit,
+	"italic": italic,
+	"normal": normal,
+	"inherit": inherit,
 );
 
 // Letter Spacing -- <div cass="letter-spacing-1"></div>
 $letter-spacings: (
-  "1": 1px,
-  "2": 2px,
-  "3": 3px,
-  "10": 10px,
+	"1": 1px,
+	"2": 2px,
+	"3": 3px,
 );
 
 // Line Heights -- <div cass="line-height-25"></div>
 $line-heights: (
-  "25": 25px,
-  "30": 30px,
-  "42": 42px,
+	"25": 25px,
+	"30": 30px,
+	"42": 42px,
 );
 
 // Colors -- <div cass="text-main"></div>
 $text-colors: (
-  "main": #001aaa,
-  "white": #fff,
-  "black": #000,
+	"main": #001aaa,
+	"white": #fff,
+	"black": #000,
 );
 
 // Text Decorations -- <div cass="text-underline"></div>
 $text-decorations: (
-  "text-underline": underline,
-  "text-no-underline": none,
-  "text-line-through": line-through,
+	"text-underline": underline,
+	"text-no-underline": none,
+	"text-line-through": line-through,
 );
 
 // Text Transforms -- <div cass="text-uppercase"></div>
 $text-transforms: (
-  "text-uppercase": uppercase,
-  "text-lowercase": lowercase,
-  "text-capitalize": capitalize,
-  "text-normal-case": normal,
+	"text-uppercase": uppercase,
+	"text-lowercase": lowercase,
+	"text-capitalize": capitalize,
+	"text-normal-case": normal,
 );
 
 // Background Colors -- <div cass="bg-main"></div>
 $background-colors: (
-  "main": #001aaa,
-  "white": #fff,
-  "black": #000,
+	"main": #001aaa,
+	"white": #fff,
+	"black": #000,
 );
 
 // Widths || REF
-$widths: (
-  "screen": "100vw",
-  "auto": "auto",
-  "full": "100%",
-  "0": "0",
-  "1\\/2": "50%",
-  "1\\/3": "33.333333%",
-  "2\\/3": "66.666667%",
-  "2\\/4": "50%",
-  "3\\/4": "75%",
-  "1\\/5": "20%",
-  "2\\/5": "40%",
-  "3\\/5": "60%",
-  "4\\/5": "80%",
-  "1\\/6": "16.666667%",
-  "2\\/6": "33.333333%",
-  "3\\/6": "50%",
-  "4\\/6": "66.666667%",
-  "5\\/6": "83.333333%",
-  "1\\/12": "83.333333%",
-  "2\\/12": "16.666667%",
-  "3\\/12": "25%",
-  "4\\/12": "33.333333%",
-  "5\\/12": "41.666667%",
-  "6\\/12": "50%",
-  "7\\/12": "58.333333%",
-  "8\\/12": "66.666667%",
-  "9\\/12": "75%",
-  "10\\/12": "83.333333%",
-  "11\\/12": "91.666667%",
-);
+// $widths: (
+// 	"screen": "100vw",
+// 	"auto": "auto",
+// 	"full": "100%",
+// 	"0": "0",
+// 	"1\\/2": "50%",
+// 	"1\\/3": "33.333333%",
+// 	"2\\/3": "66.666667%",
+// 	"2\\/4": "50%",
+// 	"3\\/4": "75%",
+// 	"1\\/5": "20%",
+// 	"2\\/5": "40%",
+// 	"3\\/5": "60%",
+// 	"4\\/5": "80%",
+// 	"1\\/6": "16.666667%",
+// 	"2\\/6": "33.333333%",
+// 	"3\\/6": "50%",
+// 	"4\\/6": "66.666667%",
+// 	"5\\/6": "83.333333%",
+// 	"1\\/12": "83.333333%",
+// 	"2\\/12": "16.666667%",
+// 	"3\\/12": "25%",
+// 	"4\\/12": "33.333333%",
+// 	"5\\/12": "41.666667%",
+// 	"6\\/12": "50%",
+// 	"7\\/12": "58.333333%",
+// 	"8\\/12": "66.666667%",
+// 	"9\\/12": "75%",
+// 	"10\\/12": "83.333333%",
+// 	"11\\/12": "91.666667%",
+// );
 
 // Max Widths || REF
-$max-widths: (
-  "full": "100%",
-  "62\\.5": "62.5rem" /* 1000px */,
-  "75": "75rem" /* 1200px */,
-  "100": "100rem" /* 1600px */,
-);
+// $max-widths: (
+// 	"full": "100%",
+// 	"62\\.5": "62.5rem" /* 1000px */,
+// 	"75": "75rem" /* 1200px */,
+// 	"100": "100rem" /* 1600px */,
+// );
 
 // Heights || REF
-$heights: (
-  "screen": "100vh",
-  "auto": "auto",
-  "full": "100%",
-  "0": "0",
-  "1\\/2": "50%",
-  "1\\/3": "33.333333%",
-  "2\\/3": "66.666667%",
-  "2\\/4": "50%",
-  "3\\/4": "75%",
-  "1\\/5": "20%",
-  "2\\/5": "40%",
-  "3\\/5": "60%",
-  "4\\/5": "80%",
-  "1\\/6": "16.666667%",
-  "2\\/6": "33.333333%",
-  "3\\/6": "50%",
-  "4\\/6": "66.666667%",
-  "5\\/6": "83.333333%",
-  "1\\/12": "83.333333%",
-  "2\\/12": "16.666667%",
-  "3\\/12": "25%",
-  "4\\/12": "33.333333%",
-  "5\\/12": "41.666667%",
-  "6\\/12": "50%",
-  "7\\/12": "58.333333%",
-  "8\\/12": "66.666667%",
-  "9\\/12": "75%",
-  "10\\/12": "83.333333%",
-  "11\\/12": "91.666667%",
-);
+// $heights: (
+// 	"screen": "100vh",
+// 	"auto": "auto",
+// 	"full": "100%",
+// 	"0": "0",
+// 	"1\\/2": "50%",
+// 	"1\\/3": "33.333333%",
+// 	"2\\/3": "66.666667%",
+// 	"2\\/4": "50%",
+// 	"3\\/4": "75%",
+// 	"1\\/5": "20%",
+// 	"2\\/5": "40%",
+// 	"3\\/5": "60%",
+// 	"4\\/5": "80%",
+// 	"1\\/6": "16.666667%",
+// 	"2\\/6": "33.333333%",
+// 	"3\\/6": "50%",
+// 	"4\\/6": "66.666667%",
+// 	"5\\/6": "83.333333%",
+// 	"1\\/12": "83.333333%",
+// 	"2\\/12": "16.666667%",
+// 	"3\\/12": "25%",
+// 	"4\\/12": "33.333333%",
+// 	"5\\/12": "41.666667%",
+// 	"6\\/12": "50%",
+// 	"7\\/12": "58.333333%",
+// 	"8\\/12": "66.666667%",
+// 	"9\\/12": "75%",
+// 	"10\\/12": "83.333333%",
+// 	"11\\/12": "91.666667%",
+// );
 
 // Spacing
 // $spacing-main: (
@@ -193,47 +199,55 @@ $heights: (
 
 // Borders -- <div cass="border"></div>
 $borders: (
-  "border": 1px,
-  "border-0": 0px,
-  "border-2": 2px,
-  "border-4": 4px,
-  "border-8": 8px,
+	"border": 1px,
+	"border-0": 0px,
+	"border-2": 2px,
+	"border-4": 4px,
+	"border-8": 8px,
 );
 
-// Border Styles -- <div cass="border"></div>
+// Border Styles -- <div cass="border-solid"></div>
 $border-styles: (
-  "solid": solid,
-  "dashed": dashed,
-  "dotted": dotted,
-  "double": double,
-  "none": none,
+	"solid": solid,
+	"dashed": dashed,
+	"dotted": dotted,
+	"double": double,
+	"none": none,
 );
 
-// Border Direction -- <div cass="border border-t"></div>
+// Border Direction
 $border-directions: (
-  "t": top,
-  "r": right,
-  "b": bottom,
-  "l": left,
+	"t": top,
+	"r": right,
+	"b": bottom,
+	"l": left,
+);
+
+// Border Radius Positions -- <div cass="border-radius-tr-0"></div>
+$border-radius-positions: (
+	"tr": "top-right",
+	"tl": "top-left",
+	"br": "bottom-right",
+	"bl": "bottom-left",
 );
 
 // Border Values -- <div cass="border border-t-0"></div>
 $border-values: (
-  "0": 0px,
-  "1": 1px,
-  "2": 2px,
-  "4": 4px,
-  "8": 8px,
-  "10": 10px,
+	"0": 0,
+	"1": 1,
+	"2": 2,
+	"4": 4,
+	"8": 8,
+	"10": 10,
 );
 
 // Border Colors -- <div cass="border border-t-1 border-white"></div> || REF
-$border-colors: (
-  "main-0": "rgba(100, 100, 100, 0)",
-  "main-5": "rgba(100, 100, 100, 0.05)",
-  "main-10": "rgba(100, 100, 100, 0.1)",
-  "main-100": "rgba(100, 100, 100, 100)",
-);
+// $border-colors: (
+// 	"main-0": "rgba(100, 100, 100, 0)",
+// 	"main-5": "rgba(100, 100, 100, 0.05)",
+// 	"main-10": "rgba(100, 100, 100, 0.1)",
+// 	"main-100": "rgba(100, 100, 100, 100)",
+// );
 
 // Border Opacity -- <div cass="border border-t-1 border-white border-opacity-0"></div>
 // $border-opacity: (
@@ -242,85 +256,81 @@ $border-colors: (
 //   "10": 0.1,
 // );
 
-// Border Radius -- <div cass="border-radius-0"></div>
-$border-radius: (
-  "0": 0px,
-  "1": 1px,
-  "2": 2px,
-  "4": 4px,
-  "8": 8px,
-  "10": 10px,
+// Positions -- <div cass="relative"></div>
+$positions: (
+	"relative": relative,
+	"absolute": absolute,
+	"static": static,
+	"sticky": sticky,
 );
-
-// Border Radius Positions -- <div cass="border-radius-tr-0"></div> || REF
-// $border-radius-positions: (
-//   "tr-0": 0px,
-//   "tr-1": 1px,
-//   "tl-0": 0px,
-//   "br-0": 0px,
-//   "bl-0": 0px,
-// );
 
 // Display -- <div cass="block"></div>
 $display: (
-  "block": block,
-  "inline": inline,
-  "inline-block": inline-block,
-  "flex": flex,
-  "grid": grid,
+	"hidden": none,
+	"block": block,
+	"inline": inline,
+	"inline-block": inline-block,
+	"flex": flex,
+	"grid": grid,
 );
 
 // Flex -- <div cass="flex-1"></div>
 $flex: (
-  "1": 1 1 0%,
-  "auto": 1 1 auto,
-  "initial": 0 1 auto,
-  "none": none,
+	"1": 1 1 0%,
+	"auto": 1 1 auto,
+	"initial": 0 1 auto,
+	"none": none,
 );
+
+// Flex Shrink -- <div cass="flex-shrink-0"></div> || REF
+
+// Flex Grow -- <div cass="flex-grow-0"></div> || REF
 
 // Flex Directions -- <div cass="flex-col"></div>
 $flex-directions: (
-  "col": column,
-  "row": row,
+	"col": column,
+	"row": row,
 );
 
 // Flex Justify Content -- <div cass="justify-start"></div>
 $flex-justify-content: (
-  "justify-start": flex-start,
-  "justify-end": flex-end,
-  "justify-center": center,
-  "justify-between": space-between,
-  "justify-around": space-around,
-  "justify-evenly": space-evenly,
+	"justify-start": flex-start,
+	"justify-end": flex-end,
+	"justify-center": center,
+	"justify-between": space-between,
+	"justify-around": space-around,
+	"justify-evenly": space-evenly,
 );
 
 // Flex Align Items -- <div cass="items-start"></div>
 $flex-align-items: (
-  "items-start": flex-start,
-  "items-end": flex-end,
-  "items-center": center,
-  "items-baseline": baseline,
-  "items-stretch": stretch,
+	"items-start": flex-start,
+	"items-end": flex-end,
+	"items-center": center,
+	"items-baseline": baseline,
+	"items-stretch": stretch,
 );
 
 // Flex Justify Self -- <div cass="justify-self-auto"></div>
 $flex-justify-self: (
-  "justify-self-auto": auto,
-  "justify-self-start": start,
-  "justify-self-end": end,
-  "justify-self-center": center,
-  "justify-self-stretch": stretch,
+	"justify-self-auto": auto,
+	"justify-self-start": start,
+	"justify-self-end": end,
+	"justify-self-center": center,
+	"justify-self-stretch": stretch,
 );
 
 // Flex Align Self -- <div cass="align-self-auto"></div>
 $flex-align-self: (
-  "align-self-auto": auto,
-  "align-self-start": start,
-  "align-self-end": end,
-  "align-self-center": center,
-  "align-self-stretch": stretch,
+	"align-self-auto": auto,
+	"align-self-start": start,
+	"align-self-end": end,
+	"align-self-center": center,
+	"align-self-stretch": stretch,
 );
 
 // Grid Spaces -- <div cass="space-x-2"></div>
 
-// Box Shodows -- <div cass="space-x-2"></div>
+// Box Shodows -- <div cass=""></div>
+
+// Transform -- <div cass=""></div>
