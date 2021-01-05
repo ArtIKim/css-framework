@@ -3,9 +3,34 @@ $media: (
 	"sm": "640px",
 	"md": "767px",
 	"lg": "1023px",
-	"xl": "1279px",
-	"xl-2": "1536px",
 );
+
+// $media: (
+// 	"lg": "1024px",
+// 	"md": "767px",
+// 	"sm": "640px",
+// );
+
+// $media: (
+// 	"sm": 640,
+// 	"md": 767,
+// 	"lg": 1023,
+// 	"xl": 1279,
+// );
+
+// $colors-list: #111 #222 #333 #444 #555;
+// @each $current-color in $colors-list {
+// 	$i: index($colors-list, $current-color);
+// 	@if ($i == 1) {
+// 		.stuff-#{$i} {
+// 			background-color: $current-color;
+// 		}
+// 	} @else {
+// 		.stuff-#{$i} {
+// 			color: $current-color;
+// 		}
+// 	}
+// }
 
 // Font Families -- <div cass="font-open"></div>
 $font-families: (

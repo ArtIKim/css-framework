@@ -67,6 +67,55 @@
 			}
 		}
 	}
+
+	// @each $name1, $break in $media {
+	// 	$i: index($media, $name1 $break);
+	// 	@if ($i == 1) {
+	// 		@media (min-width: #{$break}px) {
+	// 			.#{$name1}\:text-#{$name} {
+	// 				text-align: $value !important;
+	// 			}
+	// 		}
+	// 	} @else if($i == 2) {
+	// 		@media (min-width: #{$break}px) {
+	// 			.#{index($media, $name1)}\:text-#{$name} {
+	// 				text-align: $value;
+	// 			}
+	// 			.#{$name1}\:text-#{$name} {
+	// 				text-align: $value !important;
+	// 			}
+	// 		}
+	// 	} @else if($i == 3) {
+	// 		@media (min-width: #{$break}px) {
+	// 			.#{nth($name1 $media, 1)}\:text-#{$name} {
+	// 				text-align: $value;
+	// 			}
+	// 			.#{nth($name1 $media, 1)}\:text-#{$name} {
+	// 				text-align: $value;
+	// 			}
+	// 			.#{$name1}\:text-#{$name} {
+	// 				text-align: $value !important;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// @each $name1, $break in $media {
+	// 	$i: index($media, $name1 $break);
+	// 	@if ($i == 1) {
+	// 		@media (min-width: 0px) and (min-width: #{$break}px) {
+	// 			.#{$name1}\:text-#{$name} {
+	// 				text-align: $value;
+	// 			}
+	// 		}
+	// 	} @else {
+	// 		@media (min-width: #{nth($media, $i - 1)}px) and (min-width: #{$break}px) {
+	// 			.#{$name1}\:text-#{$name} {
+	// 				text-align: $value;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 /*Letter Spacing*/
