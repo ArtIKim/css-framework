@@ -1,8 +1,16 @@
-// Media - Deskotp First -- <div cass="sm:text-xs"></div> || REF
+// Media - Deskotp First -- <div class="sm:text-xs"></div> || REF
 $media: (
 	"sm": "640px",
 	"md": "767px",
 	"lg": "1023px",
+);
+
+// Colors -- <div class="text-main"></div>
+//		  -- <div class="bg-main"></div>
+$colors: (
+	"main": #001aaa,
+	"white": #fff,
+	"black": #000,
 );
 
 // $media: (
@@ -32,28 +40,26 @@ $media: (
 // 	}
 // }
 
-// Font Families -- <div cass="font-open"></div>
+// Font Families -- <div class="font-open"></div>
 $font-families: (
 	"open": "Open Sans, sans serif",
 	"roboto": "Roboto, sans serif",
 	"mono": "Monospace, sans serif",
 );
 
-// Font Sizes -- <div cass="text-xs"></div> || REF
+// Font Sizes -- <div class="text-12"></div>
 $texts: (
-	"xs": 0.75rem /* 12px */,
-	"sm": 0.875rem /* 14px */,
-	"4xl": 2.25rem /* 36px */,
+	"12": 12px,
+	"14": 14px,
+	"16": 16px,
 );
 
-// Font Sizes With Clamps -- <div cass="text-"></div> || REF
-// $text-clamps: (
-// 	"xs": 0.75rem /* 12px */,
-// 	"sm": 0.875rem /* 14px */,
-// 	"4xl": 2.25rem /* 36px */,
-// );
+// Font Sizes With Clamps -- <div class="text-50-clamp"></div> || REF
+$text-clamps: (
+	"50": 50px,
+);
 
-// Font Weights -- <div cass="font-thin"></div>
+// Font Weights -- <div class="font-thin"></div>
 $font-weights: (
 	"thin": 100,
 	"extralight": 200,
@@ -66,14 +72,14 @@ $font-weights: (
 	"black": 900,
 );
 
-// Font Style -- <div cass="font-italic"></div>
+// Font Style -- <div class="font-italic"></div>
 $font-styles: (
 	"italic": italic,
 	"normal": normal,
 	"inherit": inherit,
 );
 
-// Text Positions -- <div cass="text-center"></div>
+// Text Positions -- <div class="text-center"></div>
 $text-positions: (
 	"center": center,
 	"left": left,
@@ -81,47 +87,33 @@ $text-positions: (
 	"justify": justify,
 );
 
-// Letter Spacing -- <div cass="letter-spacing-1"></div>
+// Letter Spacing -- <div class="letter-spacing-1"></div>
 $letter-spacings: (
 	"1": 1px,
 	"2": 2px,
 	"3": 3px,
 );
 
-// Line Heights -- <div cass="line-height-25"></div>
+// Line Heights -- <div class="line-height-25"></div>
 $line-heights: (
 	"25": 25px,
 	"30": 30px,
 	"42": 42px,
 );
 
-// Colors -- <div cass="text-main"></div>
-$text-colors: (
-	"main": #001aaa,
-	"white": #fff,
-	"black": #000,
-);
-
-// Text Decorations -- <div cass="text-underline"></div>
+// Text Decorations -- <div class="text-underline"></div>
 $text-decorations: (
 	"text-underline": underline,
 	"text-no-underline": none,
 	"text-line-through": line-through,
 );
 
-// Text Transforms -- <div cass="text-uppercase"></div>
+// Text Transforms -- <div class="text-uppercase"></div>
 $text-transforms: (
 	"text-uppercase": uppercase,
 	"text-lowercase": lowercase,
 	"text-capitalize": capitalize,
 	"text-normal-case": normal,
-);
-
-// Background Colors -- <div cass="bg-main"></div>
-$background-colors: (
-	"main": #001aaa,
-	"white": #fff,
-	"black": #000,
 );
 
 // Widths || REF
@@ -230,7 +222,7 @@ $background-colors: (
 //   "40": "10rem",
 // );
 
-// Borders -- <div cass="border"></div>
+// Borders -- <div class="border"></div>
 $borders: (
 	"border": 1px,
 	"border-0": 0px,
@@ -239,7 +231,7 @@ $borders: (
 	"border-8": 8px,
 );
 
-// Border Styles -- <div cass="border-solid"></div>
+// Border Styles -- <div class="border-solid"></div>
 $border-styles: (
 	"solid": solid,
 	"dashed": dashed,
@@ -256,7 +248,7 @@ $border-directions: (
 	"l": left,
 );
 
-// Border Radius Positions -- <div cass="border-radius-tr-0"></div>
+// Border Radius Positions -- <div class="border-tr-radius-0"></div>
 $border-radius-positions: (
 	"tr": "top-right",
 	"tl": "top-left",
@@ -264,7 +256,7 @@ $border-radius-positions: (
 	"bl": "bottom-left",
 );
 
-// Border Values -- <div cass="border border-t-0"></div>
+// Border Values -- <div class="border border-t-0"></div>
 $border-values: (
 	"0": 0,
 	"1": 1,
@@ -274,7 +266,7 @@ $border-values: (
 	"10": 10,
 );
 
-// Border Colors -- <div cass="border border-t-1 border-white"></div> || REF
+// Border Colors -- <div class="border border-t-1 border-white"></div> || REF
 // $border-colors: (
 // 	"main-0": "rgba(100, 100, 100, 0)",
 // 	"main-5": "rgba(100, 100, 100, 0.05)",
@@ -282,14 +274,14 @@ $border-values: (
 // 	"main-100": "rgba(100, 100, 100, 100)",
 // );
 
-// Border Opacity -- <div cass="border border-t-1 border-white border-opacity-0"></div>
+// Border Opacity -- <div class="border border-t-1 border-white border-opacity-0"></div>
 // $border-opacity: (
 //   "0": 0,
 //   "5": 0.05,
 //   "10": 0.1,
 // );
 
-// Positions -- <div cass="relative"></div>
+// Positions -- <div class="relative"></div>
 $positions: (
 	"relative": relative,
 	"absolute": absolute,
@@ -297,7 +289,7 @@ $positions: (
 	"sticky": sticky,
 );
 
-// Display -- <div cass="block"></div>
+// Display -- <div class="block"></div>
 $display: (
 	"hidden": none,
 	"block": block,
@@ -307,7 +299,7 @@ $display: (
 	"grid": grid,
 );
 
-// Flex -- <div cass="flex-1"></div>
+// Flex -- <div class="flex-1"></div>
 $flex: (
 	"1": 1 1 0%,
 	"auto": 1 1 auto,
@@ -315,17 +307,17 @@ $flex: (
 	"none": none,
 );
 
-// Flex Shrink -- <div cass="flex-shrink-0"></div> || REF
+// Flex Shrink -- <div class="flex-shrink-0"></div> || REF
 
-// Flex Grow -- <div cass="flex-grow-0"></div> || REF
+// Flex Grow -- <div class="flex-grow-0"></div> || REF
 
-// Flex Directions -- <div cass="flex-col"></div>
+// Flex Directions -- <div class="flex-col"></div>
 $flex-directions: (
 	"col": column,
 	"row": row,
 );
 
-// Flex Justify Content -- <div cass="justify-start"></div>
+// Flex Justify Content -- <div class="justify-start"></div>
 $flex-justify-content: (
 	"justify-start": flex-start,
 	"justify-end": flex-end,
@@ -335,7 +327,7 @@ $flex-justify-content: (
 	"justify-evenly": space-evenly,
 );
 
-// Flex Align Items -- <div cass="items-start"></div>
+// Flex Align Items -- <div class="items-start"></div>
 $flex-align-items: (
 	"items-start": flex-start,
 	"items-end": flex-end,
@@ -344,7 +336,7 @@ $flex-align-items: (
 	"items-stretch": stretch,
 );
 
-// Flex Justify Self -- <div cass="justify-self-auto"></div>
+// Flex Justify Self -- <div class="justify-self-auto"></div>
 $flex-justify-self: (
 	"justify-self-auto": auto,
 	"justify-self-start": start,
@@ -353,7 +345,7 @@ $flex-justify-self: (
 	"justify-self-stretch": stretch,
 );
 
-// Flex Align Self -- <div cass="align-self-auto"></div>
+// Flex Align Self -- <div class="align-self-auto"></div>
 $flex-align-self: (
 	"align-self-auto": auto,
 	"align-self-start": start,
@@ -362,12 +354,12 @@ $flex-align-self: (
 	"align-self-stretch": stretch,
 );
 
-// Flex Basis -- <div cass="space-x-2"></div>
+// Flex Basis -- <div class="space-x-2"></div>
 
-// Grid Spaces -- <div cass="space-x-2"></div>
+// Grid Spaces -- <div class="space-x-2"></div>
 
-// Box Shodows -- <div cass=""></div>
+// Box Shodows -- <div class=""></div>
 
-// Transform -- <div cass=""></div>
+// Transform -- <div class=""></div>
 
-// Hover -- <div cass=""></div>
+// Hover -- <div class=""></div>

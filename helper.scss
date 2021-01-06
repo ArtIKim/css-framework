@@ -1,54 +1,83 @@
 @import "config";
 
-/*Font Families*/
-@each $name, $font-family in $font-families {
-	.font-#{$name} {
-		font-family: $font-family;
-	}
-}
-
-/*Font Sizes*/
-@each $name, $text in $texts {
+/*Colors*/
+@each $name, $value in $colors {
 	.text-#{$name} {
-		font-size: $text;
-		line-height: calc(#{$text} + 0.25rem);
+		color: $value;
+	}
+
+	.bg-#{$name} {
+		background-color: $value;
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:text-#{$name} {
-				font-size: $text;
-				line-height: calc(#{$text} + 0.25rem);
+				color: $value !important;
+			}
+			.#{$name1}\:bg-#{$name} {
+				background-color: $value !important;
 			}
 		}
 	}
 }
 
-/*Font Weights*/
-@each $name, $font-weight in $font-weights {
+/*Font Families*/
+@each $name, $value in $font-families {
 	.font-#{$name} {
-		font-weight: $font-weight;
+		font-family: $value;
+	}
+}
+
+/*Font Sizes*/
+@each $name, $value in $texts {
+	.text-#{$name} {
+		font-size: $value;
+		line-height: calc(#{$value} + 4px);
+	}
+
+	@each $name1, $break in $media {
+		@media (min-width: $break) {
+			.#{$name1}\:text-#{$name} {
+				font-size: $value;
+				line-height: calc(#{$value} + 4px);
+			}
+		}
+	}
+}
+
+/*Font Sizes With Clamps*/
+@each $name, $value in $text-clamps {
+	.text-#{$name}-clamp {
+		font-size: clamp(30px, 5vw, $value);
+	}
+}
+
+/*Font Weights*/
+@each $name, $value in $font-weights {
+	.font-#{$name} {
+		font-weight: $value;
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:font-#{$name} {
-				font-weight: $font-weight;
+				font-weight: $value;
 			}
 		}
 	}
 }
 
 /*Font Styles*/
-@each $name, $font-style in $font-styles {
+@each $name, $value in $font-styles {
 	.font-#{$name} {
-		font-style: $font-style;
+		font-style: $value;
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:font-#{$name} {
-				font-style: $font-style;
+				font-style: $value;
 			}
 		}
 	}
@@ -60,13 +89,15 @@
 		text-align: $value;
 	}
 
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:text-#{$name} {
-				text-align: $value;
-			}
-		}
-	}
+	// @each $name1, $break in $media {
+	// 	$i: index($media, $name1 $break);
+	// 	$j: map-get($break, $i);
+	// 	@media (min-width: $break) and (max-width: nth($media, $j )) {
+	// 		.#{$name1}\:text-#{$name} {
+	// 			text-align: $value;
+	// 		}
+	// 	}
+	// }
 
 	// @each $name1, $break in $media {
 	// 	$i: index($media, $name1 $break);
@@ -119,94 +150,64 @@
 }
 
 /*Letter Spacing*/
-@each $name, $letter-spacing in $letter-spacings {
+@each $name, $value in $letter-spacings {
 	.letter-spacing-#{$name} {
-		letter-spacing: $letter-spacing;
-		// margin-left: -$letter-spacing;
+		letter-spacing: $value;
+		// margin-left: -$value;
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:letter-spacing-#{$name} {
-				letter-spacing: $letter-spacing;
-				// margin-left: -$letter-spacing;
+				letter-spacing: $value;
+				// margin-left: -$value;
 			}
 		}
 	}
 }
 
 /*Line Heights*/
-@each $name, $line-height in $line-heights {
+@each $name, $value in $line-heights {
 	.line-height-#{$name} {
-		line-height: $line-height;
+		line-height: $value;
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:line-height-#{$name} {
-				line-height: $line-height;
-			}
-		}
-	}
-}
-
-/*Colors*/
-@each $name, $text-color in $text-colors {
-	.text-#{$name} {
-		color: $text-color;
-	}
-
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:text-#{$name} {
-				color: $text-color !important;
+				line-height: $value;
 			}
 		}
 	}
 }
 
 /*Text Decorations*/
-@each $name, $text-decoration in $text-decorations {
+@each $name, $value in $text-decorations {
 	.#{$name} {
-		-webkit-text-decoration: $text-decoration;
-		text-decoration: $text-decoration;
+		-webkit-text-decoration: $value;
+		text-decoration: $value;
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:#{$name} {
-				-webkit-text-decoration: $text-decoration;
-				text-decoration: $text-decoration;
+				-webkit-text-decoration: $value;
+				text-decoration: $value;
 			}
 		}
 	}
 }
 
 /*Text Transforms*/
-@each $name, $text-transform in $text-transforms {
+@each $name, $value in $text-transforms {
 	.#{$name} {
-		text-transform: $text-transform;
+		text-transform: $value;
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:#{$name} {
-				text-transform: $text-transform;
-			}
-		}
-	}
-}
-
-/*Background Colors*/
-@each $name, $background-color in $background-colors {
-	.bg-#{$name} {
-		background-color: $background-color;
-	}
-
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:bg-#{$name} {
-				background-color: $background-color !important;
+				text-transform: $value;
 			}
 		}
 	}
@@ -490,75 +491,75 @@
 }
 
 /*Flex Directions*/
-@each $name, $direction in $flex-directions {
+@each $name, $value in $flex-directions {
 	.flex-#{$name} {
-		flex-direction: #{$direction};
+		flex-direction: #{$value};
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:flex-#{$name} {
-				flex-direction: #{$direction};
+				flex-direction: #{$value};
 			}
 		}
 	}
 }
 
 /*Flex Justify Content*/
-@each $name, $justify in $flex-justify-content {
+@each $name, $value in $flex-justify-content {
 	.#{$name} {
-		justify-content: #{$justify};
+		justify-content: #{$value};
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:#{$name} {
-				justify-content: #{$justify};
+				justify-content: #{$value};
 			}
 		}
 	}
 }
 
 /*Flex Align Items*/
-@each $name, $align in $flex-align-items {
+@each $name, $value in $flex-align-items {
 	.#{$name} {
-		align-items: #{$align};
+		align-items: #{$value};
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:#{$name} {
-				align-items: #{$align};
+				align-items: #{$value};
 			}
 		}
 	}
 }
 
 /*Flex Justify Self*/
-@each $name, $self in $flex-justify-self {
+@each $name, $value in $flex-justify-self {
 	.#{$name} {
-		justify-self: #{$self};
+		justify-self: #{$value};
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:#{$name} {
-				justify-self: #{$self} !important;
+				justify-self: #{$value} !important;
 			}
 		}
 	}
 }
 
 /*Flex Align Self*/
-@each $name, $self in $flex-align-self {
+@each $name, $value in $flex-align-self {
 	.#{$name} {
-		align-self: #{$self};
+		align-self: #{$value};
 	}
 
 	@each $name1, $break in $media {
 		@media (min-width: $break) {
 			.#{$name1}\:#{$name} {
-				align-self: #{$self} !important;
+				align-self: #{$value} !important;
 			}
 		}
 	}
