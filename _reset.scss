@@ -1,37 +1,37 @@
 // Reset
 * {
-  //   @extend .m-0;
-  //   @extend .p-0;
-  //   @extend .box-border;
-  //   @extend .font-primary;
-  //   @extend .color-primary;
+	//   @extend .m-0;
+	//   @extend .p-0;
+	//   @extend .box-border;
+	//   @extend .font-primary;
+	//   @extend .color-primary;
 }
 
 body {
-  //   @extend .font-primary;
+	//   @extend .font-primary;
 }
 
 input,
 select,
 textarea,
 button {
-  &:focus {
-    // @extend .shadow-none;
-    // @extend .outline-none;
-  }
+	&:focus {
+		// @extend .shadow-none;
+		// @extend .outline-none;
+	}
 }
 
 b,
 strong {
-  //   @extend .font-bold;
-  //   @extend .text-inherit;
-  //   @extend .text-color-inherit;
+	//   @extend .font-bold;
+	//   @extend .text-inherit;
+	//   @extend .text-color-inherit;
 }
 
 span {
-  //   @extend .text-inherit;
+	//   @extend .text-inherit;
 }
 
 a {
-  //   @extend .color-primary;
+	//   @extend .color-primary;
 }
