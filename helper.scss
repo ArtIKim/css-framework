@@ -125,14 +125,6 @@
 	.w-#{$name} {
 		width: #{$width};
 	}
-
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:w-#{$name} {
-				width: #{$width};
-			}
-		}
-	}
 }
 
 // --Max Widths
@@ -141,27 +133,19 @@
 		max-width: #{$value};
 	}
 
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.max-w-#{$name} {
-				max-width: #{$value};
-			}
-		}
-	}
+	// @each $name1, $break in $media {
+	// 	@media (max-width: $break) {
+	// 		.max-w-#{$name} {
+	// 			max-width: #{$value};
+	// 		}
+	// 	}
+	// }
 }
 
 // Heights
-@each $name, $width in $heights {
+@each $name, $value in $heights {
 	.h-#{$name} {
-		height: #{$width};
-	}
-
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:h-#{$name} {
-				height: #{$width};
-			}
-		}
+		height: #{$value};
 	}
 }
 
@@ -172,11 +156,18 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				font-weight: $value;
 			}
 		}
+	}
+}
+
+// Fonts
+@each $name, $value in $fonts {
+	.font-#{$name} {
+		font-family: $value;
 	}
 }
 
@@ -189,7 +180,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:text-#{$name} {
 				text-align: $value;
 			}
@@ -204,7 +195,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				font-style: $value;
 			}
@@ -220,7 +211,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				-webkit-text-decoration: $value;
 				text-decoration: $value;
@@ -236,7 +227,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				text-transform: $value;
 			}
@@ -250,13 +241,13 @@
 		font-size: $value;
 	}
 
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:text-#{$name} {
-				font-size: $value;
-			}
-		}
-	}
+	// @each $name1, $break in $media {
+	// 	@media (max-width: $break) {
+	// 		.#{$name1}\:text-#{$name} {
+	// 			font-size: $value;
+	// 		}
+	// 	}
+	// }
 }
 
 // Displays
@@ -266,7 +257,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				display: #{$value};
 			}
@@ -281,7 +272,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:flex-#{$name} {
 				flex: #{$value};
 			}
@@ -294,13 +285,12 @@
 	.flex-#{$name} {
 		flex-direction: #{$value};
 	}
+}
 
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:flex-#{$name} {
-				flex-direction: #{$value};
-			}
-		}
+// --Flex Wraps
+@each $name, $value in $flex-wraps {
+	.#{$name} {
+		flex-wrap: #{$value};
 	}
 }
 
@@ -311,7 +301,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				justify-content: #{$value};
 			}
@@ -326,7 +316,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				align-items: #{$value};
 			}
@@ -341,7 +331,7 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				justify-self: #{$value};
 			}
@@ -356,11 +346,33 @@
 	}
 
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
 				align-self: #{$value};
 			}
 		}
+	}
+}
+
+// --Grid Template Columns
+@each $name, $value in $grid-template-columns {
+	.#{$name} {
+		grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
+	}
+
+	@each $name1, $break in $media {
+		@media (max-width: $break) {
+			.#{$name1}\:#{$name} {
+				grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
+			}
+		}
+	}
+}
+
+// --Grid Gap
+@each $name, $value in $grid-gap {
+	.gap-#{$name} {
+		grid-gap: #{$value};
 	}
 }
 
@@ -370,10 +382,25 @@
 		position: #{$value};
 	}
 
+	// @each $name1, $break in $media {
+	// 	@media (max-width: $break) {
+	// 		.#{$name1}\:#{$name} {
+	// 			position: #{$value};
+	// 		}
+	// 	}
+	// }
+}
+
+// Z-Index
+@each $name, $value in $z-index {
+	.#{$name} {
+		z-index: #{$value};
+	}
+
 	@each $name1, $break in $media {
-		@media (min-width: $break) {
+		@media (max-width: $break) {
 			.#{$name1}\:#{$name} {
-				position: #{$value};
+				z-index: #{$value};
 			}
 		}
 	}
@@ -385,22 +412,145 @@
 		color: $value;
 	}
 
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:text-#{$name} {
-				color: $value;
-			}
-		}
-	}
+	// @each $name1, $break in $media {
+	// 	@media (max-width: $break) {
+	// 		.#{$name1}\:text-#{$name} {
+	// 			color: $value;
+	// 		}
+	// 	}
+	// }
 
 	.bg-#{$name} {
 		background-color: $value;
 	}
 
-	@each $name1, $break in $media {
-		@media (min-width: $break) {
-			.#{$name1}\:bg-#{$name} {
-				background-color: $value;
+	// @each $name1, $break in $media {
+	// 	@media (max-width: $break) {
+	// 		.#{$name1}\:bg-#{$name} {
+	// 			background-color: $value;
+	// 		}
+	// 	}
+	// }
+}
+
+// Hovers
+@each $name, $value in $opacity {
+	@each $name2, $value2 in $opacity-scales {
+		.hover\:#{$name}-#{$name2}:hover {
+			opacity: $value2;
+		}
+	}
+}
+
+// Background
+
+// --Background Positions
+@each $name, $value in $background-positions {
+	.#{$name} {
+		background-position: $value;
+	}
+}
+
+// --Background Sizes
+@each $name, $value in $background-sizes {
+	.#{$name} {
+		background-size: $value;
+	}
+}
+
+// --Background Repeats
+@each $name, $value in $background-repeats {
+	.#{$name} {
+		background-repeat: $value;
+	}
+}
+
+// --Background Attachments
+@each $name, $value in $background-attatchments {
+	.#{$name} {
+		background-attachment: $value;
+	}
+}
+
+// Object Fit
+@each $name, $value in $object-fit {
+	.#{$name} {
+		-o-object-fit: $value;
+		object-fit: $value;
+	}
+}
+
+// Cursor
+@each $name, $value in $cursor {
+	.#{$name} {
+		cursor: $value;
+	}
+}
+
+// Overflow
+@each $name, $value in $overflow {
+	.#{$name} {
+		overflow: $value;
+	}
+}
+
+// Overflow-x
+@each $name, $value in $overflow-x {
+	.#{$name} {
+		overflow-x: $value;
+	}
+}
+
+// Overflow-y
+@each $name, $value in $overflow-y {
+	.#{$name} {
+		overflow-y: $value;
+	}
+}
+
+// Media
+@each $name, $break in $media {
+	@media (max-width: $break) {
+		// --Text Sizes
+		@each $name1, $value1 in $texts {
+			.#{$name}\:text-#{$name1} {
+				font-size: $value1;
+			}
+		}
+		// Heights
+		@each $name2, $value2 in $heights {
+			.#{$name}\:h-#{$name2} {
+				height: #{$value2};
+			}
+		}
+		// Widths
+		@each $name3, $value3 in $widths {
+			.#{$name}\:w-#{$name3} {
+				width: #{$value3};
+			}
+		}
+		// --Flex Directions
+		@each $name4, $value4 in $flex-directions {
+			.#{$name}\:flex-#{$name4} {
+				flex-direction: #{$value4};
+			}
+		}
+		// Positions
+		@each $name5, $value5 in $positions {
+			.#{$name}\:#{$name5} {
+				position: #{$value5};
+			}
+		}
+		// --Flex Wraps
+		@each $name6, $value6 in $flex-wraps {
+			.#{$name}\:#{$name6} {
+				flex-wrap: #{$value6};
+			}
+		}
+		// --Max Widths
+		@each $name7, $value7 in $max-widths {
+			.#{$name}\:max-w-#{$name7} {
+				max-width: #{$value7};
 			}
 		}
 	}
@@ -413,7 +563,7 @@
 // 		}
 
 // 		@each $name1, $break in $media {
-// 			@media (min-width: $break) {
+// 			@media (max-width: $break) {
 // 				.#{$name1}\:border-#{$name}-radius-#{$value2} {
 // 					border-#{$value}-radius: #{$value2}px;
 // 				}
@@ -439,13 +589,13 @@
 // 	// @each $name1, $break in $media {
 // 	// 	$i: index($media, $name1 $break);
 // 	// 	@if ($i == 1) {
-// 	// 		@media (min-width: #{$break}px) {
+// 	// 		@media (max-width: #{$break}px) {
 // 	// 			.#{$name1}\:text-#{$name} {
 // 	// 				text-align: $value ;
 // 	// 			}
 // 	// 		}
 // 	// 	} @else if($i == 2) {
-// 	// 		@media (min-width: #{$break}px) {
+// 	// 		@media (max-width: #{$break}px) {
 // 	// 			.#{index($media, $name1)}\:text-#{$name} {
 // 	// 				text-align: $value;
 // 	// 			}
@@ -454,7 +604,7 @@
 // 	// 			}
 // 	// 		}
 // 	// 	} @else if($i == 3) {
-// 	// 		@media (min-width: #{$break}px) {
+// 	// 		@media (max-width: #{$break}px) {
 // 	// 			.#{nth($name1 $media, 1)}\:text-#{$name} {
 // 	// 				text-align: $value;
 // 	// 			}
@@ -471,13 +621,13 @@
 // 	// @each $name1, $break in $media {
 // 	// 	$i: index($media, $name1 $break);
 // 	// 	@if ($i == 1) {
-// 	// 		@media (min-width: 0px) and (min-width: #{$break}px) {
+// 	// 		@media (max-width: 0px) and (max-width: #{$break}px) {
 // 	// 			.#{$name1}\:text-#{$name} {
 // 	// 				text-align: $value;
 // 	// 			}
 // 	// 		}
 // 	// 	} @else {
-// 	// 		@media (min-width: #{nth($media, $i - 1)}px) and (min-width: #{$break}px) {
+// 	// 		@media (max-width: #{nth($media, $i - 1)}px) and (max-width: #{$break}px) {
 // 	// 			.#{$name1}\:text-#{$name} {
 // 	// 				text-align: $value;
 // 	// 			}
@@ -494,7 +644,7 @@
 // 	}
 
 // 	@each $name1, $break in $media {
-// 		@media (min-width: $break) {
+// 		@media (max-width: $break) {
 // 			.#{$name1}\:letter-spacing-#{$name} {
 // 				letter-spacing: $value;
 // 				// margin-left: -$value;
@@ -510,7 +660,7 @@
 // 	}
 
 // 	@each $name1, $break in $media {
-// 		@media (min-width: $break) {
+// 		@media (max-width: $break) {
 // 			.#{$name1}\:line-height-#{$name} {
 // 				line-height: $value;
 // 			}
@@ -519,15 +669,15 @@
 // }
 
 // /*Max Widths*/
-// // @each $name, $min-width in $min-widths {
+// // @each $name, $max-width in $max-widths {
 // // 	.max-w-#{$name} {
-// // 		min-width: #{$min-width};
+// // 		max-width: #{$max-width};
 // // 	}
 
 // // 	@each $name1, $break in $media {
-// // 		@media (min-width: $break) {
+// // 		@media (max-width: $break) {
 // // 			.#{$name1}\:max-w-#{$name} {
-// // 				min-width: #{$min-width} ;
+// // 				max-width: #{$max-width} ;
 // // 			}
 // // 		}
 // // 	}
@@ -540,7 +690,7 @@
 // // 	}
 
 // // 	@each $name1, $break in $media {
-// // 		@media (min-width: $break) {
+// // 		@media (max-width: $break) {
 // // 			.#{$name1}\:h-#{$name} {
 // // 				height: #{$height};
 // // 			}
@@ -631,7 +781,7 @@
 // 	}
 
 // 	@each $name1, $break in $media {
-// 		@media (min-width: $break) {
+// 		@media (max-width: $break) {
 // 			.#{$name1}\:#{$name} {
 // 				border-width: #{$value};
 // 			}
@@ -646,7 +796,7 @@
 // 	}
 
 // 	@each $name1, $break in $media {
-// 		@media (min-width: $break) {
+// 		@media (max-width: $break) {
 // 			.#{$name1}\:border-#{$name} {
 // 				border-style: #{$value};
 // 			}
@@ -662,7 +812,7 @@
 // 		}
 
 // 		@each $name1, $break in $media {
-// 			@media (min-width: $break) {
+// 			@media (max-width: $break) {
 // 				.#{$name1}\:border-#{$name2}-#{$name} {
 // 					border-#{$value2}-style: #{$value};
 // 				}
@@ -679,7 +829,7 @@
 // 		}
 
 // 		@each $name1, $break in $media {
-// 			@media (min-width: $break) {
+// 			@media (max-width: $break) {
 // 				.#{$name1}\:border-#{$name}-#{$name2} {
 // 					border-#{$value}-width: #{$value2}px;
 // 				}
@@ -695,7 +845,7 @@
 // // 	}
 
 // // 	@each $name1, $break in $media {
-// // 		@media (min-width: $break) {
+// // 		@media (max-width: $break) {
 // // 			.#{$name1}\:border-#{$name} {
 // // 				border-color: #{$value};
 // // 			}
@@ -710,7 +860,7 @@
 // 	}
 
 // 	@each $name1, $break in $media {
-// 		@media (min-width: $break) {
+// 		@media (max-width: $break) {
 // 			.#{$name1}\:border-radius-#{$name} {
 // 				border-radius: #{$value}px;
 // 			}

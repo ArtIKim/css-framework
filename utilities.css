@@ -1,3 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400&display=swap");
+:root {
+  --clr-primary: #51c0ad;
+  --clr-primary-2: #00887a;
+  --clr-secondary: #003d7c;
+  --clr-secondary-2: #424f5b;
+  --clr-secondary-3: #eeeeee;
+  --clr-secondary-4: #006cb8;
+  --font-roboto: "Roboto", sans-serif;
+  --font-roboto-condensed: "Roboto Condensed", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  color: var(--clr-secondary-2);
+  overflow-x: hidden;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+b,
+strong {
+  font-weight: bold;
+  font-size: inherit;
+  color: inherit;
+}
+
+span {
+  font-size: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  line-height: 24px;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+
 .p-0 {
   padding: 0;
 }
@@ -7562,4 +7640,4 @@
     max-width: 1335px;
   }
 }
-/*# sourceMappingURL=helper.css.map */
+/*# sourceMappingURL=utilities.css.map */
