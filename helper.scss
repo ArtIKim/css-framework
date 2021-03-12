@@ -9,14 +9,6 @@
 			.#{$name}#{$name2}-#{$name3} {
 				#{$value}#{$value2}: $value3;
 			}
-
-			@each $name1, $break in $media {
-				@media (max-width: $break) {
-					.#{$name1}\:#{$name}#{$name2}-#{$name3} {
-						#{$value}#{$value2}: $value3;
-					}
-				}
-			}
 		}
 	}
 }
@@ -27,15 +19,6 @@
 			.#{$name}#{$name2}-#{$name3} {
 				padding-left: $value3;
 				padding-right: $value3;
-			}
-
-			@each $name1, $break in $media {
-				@media (max-width: $break) {
-					.#{$name1}\:#{$name}#{$name2}-#{$name3} {
-						padding-left: $value3;
-						padding-right: $value3;
-					}
-				}
 			}
 		}
 	}
@@ -48,15 +31,6 @@
 				padding-top: $value3;
 				padding-bottom: $value3;
 			}
-
-			@each $name1, $break in $media {
-				@media (max-width: $break) {
-					.#{$name1}\:#{$name}#{$name2}-#{$name3} {
-						padding-top: $value3;
-						padding-bottom: $value3;
-					}
-				}
-			}
 		}
 	}
 }
@@ -67,14 +41,6 @@
 		@each $name3, $value3 in $spacing-values-m {
 			.#{$name}#{$name2}-#{$name3} {
 				#{$value}#{$value2}: $value3;
-			}
-
-			@each $name1, $break in $media {
-				@media (max-width: $break) {
-					.#{$name1}\:#{$name}#{$name2}-#{$name3} {
-						#{$value}#{$value2}: $value3;
-					}
-				}
 			}
 		}
 	}
@@ -87,15 +53,6 @@
 				margin-left: $value3;
 				margin-right: $value3;
 			}
-
-			@each $name1, $break in $media {
-				@media (max-width: $break) {
-					.#{$name1}\:#{$name}#{$name2}-#{$name3} {
-						margin-left: $value3;
-						margin-right: $value3;
-					}
-				}
-			}
 		}
 	}
 }
@@ -106,15 +63,6 @@
 			.#{$name}#{$name2}-#{$name3} {
 				margin-top: $value3;
 				margin-bottom: $value3;
-			}
-
-			@each $name1, $break in $media {
-				@media (max-width: $break) {
-					.#{$name1}\:#{$name}#{$name2}-#{$name3} {
-						margin-top: $value3;
-						margin-bottom: $value3;
-					}
-				}
 			}
 		}
 	}
@@ -132,14 +80,6 @@
 	.max-w-#{$name} {
 		max-width: #{$value};
 	}
-
-	// @each $name1, $break in $media {
-	// 	@media (max-width: $break) {
-	// 		.max-w-#{$name} {
-	// 			max-width: #{$value};
-	// 		}
-	// 	}
-	// }
 }
 
 // Heights
@@ -240,14 +180,6 @@
 	.text-#{$name} {
 		font-size: $value;
 	}
-
-	// @each $name1, $break in $media {
-	// 	@media (max-width: $break) {
-	// 		.#{$name1}\:text-#{$name} {
-	// 			font-size: $value;
-	// 		}
-	// 	}
-	// }
 }
 
 // Displays
@@ -360,13 +292,13 @@
 		grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
 	}
 
-	@each $name1, $break in $media {
-		@media (max-width: $break) {
-			.#{$name1}\:#{$name} {
-				grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
-			}
-		}
-	}
+	// @each $name1, $break in $media {
+	// 	@media (max-width: $break) {
+	// 		.#{$name1}\:#{$name} {
+	// 			grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
+	// 		}
+	// 	}
+	// }
 }
 
 // --Grid Gap
@@ -381,14 +313,6 @@
 	.#{$name} {
 		position: #{$value};
 	}
-
-	// @each $name1, $break in $media {
-	// 	@media (max-width: $break) {
-	// 		.#{$name1}\:#{$name} {
-	// 			position: #{$value};
-	// 		}
-	// 	}
-	// }
 }
 
 // Z-Index
@@ -412,25 +336,9 @@
 		color: $value;
 	}
 
-	// @each $name1, $break in $media {
-	// 	@media (max-width: $break) {
-	// 		.#{$name1}\:text-#{$name} {
-	// 			color: $value;
-	// 		}
-	// 	}
-	// }
-
 	.bg-#{$name} {
 		background-color: $value;
 	}
-
-	// @each $name1, $break in $media {
-	// 	@media (max-width: $break) {
-	// 		.#{$name1}\:bg-#{$name} {
-	// 			background-color: $value;
-	// 		}
-	// 	}
-	// }
 }
 
 // Hovers
@@ -448,6 +356,13 @@
 @each $name, $value in $background-positions {
 	.#{$name} {
 		background-position: $value;
+	}
+}
+
+// --Background Image
+@each $name, $value in $background-image {
+	.#{$name} {
+		background-image: $value;
 	}
 }
 
@@ -551,6 +466,78 @@
 		@each $name7, $value7 in $max-widths {
 			.#{$name}\:max-w-#{$name7} {
 				max-width: #{$value7};
+			}
+		}
+		// Margins
+		@each $name8, $value8 in $spacing-attributes-m {
+			@each $name9, $value9 in $spacing-directions {
+				@each $name10, $value10 in $spacing-values-m {
+					.#{$name}\:#{$name8}#{$name9}-#{$name10} {
+						#{$value8}#{$value9}: $value10;
+					}
+				}
+			}
+		}
+		@each $name11, $value11 in $spacing-attributes-m {
+			@each $name12, $value12 in $spacing-directions-x {
+				@each $name13, $value13 in $spacing-values-m {
+					.#{$name}\:#{$name11}#{$name12}-#{$name13} {
+						margin-left: $value13;
+						margin-right: $value13;
+					}
+				}
+			}
+		}
+		@each $name14, $value14 in $spacing-attributes-m {
+			@each $name15, $value15 in $spacing-directions-y {
+				@each $name16, $value16 in $spacing-values-m {
+					.#{$name}\:#{$name14}#{$name15}-#{$name16} {
+						margin-top: $value16;
+						margin-bottom: $value16;
+					}
+				}
+			}
+		}
+		// Paddings
+		@each $name17, $value17 in $spacing-attributes-p {
+			@each $name18, $value18 in $spacing-directions {
+				@each $name19, $value19 in $spacing-values-p {
+					.#{$name}\:#{$name17}#{$name18}-#{$name19} {
+						#{$value17}#{$value18}: $value19;
+					}
+				}
+			}
+		}
+		@each $name20, $value20 in $spacing-attributes-p {
+			@each $name21, $value21 in $spacing-directions-x {
+				@each $name22, $value22 in $spacing-values-p {
+					.#{$name}\:#{$name20}#{$name21}-#{$name22} {
+						padding-left: $value22;
+						padding-right: $value22;
+					}
+				}
+			}
+		}
+		@each $name23, $value23 in $spacing-attributes-p {
+			@each $name24, $value24 in $spacing-directions-y {
+				@each $name25, $value25 in $spacing-values-p {
+					.#{$name}\:#{$name23}#{$name24}-#{$name25} {
+						padding-top: $value25;
+						padding-bottom: $value25;
+					}
+				}
+			}
+		}
+		// Background Image
+		@each $name26, $value26 in $background-image {
+			.#{$name}\:#{$name26} {
+				background-image: #{$value26};
+			}
+		}
+		// --Grid Template Columns
+		@each $name27, $value27 in $grid-template-columns {
+			.#{$name}\:#{$name27} {
+				grid-template-columns: repeat(#{$value27}, minmax(0, 1fr));
 			}
 		}
 	}

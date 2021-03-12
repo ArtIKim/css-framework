@@ -44,6 +44,67 @@ a {
 	}
 }
 
+td {
+	padding: 10px;
+}
+
+ul,
+ol {
+	padding-left: 25px;
+	list-style: none;
+}
+
+ul {
+	&.primary {
+		li {
+			&::before {
+				background-color: var(--clr-primary);
+			}
+		}
+	}
+
+	li {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 4px;
+			height: 4px;
+			background-color: var(--clr-secondary);
+			border-radius: 50%;
+			top: 8px;
+			left: -15px;
+		}
+	}
+}
+
+ol {
+	counter-reset: li;
+
+	&.primary {
+		li {
+			&::before {
+				color: var(--clr-primary);
+			}
+		}
+	}
+
+	li {
+		position: relative;
+		counter-increment: li;
+
+		&::before {
+			content: counter(li) ".";
+			color: var(--clr-secondary);
+			position: absolute;
+			top: 0px;
+			left: -25px;
+		}
+	}
+}
+
+li,
 p {
 	line-height: 24px;
 }

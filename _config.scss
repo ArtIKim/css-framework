@@ -37,6 +37,7 @@ $spacing-values-p: (
 	"10": 10px,
 	"15": 15px,
 	"20": 20px,
+	"30": 30px,
 	"50": 50px,
 	"57": 57px,
 	"60": 60px,
@@ -48,6 +49,7 @@ $spacing-values-p: (
 // ------------------- Editable -------------------
 $spacing-values-m: (
 	"auto": auto,
+	"0": 0px,
 	"8": 8px,
 	"12": 12px,
 	"15": 15px,
@@ -58,6 +60,9 @@ $spacing-values-m: (
 	"80": 80px,
 	"60": 60px,
 	"66": 66px,
+	"100": 100px,
+	"115": 115px,
+	"189": 189px,
 );
 
 // Widths ------------------- Editable -------------------
@@ -66,6 +71,8 @@ $widths: (
 	"auto": auto,
 	"full": 100%,
 	"20\\%": 20%,
+	"5": 5px,
+	"10": 10px,
 	"155": 155px,
 	"170": 170px,
 	"200": 200px,
@@ -77,10 +84,14 @@ $max-widths: (
 	"155": 155px,
 	"370": 370px,
 	"396": 396px,
+	"435": 435px,
 	"540": 540px,
+	"550": 550px,
 	"700": 700px,
 	"727": 727px,
 	"775": 775px,
+	"930": 930px,
+	"957": 957px,
 	"1000": 1000px,
 	"1100": 1100px,
 	"1335": 1335px,
@@ -93,6 +104,7 @@ $heights: (
 	"full": 100%,
 	"2": 2px,
 	"4": 4px,
+	"45": 45px,
 	"70": 70px,
 	"86": 86px,
 	"36": 36px,
@@ -298,6 +310,11 @@ $background-positions: (
 	"bg-right-bottom": right bottom,
 	"bg-right-top": right top,
 	"bg-top": top,
+);
+
+// Background Image
+$background-image: (
+	"bg-none": none,
 );
 
 // Background Sizes
