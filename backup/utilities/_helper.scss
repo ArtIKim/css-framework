@@ -3,16 +3,9 @@
 // LAYOUT
 // Box Sizing
 @each $name, $value in $box-sizing {
-	.box-#{$name} {
-		box-sizing: #{$name}-box;
-	}
-}
-
-// Display
-@each $name, $value in $display {
-	.#{$name} {
-		display: #{$name};
-	}
+    .box-#{$name} {
+        box-sizing: #{$name}-box;
+    }
 }
 
 // @each $name, $value in $spacing-attributes-p {
