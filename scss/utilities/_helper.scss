@@ -1,19 +1,65 @@
-@import "config";
-
 // LAYOUT
-// Box Sizing
-@each $name, $value in $box-sizing {
-	.box-#{$name} {
-		box-sizing: #{$name}-box;
+// Colors
+// @each $color, $levels in $colors {
+// 	@each $level, $value in $levels {
+// 		@if $level == 0 {
+// 			.text-#{$color} {
+// 				color: #{$value};
+// 			}
+
+// 			.bg-#{$color} {
+// 				background-color: #{$value};
+// 			}
+// 		} @else {
+// 			.text-#{$color}-#{$level} {
+// 				color: #{$value};
+// 			}
+
+// 			.bg-#{$color}-#{$level} {
+// 				background-color: #{$value};
+// 			}
+// 		}
+// 	}
+// }
+
+@each $color, $levels in $colors {
+	@each $level, $value in $levels {
+		@if $level == 0 {
+			.text-#{$color} {
+				color: #{$value};
+			}
+		} @else {
+			.text-#{$color}-#{$level} {
+				color: #{$value};
+			}
+		}
 	}
 }
+
+// MEDIA
+// @each $breakpoint, $value in $media {
+// 	@media (max-width: $value) {
+// 		@each $box-sizing-name, $box-sizing-value in $box-sizing {
+// 			.#{$breakpoint}\:box-#{$box-sizing-name} {
+// 				box-sizing: $box-sizing-value;
+// 			}
+// 		}
+// 	}
+// }
+
+// Box Sizing
+// @each $name, $value in $box-sizing {
+// 	.box-#{$name} {
+// 		box-sizing: #{$name}-box;
+// 	}
+// }
 
 // Display
-@each $name, $value in $display {
-	.#{$name} {
-		display: #{$name};
-	}
-}
+// @each $name, $value in $display {
+// 	.#{$name} {
+// 		display: #{$name};
+// 	}
+// }
 
 // @each $name, $value in $spacing-attributes-p {
 //     @each $name2, $value2 in $spacing-directions-x {

@@ -1,10 +1,23 @@
 // LAYOUT
+// Colors
+$colors: (
+	primary: (
+		0: red,
+		1: #51c0ad,
+	),
+	secondary: (
+		0: green,
+		1: #003d7c,
+	),
+	// media: (
+	// 	"media-1300": 1300px,
+	// ),,
+);
+
 // Container
 $media: (
 	"media-1300": 1300px,
 	"media-1200": 1200px,
-	"media-991": 991px,
-	"media-680": 680px,
 );
 
 // Box Sizing
@@ -513,3 +526,15 @@ $background-image: ();
 $gradient-color-stops: ();
 
 // BORDERS
+
+// MEDIA
+$in-media: (
+	$colors: (
+		primary: (
+			0: cyan,
+		),
+		secondary: (
+			0: purple,
+		),
+	),
+);
