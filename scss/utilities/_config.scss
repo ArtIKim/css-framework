@@ -1,3 +1,6 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
 // ROOT
 :root {
 	--clr-primary: #51c0ad;
@@ -72,7 +75,7 @@ $object-fit: (
 	"object-cover": cover,
 	// "object-fill": fill,
 	// "object-none": none,
-	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Object Position
@@ -536,7 +539,7 @@ $word-break: (
 $background-attachment: (
 	"bg-fixed": fixed,
 	// "bg-local": local,
-	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Background Clip

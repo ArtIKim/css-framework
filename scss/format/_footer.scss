@@ -1,0 +1,270 @@
+﻿/***** Footer *****/
+.footer {
+	position: relative;
+
+	&__container {
+		background-image: url(/CMS/site/images/footer-bg.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		padding: 30px 30px 0;
+		background-size: cover;
+
+		@include max-media(1400px) {
+			background-position: center;
+		}
+
+		@include max-media(1080px) {
+			padding: 30px;
+		}
+
+		&--bg {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			max-width: 1700px;
+			margin: 0 auto;
+			grid-gap: 70px;
+			justify-items: center;
+
+			@include max-media(1400px) {
+				grid-template-columns: repeat(5, 1fr);
+			}
+
+			@include max-media(1080px) {
+				grid-template-columns: 1fr;
+				grid-gap: 40px;
+				max-width: 600px;
+			}
+		}
+	}
+
+	&__column {
+		@include max-media(1080px) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__menu {
+		.main-menu {
+			ul {
+				max-width: 100%;
+
+				li {
+					float: none;
+					margin-bottom: 8px;
+
+					&:first-child {
+						display: none;
+					}
+
+					&.active,
+					&:hover {
+						background-color: unset;
+					}
+
+					&.active {
+						a {
+							color: var(--clr-primary);
+						}
+					}
+
+					&.hasChildren {
+						padding: 0;
+
+						&:before {
+							display: none;
+						}
+
+						ul {
+							display: none;
+						}
+					}
+
+					&.menu-close-icon {
+						display: none;
+					}
+
+					a {
+						margin: 0;
+						font-size: 15px;
+						color: var(--clr-secondary-2);
+						width: initial;
+						display: inline-block;
+
+						&:hover {
+							color: var(--clr-primary);
+						}
+
+						&::after,
+						&::before {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		.menu-close-icon {
+			display: none;
+		}
+
+		&.menu-2 {
+			.main-menu {
+				ul {
+					li {
+						&:first-child {
+							display: block;
+						}
+
+						a {
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-accordion {
+		&-title {
+			position: relative;
+
+			&::after {
+				position: absolute;
+				width: 144px;
+				content: "";
+				height: 2px;
+				background-color: var(--clr-secondary);
+
+				@include max-media(1080px) {
+					display: none;
+				}
+			}
+		}
+
+		&-section {
+			margin-bottom: 15px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&-content {
+				display: block;
+				padding: 20px 0;
+				font-size: 16px;
+
+				@include max-media(1080px) {
+					display: none;
+				}
+			}
+
+			&-title {
+				font-size: 20px;
+				color: var(--clr-primary);
+				font-weight: bold;
+				display: block;
+				text-decoration: none;
+				pointer-events: none;
+				position: relative;
+				padding-bottom: 8px;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				@include max-media(1080px) {
+					border-bottom: 2px solid var(--clr-secondary);
+					padding-left: 40px;
+					padding-right: 40px;
+				}
+
+				@include max-media(1080px) {
+					pointer-events: all;
+				}
+
+				.arrows {
+					display: block;
+					position: absolute;
+					right: 0;
+					transform: translateY(-50%);
+					top: 50%;
+					width: 20px;
+					height: 20px;
+					display: none;
+					pointer-events: none;
+
+					@include max-media(1080px) {
+						display: block;
+					}
+				}
+
+				.arrow {
+					&-props {
+						position: absolute;
+						display: block;
+						width: 20px;
+						height: 12px;
+						background-color: var(--clr-secondary);
+						top: 50%;
+						transform: translateY(-50%);
+						right: 0;
+					}
+
+					&-down {
+						-webkit-clip-path: polygon(50% 100%, 0% 0, 100% 0);
+						clip-path: polygon(50% 100%, 0% 0, 100% 0);
+					}
+
+					&-up {
+						-webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+						clip-path: polygon(50% 0, 0 100%, 100% 100%);
+						display: none;
+					}
+				}
+
+				&.active {
+					.arrow {
+						&-up {
+							display: flex;
+						}
+
+						&-down {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__down {
+		padding: 0 20px;
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: (minmax(300px, 1fr)) [auto-fit];
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		place-items: center;
+		text-align: center;
+		line-height: 13px;
+		padding: 10px 0;
+		background-color: #fff;
+		margin-left: -30px;
+		margin-right: -30px;
+
+		@include max-media(1200px) {
+			grid-template-columns: 1fr;
+			grid-gap: 5px;
+		}
+
+		> div {
+			span,
+			a {
+				font-size: 12px;
+			}
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+}
