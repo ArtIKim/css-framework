@@ -1,23 +1,25 @@
+// ROOT
+:root {
+	--clr-primary: #51c0ad;
+	--clr-secondary: #003d7c;
+
+	--font-roboto: "Roboto", sans-serif;
+	--font-roboto-condensed: "Roboto Condensed", sans-serif;
+}
+
 // LAYOUT
 // Colors
 $colors: (
-	primary: (
-		0: red,
-		1: #51c0ad,
-	),
-	secondary: (
-		0: green,
-		1: #003d7c,
-	),
-	// media: (
-	// 	"media-1300": 1300px,
-	// ),,
+	"white": #fff,
+	"black": #000,
+	"primary": var(--clr-primary),
+	"secondary": var(--clr-secondary),
 );
 
 // Container
 $media: (
 	"media-1300": 1300px,
-	"media-1200": 1200px,
+	"media-991": 991px,
 );
 
 // Box Sizing
@@ -29,61 +31,61 @@ $box-sizing: (
 // Display
 $display: (
 	"block": block,
-	"inline-block": inline-block,
+	// "inline-block": inline-block,
 	"inline": inline,
 	"flex": flex,
-	"inline-flex": inline-flex,
-	"table": table,
-	"table-caption": table-caption,
-	"table-cell": table-cell,
-	"table-column": table-column,
-	"table-column-group": table-column-group,
-	"table-footer-group": table-footer-group,
-	"table-header-group": table-header-group,
-	"table-row-group": table-row-group,
-	"table-row": table-row,
-	"flow-root": flow-root,
+	// "inline-flex": inline-flex,
+	// "table": table,
+	// "table-caption": table-caption,
+	// "table-cell": table-cell,
+	// "table-column": table-column,
+	// "table-column-group": table-column-group,
+	// "table-footer-group": table-footer-group,
+	// "table-header-group": table-header-group,
+	// "table-row-group": table-row-group,
+	// "table-row": table-row,
+	// "flow-root": flow-root,
 	"grid": grid,
-	"inline-grid": inline-grid,
-	"contents": contents,
+	// "inline-grid": inline-grid,
+	// "contents": contents,
 	"hidden": none,
 );
 
 // Floats
 $floats: (
-	"float-right": right,
-	"float-left": left,
-	"float-none": none,
+	// "float-right": right,
+	// "float-left": left,
+	// "float-none": none,
 );
 
 // Clear
 $clear: (
-	"clear-left": left,
-	"clear-right": right,
-	"clear-both": both,
-	"clear-none": none,
+	// "clear-left": left,
+	// "clear-right": right,
+	// "clear-both": both,
+	// "clear-none": none,
 );
 
 // Object Fit
 $object-fit: (
 	"object-contain": contain,
 	"object-cover": cover,
-	"object-fill": fill,
-	"object-none": none,
-	"object-scale-down": scale-down,
+	// "object-fill": fill,
+	// "object-none": none,
+	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Object Position
 $object-position: (
-	"object-bottom": bottom,
-	"object-center": center,
-	"object-left": left,
-	"object-left-bottom": left bottom,
-	"object-left-top": left top,
-	"object-right": right,
-	"object-right-bottom": right bottom,
-	"object-right-top": right top,
-	"object-top": top,
+	// "object-bottom": bottom,
+	// "object-center": center,
+	// "object-left": left,
+	// "object-left-bottom": left bottom,
+	// "object-left-top": left top,
+	// "object-right": right,
+	// "object-right-bottom": right bottom,
+	// "object-right-top": right top,
+	// "object-top": top,
 );
 
 // Overflow
@@ -104,15 +106,15 @@ $overflow: (
 
 // Overscroll Behavior
 $overscroll-behavior: (
-	"overscroll-auto": auto,
-	"overscroll-contain": contain,
-	"overscroll-none": none,
-	"overscroll-y-auto": auto,
-	"overscroll-y-contain": contain,
-	"overscroll-y-none": none,
-	"overscroll-x-auto": auto,
-	"overscroll-x-contain": contain,
-	"overscroll-x-none": none,
+	// "overscroll-auto": auto,
+	// "overscroll-contain": contain,
+	// "overscroll-none": none,
+	// "overscroll-y-auto": auto,
+	// "overscroll-y-contain": contain,
+	// "overscroll-y-none": none,
+	// "overscroll-x-auto": auto,
+	// "overscroll-x-contain": contain,
+	// "overscroll-x-none": none,
 );
 
 // Position
@@ -124,11 +126,22 @@ $position: (
 	"sticky": sticky,
 );
 
-// Position Directions
-$position-derections: ();
+// Position Settings
+$position-directions: (
+	"t": top,
+	"r": right,
+	"b": bottom,
+	"l": left,
+);
+
+$position-coords: (
+	"0": 0,
+);
 
 // Z-Index
 $z-index: (
+	"-z-1": -1,
+	"-z-2": -2,
 	"z-0": 0,
 	"z-10": 10,
 	"z-auto": auto,
@@ -179,7 +192,7 @@ $flex-shrink: (
 // Order
 $order: (
 	"-order-1": -1,
-	"order-": 0,
+	"order-0": 0,
 	"order-1": 1,
 );
 
@@ -210,7 +223,7 @@ $grid-template-rows: (
 );
 
 // Grid Row Start / End
-$col-span: (
+$row-span: (
 	"row-span-full": 1 / -1,
 );
 
@@ -224,11 +237,13 @@ $auto-cols: ();
 $auto-rows: ();
 
 // Gap
-$gap: ();
+$gap: (
+	"30": 30px,
+);
 
 // Gap Directions
 $gap-directions: (
-	"": "",
+	"null": "",
 	"x": "x",
 	"y": "y",
 );
@@ -319,53 +334,83 @@ $place-self: (
 	"place-self-stretch": stretch,
 );
 
+// SPACING
+$sizing-directions: (
+	"y": y,
+	"x": x,
+	"t": top,
+	"r": right,
+	"b": bottom,
+	"l": left,
+	"defult": "",
+);
+
+// Padding
+$padding: (
+	"0": 0,
+	"10": 10px,
+	"15": 15px,
+	"20": 20px,
+	"30": 30px,
+	"40": 40px,
+	"50": 50px,
+	"57": 57px,
+	"60": 60px,
+	"70": 70px,
+	"80": 80px,
+	"100": 100px,
+	"150": 150px,
+	"230": 230px,
+);
+
+// Margin
+$margin: (
+	"auto": auto,
+	"0": 0,
+	"10": 10px,
+	"50": 50px,
+);
+
+// Space Between
+$space-between: ();
+
 // SIZING
 // Width
 $width: (
-	"0": 0,
-	"1": 1,
-	"2": 2,
-	"3": 3,
+	"full": 100%,
+	"2": 2px,
+	"3": 3px,
 );
 
 // Min-Width
 $min-width: (
-	"0": 0,
-	"1": 1,
-	"2": 2,
-	"3": 3,
+	"2": 2px,
+	"3": 3px,
 );
 
 // Max-Width
 $max-width: (
-	"0": 0,
-	"1": 1,
-	"2": 2,
-	"3": 3,
+	"full": 100%,
+	"2": 2px,
+	"3": 3px,
 );
 
 // Height
 $height: (
-	"0": 0,
-	"1": 1,
-	"2": 2,
-	"3": 3,
+	"2": 2px,
+	"3": 3px,
 );
 
 // Min-Height
 $min-height: (
-	"0": 0,
-	"1": 1,
-	"2": 2,
-	"3": 3,
+	"2": 2px,
+	"3": 3px,
 );
 
 // Max-Height
-$Max-Height: (
-	"0": 0,
-	"1": 1,
-	"2": 2,
-	"3": 3,
+$max-height: (
+	"2": 2px,
+	"3": 3px,
 );
 
 // TYPOGRAPHY
@@ -373,6 +418,15 @@ $Max-Height: (
 $font: (
 	"roboto": var(--font-roboto),
 	"roboto-condensed": var(--font-roboto-condensed),
+);
+
+// Font Size
+$font-size: (
+	"12": 12px,
+	"14": 14px,
+	"16": 16px,
+	"18": 18px,
+	"20": 20px,
 );
 
 // Font Smoothing
@@ -407,7 +461,9 @@ $font-variant: ();
 $letter-spacing: ();
 
 // Line Height
-$line-height: ();
+$line-height: (
+	"25": 25px,
+);
 
 // List Style Type
 $list-style-type: ();
@@ -430,10 +486,7 @@ $text-align: (
 );
 
 // Text Color
-$text-color: (
-	"text-primary": var(--clr-primary),
-	"text-secondary": var(--clr-secondary),
-);
+$text-color: ("from colors");
 
 // Text Opacity
 $text-opacity: (
@@ -463,7 +516,13 @@ $text-overflow: ();
 $vertical-align: ();
 
 // Whitespace
-$whitespace: ();
+$whitespace: (
+	"whitespace-normal": normal,
+	"whitespace-nowrap": nowrap,
+	"whitespace-pre": pre,
+	"whitespace-pre-line": pre-line,
+	"whitespace-pre-wrap": pre-wrap,
+);
 
 // Word Break
 $word-break: (
@@ -476,15 +535,15 @@ $word-break: (
 // Background Attachment
 $background-attachment: (
 	"bg-fixed": fixed,
-	"bg-local": local,
-	"bg-scroll": scroll,
+	// "bg-local": local,
+	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Background Clip
 $background-clip: ();
 
 // Background Color
-$background-color: ("loop over colors");
+$background-color: ("from colors");
 
 // Background Opacity
 $background-opacity: ();
@@ -508,7 +567,7 @@ $background-repeat: (
 	"bg-no-repeat": no-repeat,
 	"bg-repeat-x": repeat-x,
 	"bg-repeat-y": repeat-y,
-	"bg-repeat-round	": round,
+	"bg-repeat-round": round,
 	"bg-repeat-space": space,
 );
 
@@ -520,21 +579,98 @@ $background-size: (
 );
 
 // Background Image
-$background-image: ();
+$background-image: (
+	"bg-none": none,
+);
 
 // Gradient Color Stops
 $gradient-color-stops: ();
 
 // BORDERS
+// Border Radius
+$border-radius: (
+	"none": 0,
+	"full": 50%,
+	"10": 10px,
+	"50": 50px,
+);
 
-// MEDIA
-$in-media: (
-	$colors: (
-		primary: (
-			0: cyan,
-		),
-		secondary: (
-			0: purple,
-		),
-	),
+// Border Radius Directions
+$border-radius-directions: (
+	"t": top,
+	"r": right,
+	"b": bottom,
+	"l": left,
+	"tl": top-left,
+	"tr": top-right,
+	"br": bottom-right,
+	"bl": bottom-left,
+);
+
+// Border Width
+$border-width: (
+	"2": 2px,
+	"5": 5px,
+	"8": 8px,
+);
+
+// Border Width Directions
+$border-width-directions: (
+	"t": top,
+	"r": right,
+	"b": bottom,
+	"l": left,
+	"defult": "",
+);
+
+// Border Color
+$border-color: ("from colors");
+
+// Border Opacity
+$border-opacity: ();
+
+// Border Style
+$border-style: (
+	"border-solid": solid,
+	"border-dashed": dashed,
+	"border-dotted": dotted,
+	"border-double": double,
+	"border-none": none,
+);
+
+// EFFECTS
+// Box Shadow
+$box-shadow: (
+	"default": 0 4px 12px -2px rgba(0, 0, 0, 0.2),
+);
+
+// Opacity
+$opacity: (
+	"opacity-0": 0,
+	"opacity-5": 0.05,
+	"opacity-10": 0.1,
+	"opacity-20": 0.2,
+	"opacity-25": 0.25,
+	"opacity-30": 0.3,
+	"opacity-40": 0.4,
+	"opacity-50": 0.5,
+	"opacity-60": 0.6,
+	"opacity-70": 0.7,
+	"opacity-75": 0.75,
+	"opacity-80": 0.8,
+	"opacity-90": 0.9,
+	"opacity-95": 0.95,
+	"opacity-100": 1,
+);
+
+// TRANSITIONS AND ANIMATION
+// Transition Property
+
+// HOVERS
+// Hover Colors
+$hover-colors: ("loop over colors");
+
+// Hover Opacity
+$hover-opacity: (
+	"opacity-70": 0.7,
 );
