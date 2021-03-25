@@ -75,7 +75,7 @@ $object-fit: (
 	"object-cover": cover,
 	// "object-fill": fill,
 	// "object-none": none,
-	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Object Position
@@ -396,10 +396,12 @@ $max-width: (
 	"full": 100%,
 	"2": 2px,
 	"3": 3px,
+	"500": 500px,
 );
 
 // Height
 $height: (
+	"screen": 100vh,
 	"2": 2px,
 	"3": 3px,
 );
@@ -539,7 +541,7 @@ $word-break: (
 $background-attachment: (
 	"bg-fixed": fixed,
 	// "bg-local": local,
-	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Background Clip
@@ -595,6 +597,8 @@ $border-radius: (
 	"none": 0,
 	"full": 50%,
 	"10": 10px,
+	"15": 15px,
+	"30": 30px,
 	"50": 50px,
 );
 
@@ -608,6 +612,7 @@ $border-radius-directions: (
 	"tr": top-right,
 	"br": bottom-right,
 	"bl": bottom-left,
+	"default": "",
 );
 
 // Border Width
@@ -644,7 +649,7 @@ $border-style: (
 // EFFECTS
 // Box Shadow
 $box-shadow: (
-	"default": 0 4px 12px -2px rgba(0, 0, 0, 0.2),
+	"default": 0 0 15px 0 rgba(0, 0, 0, 0.2),
 );
 
 // Opacity

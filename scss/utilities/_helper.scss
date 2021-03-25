@@ -42,11 +42,28 @@
 
 // Overflow
 @each $overflow-prop, $overflow-value in $overflow {
-	@if $overflow-prop == "overflow-x-auto" or $overflow-prop == "overflow-x-hidden" or $overflow-prop == "overflow-x-visible" or $overflow-prop == "overflow-x-scroll" {
+	@if $overflow-prop ==
+		"overflow-x-auto" or
+		$overflow-prop ==
+		"overflow-x-hidden" or
+		$overflow-prop ==
+		"overflow-x-visible" or
+		$overflow-prop ==
+		"overflow-x-scroll"
+	{
 		.#{$overflow-prop} {
 			overflow-x: $overflow-value;
 		}
-	} @else if $overflow-prop == "overflow-y-auto" or $overflow-prop == "overflow-y-hidden" or $overflow-prop == "overflow-y-visible" or $overflow-prop == "overflow-y-scroll" {
+	} @else if
+		$overflow-prop ==
+		"overflow-y-auto" or
+		$overflow-prop ==
+		"overflow-y-hidden" or
+		$overflow-prop ==
+		"overflow-y-visible" or
+		$overflow-prop ==
+		"overflow-y-scroll"
+	{
 		.#{$overflow-prop} {
 			overflow-y: $overflow-value;
 		}
@@ -524,7 +541,9 @@
 // BORDERS
 // Border Radius
 @each $border-radius-prop, $border-radius-value in $border-radius {
-	@each $border-radius-directions-prop, $border-radius-directions-value in $border-radius-directions {
+	@each $border-radius-directions-prop,
+		$border-radius-directions-value in $border-radius-directions
+	{
 		@if $border-radius-directions-prop == "t" {
 			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
 				border-top-left-radius: $border-radius-value;
@@ -561,13 +580,18 @@
 			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
 				border-bottom-left-radius: $border-radius-value;
 			}
+		} @else if $border-radius-directions-prop == "default" {
+			.rounded-#{$border-radius-prop} {
+				border-radius: $border-radius-value;
+			}
 		}
 	}
 }
 
 // Border Width
 @each $border-width-prop, $border-width-value in $border-width {
-	@each $border-width-directions-prop, $border-width-directions-value in $border-width-directions {
+	@each $border-width-directions-prop, $border-width-directions-value in $border-width-directions
+	{
 		@if $border-width-directions-prop == "t" {
 			.border-#{$border-width-directions-prop}-#{$border-width-prop} {
 				border-top-width: $border-width-value;
@@ -689,7 +713,9 @@
 					}
 				} @else {
 					@if $margin-value == 10px {
-						@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+						@each $sizing-directions-prop,
+							$sizing-directions-value in $sizing-directions
+						{
 							@if $sizing-directions-prop == "y" {
 								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
 									margin-top: $margin-value;
@@ -704,7 +730,9 @@
 						}
 					}
 					@if $margin-value == 50px {
-						@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+						@each $sizing-directions-prop,
+							$sizing-directions-value in $sizing-directions
+						{
 							@if $sizing-directions-prop == "t" {
 								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
 									margin-top: $margin-value;

@@ -1197,6 +1197,14 @@
   max-width: 3px;
 }
 
+.max-w-500 {
+  max-width: 500px;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .h-2 {
   height: 2px;
 }
@@ -1502,6 +1510,10 @@
   border-bottom-left-radius: 0;
 }
 
+.rounded-none {
+  border-radius: 0;
+}
+
 .rounded-t-full {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -1536,6 +1548,10 @@
 
 .rounded-bl-full {
   border-bottom-left-radius: 50%;
+}
+
+.rounded-full {
+  border-radius: 50%;
 }
 
 .rounded-t-10 {
@@ -1574,6 +1590,90 @@
   border-bottom-left-radius: 10px;
 }
 
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.rounded-t-15 {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.rounded-r-15 {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.rounded-b-15 {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.rounded-l-15 {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.rounded-tl-15 {
+  border-top-left-radius: 15px;
+}
+
+.rounded-tr-15 {
+  border-top-right-radius: 15px;
+}
+
+.rounded-br-15 {
+  border-bottom-right-radius: 15px;
+}
+
+.rounded-bl-15 {
+  border-bottom-left-radius: 15px;
+}
+
+.rounded-15 {
+  border-radius: 15px;
+}
+
+.rounded-t-30 {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.rounded-r-30 {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.rounded-b-30 {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.rounded-l-30 {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.rounded-tl-30 {
+  border-top-left-radius: 30px;
+}
+
+.rounded-tr-30 {
+  border-top-right-radius: 30px;
+}
+
+.rounded-br-30 {
+  border-bottom-right-radius: 30px;
+}
+
+.rounded-bl-30 {
+  border-bottom-left-radius: 30px;
+}
+
+.rounded-30 {
+  border-radius: 30px;
+}
+
 .rounded-t-50 {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -1608,6 +1708,10 @@
 
 .rounded-bl-50 {
   border-bottom-left-radius: 50px;
+}
+
+.rounded-50 {
+  border-radius: 50px;
 }
 
 .border-t-2 {
@@ -1691,8 +1795,8 @@
 }
 
 .shadow-default {
-  -webkit-box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .opacity-0 {
