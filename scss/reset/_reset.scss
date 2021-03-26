@@ -4,12 +4,17 @@
 	box-sizing: border-box;
 }
 
-body,
-html {
+body {
 	font-family: var(--font-roboto);
 	font-size: 16px;
 	color: var(--clr-secondary-2);
 	overflow-x: hidden;
+
+	background-color: var(--clr-background);
+}
+
+body {
+	transition: background-color linear 80ms;
 }
 
 input,

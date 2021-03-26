@@ -6,6 +6,15 @@
 	--clr-primary: #51c0ad;
 	--clr-secondary: #003d7c;
 
+	--clr-white: #fff;
+	--clr-white-2: #fff;
+
+	--clr-black: #000;
+
+	--clr-gray: #bdc1c6;
+
+	--clr-background: #F8F9FA;
+
 	--font-roboto: "Roboto", sans-serif;
 	--font-roboto-condensed: "Roboto Condensed", sans-serif;
 }
@@ -13,8 +22,8 @@
 // LAYOUT
 // Colors
 $colors: (
-	"white": #fff,
-	"black": #000,
+	"white": var(--clr-white),
+	"black": var(--clr-black),
 	"primary": var(--clr-primary),
 	"secondary": var(--clr-secondary),
 );
@@ -75,7 +84,7 @@ $object-fit: (
 	"object-cover": cover,
 	// "object-fill": fill,
 	// "object-none": none,
-	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Object Position
@@ -541,7 +550,7 @@ $word-break: (
 $background-attachment: (
 	"bg-fixed": fixed,
 	// "bg-local": local,
-	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Background Clip
@@ -598,8 +607,6 @@ $border-radius: (
 	"full": 50%,
 	"10": 10px,
 	"15": 15px,
-	"30": 30px,
-	"50": 50px,
 );
 
 // Border Radius Directions
@@ -649,7 +656,7 @@ $border-style: (
 // EFFECTS
 // Box Shadow
 $box-shadow: (
-	"default": 0 0 15px 0 rgba(0, 0, 0, 0.2),
+	"default": 0 0 3px 0 rgba(0, 0, 0, 0.2),
 );
 
 // Opacity
