@@ -1,242 +1,242 @@
 // FONTS
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 // ROOT
 :root {
-	--clr-primary: #51c0ad;
-	--clr-secondary: #003d7c;
+    --clr-primary: #51c0ad;
+    --clr-secondary: #003d7c;
 
-	--clr-white: #fff;
-	--clr-white-2: #fff;
+    --clr-white: #fff;
+    --clr-white-2: #fff;
 
-	--clr-black: #000;
+    --clr-black: #000;
 
-	--clr-gray: #bdc1c6;
+    --clr-gray: #bdc1c6;
 
-	--clr-background: #F8F9FA;
+    --clr-background: #f8f9fa;
 
-	--font-roboto: "Roboto", sans-serif;
-	--font-roboto-condensed: "Roboto Condensed", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    --font-roboto-condensed: "Roboto Condensed", sans-serif;
 }
 
 // LAYOUT
 // Colors
 $colors: (
-	"white": var(--clr-white),
-	"black": var(--clr-black),
-	"primary": var(--clr-primary),
-	"secondary": var(--clr-secondary),
+    "white": var(--clr-white),
+    "black": var(--clr-black),
+    "primary": var(--clr-primary),
+    "secondary": var(--clr-secondary),
 );
 
 // Container
 $media: (
-	"media-1300": 1300px,
-	"media-991": 991px,
+    "media-1300": 1300px,
+    "media-991": 991px,
 );
 
 // Box Sizing
 $box-sizing: (
-	"border": border-box,
-	"content": content-box,
+    "border": border-box,
+    "content": content-box,
 );
 
 // Display
 $display: (
-	"block": block,
-	// "inline-block": inline-block,
-	"inline": inline,
-	"flex": flex,
-	// "inline-flex": inline-flex,
-	// "table": table,
-	// "table-caption": table-caption,
-	// "table-cell": table-cell,
-	// "table-column": table-column,
-	// "table-column-group": table-column-group,
-	// "table-footer-group": table-footer-group,
-	// "table-header-group": table-header-group,
-	// "table-row-group": table-row-group,
-	// "table-row": table-row,
-	// "flow-root": flow-root,
-	"grid": grid,
-	// "inline-grid": inline-grid,
-	// "contents": contents,
-	"hidden": none,
+    "block": block,
+    // "inline-block": inline-block,
+    "inline": inline,
+    "flex": flex,
+    // "inline-flex": inline-flex,
+    // "table": table,
+    // "table-caption": table-caption,
+    // "table-cell": table-cell,
+    // "table-column": table-column,
+    // "table-column-group": table-column-group,
+    // "table-footer-group": table-footer-group,
+    // "table-header-group": table-header-group,
+    // "table-row-group": table-row-group,
+    // "table-row": table-row,
+    // "flow-root": flow-root,
+    "grid": grid,
+    // "inline-grid": inline-grid,
+    // "contents": contents,
+    "hidden": none,
 );
 
 // Floats
 $floats: (
-	// "float-right": right,
-	// "float-left": left,
-	// "float-none": none,
+    // "float-right": right,
+    // "float-left": left,
+    // "float-none": none,
 );
 
 // Clear
 $clear: (
-	// "clear-left": left,
-	// "clear-right": right,
-	// "clear-both": both,
-	// "clear-none": none,
+    // "clear-left": left,
+    // "clear-right": right,
+    // "clear-both": both,
+    // "clear-none": none,
 );
 
 // Object Fit
 $object-fit: (
-	"object-contain": contain,
-	"object-cover": cover,
-	// "object-fill": fill,
-	// "object-none": none,
-	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    "object-contain": contain,
+    "object-cover": cover,
+    // "object-fill": fill,
+    // "object-none": none,
+    // "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Object Position
 $object-position: (
-	// "object-bottom": bottom,
-	// "object-center": center,
-	// "object-left": left,
-	// "object-left-bottom": left bottom,
-	// "object-left-top": left top,
-	// "object-right": right,
-	// "object-right-bottom": right bottom,
-	// "object-right-top": right top,
-	// "object-top": top,
+    // "object-bottom": bottom,
+    // "object-center": center,
+    // "object-left": left,
+    // "object-left-bottom": left bottom,
+    // "object-left-top": left top,
+    // "object-right": right,
+    // "object-right-bottom": right bottom,
+    // "object-right-top": right top,
+    // "object-top": top,
 );
 
 // Overflow
 $overflow: (
-	"overflow-auto": auto,
-	"overflow-hidden": hidden,
-	"overflow-visible": visible,
-	"overflow-scroll": scroll,
-	"overflow-x-auto": auto,
-	"overflow-y-auto": auto,
-	"overflow-x-hidden": hidden,
-	"overflow-y-hidden": hidden,
-	"overflow-x-visible": visible,
-	"overflow-y-visible": visible,
-	"overflow-x-scroll": scroll,
-	"overflow-y-scroll": scroll,
+    "overflow-auto": auto,
+    "overflow-hidden": hidden,
+    "overflow-visible": visible,
+    "overflow-scroll": scroll,
+    "overflow-x-auto": auto,
+    "overflow-y-auto": auto,
+    "overflow-x-hidden": hidden,
+    "overflow-y-hidden": hidden,
+    "overflow-x-visible": visible,
+    "overflow-y-visible": visible,
+    "overflow-x-scroll": scroll,
+    "overflow-y-scroll": scroll,
 );
 
 // Overscroll Behavior
 $overscroll-behavior: (
-	// "overscroll-auto": auto,
-	// "overscroll-contain": contain,
-	// "overscroll-none": none,
-	// "overscroll-y-auto": auto,
-	// "overscroll-y-contain": contain,
-	// "overscroll-y-none": none,
-	// "overscroll-x-auto": auto,
-	// "overscroll-x-contain": contain,
-	// "overscroll-x-none": none,
+    // "overscroll-auto": auto,
+    // "overscroll-contain": contain,
+    // "overscroll-none": none,
+    // "overscroll-y-auto": auto,
+    // "overscroll-y-contain": contain,
+    // "overscroll-y-none": none,
+    // "overscroll-x-auto": auto,
+    // "overscroll-x-contain": contain,
+    // "overscroll-x-none": none,
 );
 
 // Position
 $position: (
-	"static": static,
-	"fixed": fixed,
-	"absolute": absolute,
-	"relative": relative,
-	"sticky": sticky,
+    "static": static,
+    "fixed": fixed,
+    "absolute": absolute,
+    "relative": relative,
+    "sticky": sticky,
 );
 
 // Position Settings
 $position-directions: (
-	"t": top,
-	"r": right,
-	"b": bottom,
-	"l": left,
+    "t": top,
+    "r": right,
+    "b": bottom,
+    "l": left,
 );
 
 $position-coords: (
-	"0": 0,
+    "0": 0,
 );
 
 // Z-Index
 $z-index: (
-	"-z-1": -1,
-	"-z-2": -2,
-	"z-0": 0,
-	"z-10": 10,
-	"z-auto": auto,
+    "-z-1": -1,
+    "-z-2": -2,
+    "z-0": 0,
+    "z-10": 10,
+    "z-auto": auto,
 );
 
 // Visibility
 $visibility: (
-	"visible": visible,
-	"invisible": hidden,
+    "visible": visible,
+    "invisible": hidden,
 );
 
 // FLEXBOX
 // Flex Direction
 $flex-direction: (
-	"flex-row": row,
-	"flex-row-reverse": row-reverse,
-	"flex-col": column,
-	"flex-col-reverse": column-reverse,
+    "flex-row": row,
+    "flex-row-reverse": row-reverse,
+    "flex-col": column,
+    "flex-col-reverse": column-reverse,
 );
 
 // Flex Wrap
 $flex-wrap: (
-	"flex-wrap": wrap,
-	"flex-wrap-reverse": wrap-reverse,
-	"flex-nowrap": nowrap,
+    "flex-wrap": wrap,
+    "flex-wrap-reverse": wrap-reverse,
+    "flex-nowrap": nowrap,
 );
 
 // Flex
 $flex: (
-	"flex-1": 1 1 0%,
-	"flex-auto": 1 1 auto,
-	"flex-initial": 0 1 auto,
-	"flex-none": none,
+    "flex-1": 1 1 0%,
+    "flex-auto": 1 1 auto,
+    "flex-initial": 0 1 auto,
+    "flex-none": none,
 );
 
 // Flex Grow
 $flex-grow: (
-	"flex-grow-0": 0,
-	"flex-grow": 1,
+    "flex-grow-0": 0,
+    "flex-grow": 1,
 );
 
 // Flex Shrink
 $flex-shrink: (
-	"flex-shrink-0": 0,
-	"flex-shrink": 1,
+    "flex-shrink-0": 0,
+    "flex-shrink": 1,
 );
 
 // Order
 $order: (
-	"-order-1": -1,
-	"order-0": 0,
-	"order-1": 1,
+    "-order-1": -1,
+    "order-0": 0,
+    "order-1": 1,
 );
 
 // GRID
 // Grid Template Columns
 $grid-template-columns: (
-	"grid-cols-1": 1,
-	"grid-cols-2": 2,
-	"grid-cols-3": 3,
-	"grid-cols-4": 4,
-	"grid-cols-5": 5,
-	"grid-cols-none": none,
+    "grid-cols-1": 1,
+    "grid-cols-2": 2,
+    "grid-cols-3": 3,
+    "grid-cols-4": 4,
+    "grid-cols-5": 5,
+    "grid-cols-none": none,
 );
 
 // Grid Column Start / End
 $col-span: (
-	"col-span-full": 1 / -1,
+    "col-span-full": 1 / -1,
 );
 
 // Grid Template Rows
 $grid-template-rows: (
-	"grid-rows-1": 1,
-	"grid-rows-2": 2,
-	"grid-rows-3": 3,
-	"grid-rows-4": 4,
-	"grid-rows-5": 5,
-	"grid-rows-none": none,
+    "grid-rows-1": 1,
+    "grid-rows-2": 2,
+    "grid-rows-3": 3,
+    "grid-rows-4": 4,
+    "grid-rows-5": 5,
+    "grid-rows-none": none,
 );
 
 // Grid Row Start / End
 $row-span: (
-	"row-span-full": 1 / -1,
+    "row-span-full": 1 / -1,
 );
 
 // Grid Auto Flow
@@ -250,137 +250,137 @@ $auto-rows: ();
 
 // Gap
 $gap: (
-	"30": 30px,
+    "30": 30px,
 );
 
 // Gap Directions
 $gap-directions: (
-	"null": "",
-	"x": "x",
-	"y": "y",
+    "null": "",
+    "x": "x",
+    "y": "y",
 );
 
 // BOX ALIGNMENT
 // Justify Content
 $justify-content: (
-	"justify-start": flex-start,
-	"justify-end": flex-end,
-	"justify-center": center,
-	"justify-between": space-between,
-	"justify-around": space-around,
-	"justify-evenly": space-evenly,
+    "justify-start": flex-start,
+    "justify-end": flex-end,
+    "justify-center": center,
+    "justify-between": space-between,
+    "justify-around": space-around,
+    "justify-evenly": space-evenly,
 );
 
 // Justify Items
 $justify-items: (
-	"justify-items-auto": auto,
-	"justify-items-start": start,
-	"justify-items-end": end,
-	"justify-items-center": center,
-	"justify-items-stretch": stretch,
+    "justify-items-auto": auto,
+    "justify-items-start": start,
+    "justify-items-end": end,
+    "justify-items-center": center,
+    "justify-items-stretch": stretch,
 );
 
 // Justify Self
 $justify-self: (
-	"justify-self-auto": auto,
-	"justify-self-start": start,
-	"justify-self-end": end,
-	"justify-self-center": center,
-	"justify-self-stretch": stretch,
+    "justify-self-auto": auto,
+    "justify-self-start": start,
+    "justify-self-end": end,
+    "justify-self-center": center,
+    "justify-self-stretch": stretch,
 );
 
 // Align Content
 $align-content: (
-	"content-center": center,
-	"content-start": flex-start,
-	"content-end": flex-end,
-	"content-between": space-between,
-	"content-around": space-around,
-	"content-evenly": space-evenly,
+    "content-center": center,
+    "content-start": flex-start,
+    "content-end": flex-end,
+    "content-between": space-between,
+    "content-around": space-around,
+    "content-evenly": space-evenly,
 );
 
 // Align Items
 $align-items: (
-	"items-start": flex-start,
-	"items-end": flex-end,
-	"items-center": center,
-	"items-baseline": baseline,
-	"items-stretch": stretch,
+    "items-start": flex-start,
+    "items-end": flex-end,
+    "items-center": center,
+    "items-baseline": baseline,
+    "items-stretch": stretch,
 );
 
 // Align Self
 $align-self: (
-	"self-auto": auto,
-	"self-start": flex-start,
-	"self-end": flex-end,
-	"self-center": center,
-	"self-stretch": stretch,
+    "self-auto": auto,
+    "self-start": flex-start,
+    "self-end": flex-end,
+    "self-center": center,
+    "self-stretch": stretch,
 );
 
 // Place Content
 $place-content: (
-	"place-content-center": center,
-	"place-content-start": start,
-	"place-content-end": end,
-	"place-content-between": space-between,
-	"place-content-around": space-around,
-	"place-content-evenly": space-evenly,
-	"place-content-stretch": stretch,
+    "place-content-center": center,
+    "place-content-start": start,
+    "place-content-end": end,
+    "place-content-between": space-between,
+    "place-content-around": space-around,
+    "place-content-evenly": space-evenly,
+    "place-content-stretch": stretch,
 );
 
 // Place Items
 $place-items: (
-	"place-items-auto": auto,
-	"place-items-start": start,
-	"place-items-end": end,
-	"place-items-center": center,
-	"place-items-stretch": stretch,
+    "place-items-auto": auto,
+    "place-items-start": start,
+    "place-items-end": end,
+    "place-items-center": center,
+    "place-items-stretch": stretch,
 );
 
 // Place Self
 $place-self: (
-	"place-self-auto": auto,
-	"place-self-start": start,
-	"place-self-end": end,
-	"place-self-center": center,
-	"place-self-stretch": stretch,
+    "place-self-auto": auto,
+    "place-self-start": start,
+    "place-self-end": end,
+    "place-self-center": center,
+    "place-self-stretch": stretch,
 );
 
 // SPACING
 $sizing-directions: (
-	"y": y,
-	"x": x,
-	"t": top,
-	"r": right,
-	"b": bottom,
-	"l": left,
-	"defult": "",
+    "y": y,
+    "x": x,
+    "t": top,
+    "r": right,
+    "b": bottom,
+    "l": left,
+    "defult": "",
 );
 
 // Padding
 $padding: (
-	"0": 0,
-	"10": 10px,
-	"15": 15px,
-	"20": 20px,
-	"30": 30px,
-	"40": 40px,
-	"50": 50px,
-	"57": 57px,
-	"60": 60px,
-	"70": 70px,
-	"80": 80px,
-	"100": 100px,
-	"150": 150px,
-	"230": 230px,
+    "0": 0,
+    "10": 10px,
+    "15": 15px,
+    "20": 20px,
+    "30": 30px,
+    "40": 40px,
+    "50": 50px,
+    "57": 57px,
+    "60": 60px,
+    "70": 70px,
+    "80": 80px,
+    "100": 100px,
+    "150": 150px,
+    "230": 230px,
 );
 
 // Margin
 $margin: (
-	"auto": auto,
-	"0": 0,
-	"10": 10px,
-	"50": 50px,
+    "auto": auto,
+    "0": 0,
+    "10": 10px,
+    "50": 50px,
 );
 
 // Space Between
@@ -389,83 +389,83 @@ $space-between: ();
 // SIZING
 // Width
 $width: (
-	"full": 100%,
-	"2": 2px,
-	"3": 3px,
+    "full": 100%,
+    "2": 2px,
+    "3": 3px,
 );
 
 // Min-Width
 $min-width: (
-	"2": 2px,
-	"3": 3px,
+    "2": 2px,
+    "3": 3px,
 );
 
 // Max-Width
 $max-width: (
-	"full": 100%,
-	"2": 2px,
-	"3": 3px,
-	"500": 500px,
+    "full": 100%,
+    "2": 2px,
+    "3": 3px,
+    "500": 500px,
 );
 
 // Height
 $height: (
-	"screen": 100vh,
-	"2": 2px,
-	"3": 3px,
+    "screen": 100vh,
+    "2": 2px,
+    "3": 3px,
 );
 
 // Min-Height
 $min-height: (
-	"2": 2px,
-	"3": 3px,
+    "2": 2px,
+    "3": 3px,
 );
 
 // Max-Height
 $max-height: (
-	"2": 2px,
-	"3": 3px,
+    "2": 2px,
+    "3": 3px,
 );
 
 // TYPOGRAPHY
 // Font Family
 $font: (
-	"roboto": var(--font-roboto),
-	"roboto-condensed": var(--font-roboto-condensed),
+    "roboto": var(--font-roboto),
+    "roboto-condensed": var(--font-roboto-condensed),
 );
 
 // Font Size
 $font-size: (
-	"12": 12px,
-	"14": 14px,
-	"16": 16px,
-	"18": 18px,
-	"20": 20px,
+    "12": 12px,
+    "14": 14px,
+    "16": 16px,
+    "18": 18px,
+    "20": 20px,
 );
 
 // Font Smoothing
 $font-smoothing: (
-	"antialiased": antialiased,
-	"subpixel-antialiased": subpixel-antialiased,
+    "antialiased": antialiased,
+    "subpixel-antialiased": subpixel-antialiased,
 );
 
 // Font Style
 $font-style: (
-	"italic": italic,
-	"not-italic": normal,
+    "italic": italic,
+    "not-italic": normal,
 );
 
 // Font Weight
 $font-weight: (
-	"font-thin": 100,
-	"font-extralight": 200,
-	"font-light": 300,
-	"font-normal": 400,
-	"font-medium": 500,
-	"font-semibold": 600,
-	"font-bold": 700,
-	"font-extrabold": 800,
-	"font-black": 900,
+    "font-thin": 100,
+    "font-extralight": 200,
+    "font-light": 300,
+    "font-normal": 400,
+    "font-medium": 500,
+    "font-semibold": 600,
+    "font-bold": 700,
+    "font-extrabold": 800,
+    "font-black": 900,
 );
 
 // Font Variant Numeric
@@ -476,7 +476,7 @@ $letter-spacing: ();
 
 // Line Height
 $line-height: (
-	"25": 25px,
+    "25": 25px,
 );
 
 // List Style Type
@@ -493,10 +493,10 @@ $placeholder-opacity: ();
 
 // Text Alignment
 $text-align: (
-	"text-left": left,
-	"text-center": center,
-	"text-right": right,
-	"text-justify": justify,
+    "text-left": left,
+    "text-center": center,
+    "text-right": right,
+    "text-justify": justify,
 );
 
 // Text Color
@@ -504,23 +504,23 @@ $text-color: ("from colors");
 
 // Text Opacity
 $text-opacity: (
-	"text-opacity-0": 0,
-	"text-opacity-5": 0.5,
+    "text-opacity-0": 0,
+    "text-opacity-5": 0.5,
 );
 
 // Text Decoration
 $text-decoration: (
-	"underline": underline,
-	"line-through": line-through,
-	"no-underline": none,
+    "underline": underline,
+    "line-through": line-through,
+    "no-underline": none,
 );
 
 // Text Transform
 $text-transform: (
-	"uppercase": uppercase,
-	"lowercase": lowercase,
-	"capitalize": capitalize,
-	"normal-case": none,
+    "uppercase": uppercase,
+    "lowercase": lowercase,
+    "capitalize": capitalize,
+    "normal-case": none,
 );
 
 // Text Overflow
@@ -531,26 +531,26 @@ $vertical-align: ();
 
 // Whitespace
 $whitespace: (
-	"whitespace-normal": normal,
-	"whitespace-nowrap": nowrap,
-	"whitespace-pre": pre,
-	"whitespace-pre-line": pre-line,
-	"whitespace-pre-wrap": pre-wrap,
+    "whitespace-normal": normal,
+    "whitespace-nowrap": nowrap,
+    "whitespace-pre": pre,
+    "whitespace-pre-line": pre-line,
+    "whitespace-pre-wrap": pre-wrap,
 );
 
 // Word Break
 $word-break: (
-	"break-normal": normal,
-	"break-words": break-word,
-	"break-all": break-all,
+    "break-normal": normal,
+    "break-words": break-word,
+    "break-all": break-all,
 );
 
 // BACKGROUNDS
 // Background Attachment
 $background-attachment: (
-	"bg-fixed": fixed,
-	// "bg-local": local,
-	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    "bg-fixed": fixed,
+    // "bg-local": local,
+    // "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Background Clip
@@ -564,37 +564,37 @@ $background-opacity: ();
 
 // Background Position
 $background-position: (
-	"bg-bottom": bottom,
-	"bg-center": center,
-	"bg-left": left,
-	"bg-left-bottom": left bottom,
-	"bg-left-top": left top,
-	"bg-right": right,
-	"bg-right-bottom": right bottom,
-	"bg-right-top": right top,
-	"bg-top": top,
+    "bg-bottom": bottom,
+    "bg-center": center,
+    "bg-left": left,
+    "bg-left-bottom": left bottom,
+    "bg-left-top": left top,
+    "bg-right": right,
+    "bg-right-bottom": right bottom,
+    "bg-right-top": right top,
+    "bg-top": top,
 );
 
 // Background Repeat
 $background-repeat: (
-	"bg-repeat": repeat,
-	"bg-no-repeat": no-repeat,
-	"bg-repeat-x": repeat-x,
-	"bg-repeat-y": repeat-y,
-	"bg-repeat-round": round,
-	"bg-repeat-space": space,
+    "bg-repeat": repeat,
+    "bg-no-repeat": no-repeat,
+    "bg-repeat-x": repeat-x,
+    "bg-repeat-y": repeat-y,
+    "bg-repeat-round": round,
+    "bg-repeat-space": space,
 );
 
 // Background Size
 $background-size: (
-	"bg-auto": auto,
-	"bg-cover": cover,
-	"bg-contain": contain,
+    "bg-auto": auto,
+    "bg-cover": cover,
+    "bg-contain": contain,
 );
 
 // Background Image
 $background-image: (
-	"bg-none": none,
+    "bg-none": none,
 );
 
 // Gradient Color Stops
@@ -603,39 +603,39 @@ $gradient-color-stops: ();
 // BORDERS
 // Border Radius
 $border-radius: (
-	"none": 0,
-	"full": 50%,
-	"10": 10px,
-	"15": 15px,
+    "none": 0,
+    "full": 50%,
+    "10": 10px,
+    "15": 15px,
 );
 
 // Border Radius Directions
 $border-radius-directions: (
-	"t": top,
-	"r": right,
-	"b": bottom,
-	"l": left,
-	"tl": top-left,
-	"tr": top-right,
-	"br": bottom-right,
-	"bl": bottom-left,
-	"default": "",
+    "t": top,
+    "r": right,
+    "b": bottom,
+    "l": left,
+    "tl": top-left,
+    "tr": top-right,
+    "br": bottom-right,
+    "bl": bottom-left,
+    "default": "",
 );
 
 // Border Width
 $border-width: (
-	"2": 2px,
-	"5": 5px,
-	"8": 8px,
+    "2": 2px,
+    "5": 5px,
+    "8": 8px,
 );
 
 // Border Width Directions
 $border-width-directions: (
-	"t": top,
-	"r": right,
-	"b": bottom,
-	"l": left,
-	"defult": "",
+    "t": top,
+    "r": right,
+    "b": bottom,
+    "l": left,
+    "defult": "",
 );
 
 // Border Color
@@ -646,36 +646,36 @@ $border-opacity: ();
 
 // Border Style
 $border-style: (
-	"border-solid": solid,
-	"border-dashed": dashed,
-	"border-dotted": dotted,
-	"border-double": double,
-	"border-none": none,
+    "border-solid": solid,
+    "border-dashed": dashed,
+    "border-dotted": dotted,
+    "border-double": double,
+    "border-none": none,
 );
 
 // EFFECTS
 // Box Shadow
 $box-shadow: (
-	"default": 0 0 3px 0 rgba(0, 0, 0, 0.2),
+    "default": 0 0 3px 0 rgba(0, 0, 0, 0.2),
 );
 
 // Opacity
 $opacity: (
-	"opacity-0": 0,
-	"opacity-5": 0.05,
-	"opacity-10": 0.1,
-	"opacity-20": 0.2,
-	"opacity-25": 0.25,
-	"opacity-30": 0.3,
-	"opacity-40": 0.4,
-	"opacity-50": 0.5,
-	"opacity-60": 0.6,
-	"opacity-70": 0.7,
-	"opacity-75": 0.75,
-	"opacity-80": 0.8,
-	"opacity-90": 0.9,
-	"opacity-95": 0.95,
-	"opacity-100": 1,
+    "opacity-0": 0,
+    "opacity-5": 0.05,
+    "opacity-10": 0.1,
+    "opacity-20": 0.2,
+    "opacity-25": 0.25,
+    "opacity-30": 0.3,
+    "opacity-40": 0.4,
+    "opacity-50": 0.5,
+    "opacity-60": 0.6,
+    "opacity-70": 0.7,
+    "opacity-75": 0.75,
+    "opacity-80": 0.8,
+    "opacity-90": 0.9,
+    "opacity-95": 0.95,
+    "opacity-100": 1,
 );
 
 // TRANSITIONS AND ANIMATION
@@ -687,5 +687,5 @@ $hover-colors: ("loop over colors");
 
 // Hover Opacity
 $hover-opacity: (
-	"opacity-70": 0.7,
+    "opacity-70": 0.7,
 );

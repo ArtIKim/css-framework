@@ -1,470 +1,453 @@
 // LAYOUT
 // Colors
 @each $color-prop, $color-value in $colors {
-	.text-#{$color-prop} {
-		color: $color-value;
-	}
+    .text-#{$color-prop} {
+        color: $color-value;
+    }
 
-	.bg-#{$color-prop} {
-		background-color: $color-value;
-	}
+    .bg-#{$color-prop} {
+        background-color: $color-value;
+    }
 
-	.border-#{$color-prop} {
-		border-color: $color-value;
-	}
+    .border-#{$color-prop} {
+        border-color: $color-value;
+    }
 
-	.hover\:text-#{$color-prop}\:hover {
-		color: $color-value;
-	}
+    .hover\:text-#{$color-prop}\:hover {
+        color: $color-value;
+    }
 }
 
 // Box Sizing
 @each $box-sizing-prop, $box-sizing-value in $box-sizing {
-	.box-#{$box-sizing-prop} {
-		box-sizing: $box-sizing-value;
-	}
+    .box-#{$box-sizing-prop} {
+        box-sizing: $box-sizing-value;
+    }
 }
 
 // Display
 @each $display-prop, $display-value in $display {
-	.#{$display-prop} {
-		display: $display-value;
-	}
+    .#{$display-prop} {
+        display: $display-value;
+    }
 }
 
 // Object Fit
 @each $object-fit-prop, $object-fit-value in $object-fit {
-	.#{$object-fit-prop} {
-		-o-object-fit: $object-fit-value;
-		object-fit: $object-fit-value;
-	}
+    .#{$object-fit-prop} {
+        -o-object-fit: $object-fit-value;
+        object-fit: $object-fit-value;
+    }
 }
 
 // Overflow
 @each $overflow-prop, $overflow-value in $overflow {
-	@if $overflow-prop ==
-		"overflow-x-auto" or
-		$overflow-prop ==
-		"overflow-x-hidden" or
-		$overflow-prop ==
-		"overflow-x-visible" or
-		$overflow-prop ==
-		"overflow-x-scroll"
-	{
-		.#{$overflow-prop} {
-			overflow-x: $overflow-value;
-		}
-	} @else if
-		$overflow-prop ==
-		"overflow-y-auto" or
-		$overflow-prop ==
-		"overflow-y-hidden" or
-		$overflow-prop ==
-		"overflow-y-visible" or
-		$overflow-prop ==
-		"overflow-y-scroll"
-	{
-		.#{$overflow-prop} {
-			overflow-y: $overflow-value;
-		}
-	} @else {
-		.#{$overflow-prop} {
-			overflow: $overflow-value;
-		}
-	}
+    @if $overflow-prop == "overflow-x-auto" or $overflow-prop == "overflow-x-hidden" or $overflow-prop == "overflow-x-visible" or $overflow-prop == "overflow-x-scroll" {
+        .#{$overflow-prop} {
+            overflow-x: $overflow-value;
+        }
+    } @else if $overflow-prop == "overflow-y-auto" or $overflow-prop == "overflow-y-hidden" or $overflow-prop == "overflow-y-visible" or $overflow-prop == "overflow-y-scroll" {
+        .#{$overflow-prop} {
+            overflow-y: $overflow-value;
+        }
+    } @else {
+        .#{$overflow-prop} {
+            overflow: $overflow-value;
+        }
+    }
 }
 
 // Position
 @each $position-prop, $position-value in $position {
-	.#{$position-prop} {
-		position: $position-value;
-	}
+    .#{$position-prop} {
+        position: $position-value;
+    }
 }
 
 // Position Settings
 @each $position-directions-prop, $position-directions-value in $position-directions {
-	@each $position-coords-prop, $position-coords-value in $position-coords {
-		.#{$position-directions-prop}-#{$position-coords-prop} {
-			#{$position-directions-value}: $position-coords-value;
-		}
-	}
+    @each $position-coords-prop, $position-coords-value in $position-coords {
+        .#{$position-directions-prop}-#{$position-coords-prop} {
+            #{$position-directions-value}: $position-coords-value;
+        }
+    }
 }
 
 // Z-Index
 @each $z-index-prop, $z-index-value in $z-index {
-	.#{$z-index-prop} {
-		z-index: $z-index-value;
-	}
+    .#{$z-index-prop} {
+        z-index: $z-index-value;
+    }
 }
 
 // Visibility
 @each $visibility-prop, $visibility-value in $visibility {
-	.#{$visibility-prop} {
-		visibility: $visibility-value;
-	}
+    .#{$visibility-prop} {
+        visibility: $visibility-value;
+    }
 }
 
 // FLEXBOX
 // Flex Direction
 @each $flex-direction-prop, $flex-direction-value in $flex-direction {
-	.#{$flex-direction-prop} {
-		flex-direction: $flex-direction-value;
-	}
+    .#{$flex-direction-prop} {
+        flex-direction: $flex-direction-value;
+    }
 }
 
 // Flex Wrap
 @each $flex-wrap-prop, $flex-wrap-value in $flex-wrap {
-	.#{$flex-wrap-prop} {
-		flex-wrap: $flex-wrap-value;
-	}
+    .#{$flex-wrap-prop} {
+        flex-wrap: $flex-wrap-value;
+    }
 }
 
 // Flex
 @each $flex-prop, $flex-value in $flex {
-	.#{$flex-prop} {
-		flex: $flex-value;
-	}
+    .#{$flex-prop} {
+        flex: $flex-value;
+    }
 }
 
 // Flex Grow
 @each $flex-grow-prop, $flex-grow-value in $flex-grow {
-	.#{$flex-grow-prop} {
-		flex-grow: $flex-grow-value;
-	}
+    .#{$flex-grow-prop} {
+        flex-grow: $flex-grow-value;
+    }
 }
 
 // Flex Shrink
 @each $flex-shrink-prop, $flex-shrink-value in $flex-shrink {
-	.#{$flex-shrink-prop} {
-		flex-shrink: $flex-shrink-value;
-	}
+    .#{$flex-shrink-prop} {
+        flex-shrink: $flex-shrink-value;
+    }
 }
 
 // Order
 @each $order-prop, $order-value in $order {
-	.#{$order-prop} {
-		order: $order-value;
-	}
+    .#{$order-prop} {
+        order: $order-value;
+    }
 }
 
 // GRID
 // Grid Template Columns
 @each $grid-template-columns-prop, $grid-template-columns-value in $grid-template-columns {
-	@if $grid-template-columns-prop == "grid-cols-none" {
-		.#{$grid-template-columns-prop} {
-			grid-template-columns: none;
-		}
-	} @else {
-		.#{$grid-template-columns-prop} {
-			grid-template-columns: repeat($grid-template-columns-value, minmax(0, 1fr));
-		}
-	}
+    @if $grid-template-columns-prop == "grid-cols-none" {
+        .#{$grid-template-columns-prop} {
+            grid-template-columns: none;
+        }
+    } @else {
+        .#{$grid-template-columns-prop} {
+            grid-template-columns: repeat($grid-template-columns-value, minmax(0, 1fr));
+        }
+    }
 }
 
 // Grid Column Start / End
 @each $col-span-prop, $col-span-value in $col-span {
-	@if $col-span-prop == "col-span-full" {
-		.#{$col-span-prop} {
-			grid-column: 1 / -1;
-		}
-	} @else {
-		.#{$col-span-prop} {
-			grid-column: $col-span-value;
-		}
-	}
+    @if $col-span-prop == "col-span-full" {
+        .#{$col-span-prop} {
+            grid-column: 1 / -1;
+        }
+    } @else {
+        .#{$col-span-prop} {
+            grid-column: $col-span-value;
+        }
+    }
 }
 
 // Grid Template Rows
 @each $grid-template-rows-prop, $grid-template-rows-value in $grid-template-rows {
-	@if $grid-template-rows-prop == "grid-rows-none" {
-		.#{$grid-template-rows-prop} {
-			grid-template-rows: none;
-		}
-	} @else {
-		.#{$grid-template-rows-prop} {
-			grid-template-rows: repeat($grid-template-rows-value, minmax(0, 1fr));
-		}
-	}
+    @if $grid-template-rows-prop == "grid-rows-none" {
+        .#{$grid-template-rows-prop} {
+            grid-template-rows: none;
+        }
+    } @else {
+        .#{$grid-template-rows-prop} {
+            grid-template-rows: repeat($grid-template-rows-value, minmax(0, 1fr));
+        }
+    }
 }
 
 // Grid Row Start / End
 @each $row-span-prop, $row-span-value in $row-span {
-	@if $row-span-prop == "row-span-full" {
-		.#{$row-span-prop} {
-			grid-row: 1 / -1;
-		}
-	} @else {
-		.#{$row-span-prop} {
-			grid-row: $row-span-value;
-		}
-	}
+    @if $row-span-prop == "row-span-full" {
+        .#{$row-span-prop} {
+            grid-row: 1 / -1;
+        }
+    } @else {
+        .#{$row-span-prop} {
+            grid-row: $row-span-value;
+        }
+    }
 }
 
 // Gap
 @each $gap-prop, $gap-value in $gap {
-	@each $gap-directions-prop, $gap-directions-value in $gap-directions {
-		@if $gap-directions-prop == "null" {
-			.gap-#{$gap-prop} {
-				gap: $gap-value;
-			}
-		} @else if $gap-directions-prop == "x" {
-			.gap-x-#{$gap-prop} {
-				-moz-column-gap: $gap-value;
-				column-gap: $gap-value;
-			}
-		} @else if $gap-directions-prop == "y" {
-			.gap-y-#{$gap-prop} {
-				row-gap: $gap-value;
-			}
-		}
-	}
+    @each $gap-directions-prop, $gap-directions-value in $gap-directions {
+        @if $gap-directions-prop == "null" {
+            .gap-#{$gap-prop} {
+                gap: $gap-value;
+            }
+        } @else if $gap-directions-prop == "x" {
+            .gap-x-#{$gap-prop} {
+                -moz-column-gap: $gap-value;
+                column-gap: $gap-value;
+            }
+        } @else if $gap-directions-prop == "y" {
+            .gap-y-#{$gap-prop} {
+                row-gap: $gap-value;
+            }
+        }
+    }
 }
 
 // BOX ALIGNMENT
 // Justify Content
 @each $justify-content-prop, $justify-content-value in $justify-content {
-	.#{$justify-content-prop} {
-		justify-content: $justify-content-value;
-	}
+    .#{$justify-content-prop} {
+        justify-content: $justify-content-value;
+    }
 }
 
 // Justify Items
 @each $justify-items-prop, $justify-items-value in $justify-items {
-	.#{$justify-items-prop} {
-		justify-items: $justify-items-value;
-	}
+    .#{$justify-items-prop} {
+        justify-items: $justify-items-value;
+    }
 }
 
 // Justify Self
 @each $justify-self-prop, $justify-self-value in $justify-self {
-	.#{$justify-self-prop} {
-		justify-self: $justify-self-value;
-	}
+    .#{$justify-self-prop} {
+        justify-self: $justify-self-value;
+    }
 }
 
 // Align Content
 @each $align-content-prop, $align-content-value in $align-content {
-	.#{$align-content-prop} {
-		align-content: $align-content-value;
-	}
+    .#{$align-content-prop} {
+        align-content: $align-content-value;
+    }
 }
 
 // Align Items
 @each $align-items-prop, $align-items-value in $align-items {
-	.#{$align-items-prop} {
-		align-items: $align-items-value;
-	}
+    .#{$align-items-prop} {
+        align-items: $align-items-value;
+    }
 }
 
 // Align Self
 @each $align-self-prop, $align-self-value in $align-self {
-	.#{$align-self-prop} {
-		align-self: $align-self-value;
-	}
+    .#{$align-self-prop} {
+        align-self: $align-self-value;
+    }
 }
 
 // Place Content
 @each $place-content-prop, $place-content-value in $place-content {
-	.#{$place-content-prop} {
-		place-content: $place-content-value;
-	}
+    .#{$place-content-prop} {
+        place-content: $place-content-value;
+    }
 }
 
 // Place Items
 @each $place-items-prop, $place-items-value in $place-items {
-	.#{$place-items-prop} {
-		place-items: $place-items-value;
-	}
+    .#{$place-items-prop} {
+        place-items: $place-items-value;
+    }
 }
 
 // Place Self
 @each $place-self-prop, $place-self-value in $place-self {
-	.#{$place-self-prop} {
-		place-self: $place-self-value;
-	}
+    .#{$place-self-prop} {
+        place-self: $place-self-value;
+    }
 }
 
 // SPACING
 // Padding
 @each $padding-prop, $padding-value in $padding {
-	@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
-		@if $sizing-directions-prop == "y" {
-			.p#{$sizing-directions-prop}-#{$padding-prop} {
-				padding-top: $padding-value;
-				padding-bottom: $padding-value;
-			}
-		} @else if $sizing-directions-prop == "x" {
-			.p#{$sizing-directions-prop}-#{$padding-prop} {
-				padding-left: $padding-value;
-				padding-right: $padding-value;
-			}
-		} @else if $sizing-directions-prop == "t" {
-			.p#{$sizing-directions-prop}-#{$padding-prop} {
-				padding-top: $padding-value;
-			}
-		} @else if $sizing-directions-prop == "r" {
-			.p#{$sizing-directions-prop}-#{$padding-prop} {
-				padding-right: $padding-value;
-			}
-		} @else if $sizing-directions-prop == "b" {
-			.p#{$sizing-directions-prop}-#{$padding-prop} {
-				padding-bottom: $padding-value;
-			}
-		} @else if $sizing-directions-prop == "l" {
-			.p#{$sizing-directions-prop}-#{$padding-prop} {
-				padding-left: $padding-value;
-			}
-		} @else {
-			.p-#{$padding-prop} {
-				padding: $padding-value;
-			}
-		}
-	}
+    @each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+        @if $sizing-directions-prop == "y" {
+            .p#{$sizing-directions-prop}-#{$padding-prop} {
+                padding-top: $padding-value;
+                padding-bottom: $padding-value;
+            }
+        } @else if $sizing-directions-prop == "x" {
+            .p#{$sizing-directions-prop}-#{$padding-prop} {
+                padding-left: $padding-value;
+                padding-right: $padding-value;
+            }
+        } @else if $sizing-directions-prop == "t" {
+            .p#{$sizing-directions-prop}-#{$padding-prop} {
+                padding-top: $padding-value;
+            }
+        } @else if $sizing-directions-prop == "r" {
+            .p#{$sizing-directions-prop}-#{$padding-prop} {
+                padding-right: $padding-value;
+            }
+        } @else if $sizing-directions-prop == "b" {
+            .p#{$sizing-directions-prop}-#{$padding-prop} {
+                padding-bottom: $padding-value;
+            }
+        } @else if $sizing-directions-prop == "l" {
+            .p#{$sizing-directions-prop}-#{$padding-prop} {
+                padding-left: $padding-value;
+            }
+        } @else {
+            .p-#{$padding-prop} {
+                padding: $padding-value;
+            }
+        }
+    }
 }
 
 // Margin
 @each $margin-prop, $margin-value in $margin {
-	@if $margin-prop == "auto" {
-		.mx-auto {
-			margin-left: auto;
-			margin-right: auto;
-		}
-	} @else {
-		@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
-			@if $sizing-directions-prop == "y" {
-				.m#{$sizing-directions-prop}-#{$margin-prop} {
-					margin-top: $margin-value;
-					margin-bottom: $margin-value;
-				}
-			} @else if $sizing-directions-prop == "x" {
-				.m#{$sizing-directions-prop}-#{$margin-prop} {
-					margin-left: $margin-value;
-					margin-right: $margin-value;
-				}
-			} @else if $sizing-directions-prop == "t" {
-				.m#{$sizing-directions-prop}-#{$margin-prop} {
-					margin-top: $margin-value;
-				}
-			} @else if $sizing-directions-prop == "r" {
-				.m#{$sizing-directions-prop}-#{$margin-prop} {
-					margin-right: $margin-value;
-				}
-			} @else if $sizing-directions-prop == "b" {
-				.m#{$sizing-directions-prop}-#{$margin-prop} {
-					margin-bottom: $margin-value;
-				}
-			} @else if $sizing-directions-prop == "l" {
-				.m#{$sizing-directions-prop}-#{$margin-prop} {
-					margin-left: $margin-value;
-				}
-			} @else {
-				.m-#{$margin-prop} {
-					margin: $margin-value;
-				}
-			}
-		}
-	}
+    @if $margin-prop == "auto" {
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } @else {
+        @each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+            @if $sizing-directions-prop == "y" {
+                .m#{$sizing-directions-prop}-#{$margin-prop} {
+                    margin-top: $margin-value;
+                    margin-bottom: $margin-value;
+                }
+            } @else if $sizing-directions-prop == "x" {
+                .m#{$sizing-directions-prop}-#{$margin-prop} {
+                    margin-left: $margin-value;
+                    margin-right: $margin-value;
+                }
+            } @else if $sizing-directions-prop == "t" {
+                .m#{$sizing-directions-prop}-#{$margin-prop} {
+                    margin-top: $margin-value;
+                }
+            } @else if $sizing-directions-prop == "r" {
+                .m#{$sizing-directions-prop}-#{$margin-prop} {
+                    margin-right: $margin-value;
+                }
+            } @else if $sizing-directions-prop == "b" {
+                .m#{$sizing-directions-prop}-#{$margin-prop} {
+                    margin-bottom: $margin-value;
+                }
+            } @else if $sizing-directions-prop == "l" {
+                .m#{$sizing-directions-prop}-#{$margin-prop} {
+                    margin-left: $margin-value;
+                }
+            } @else {
+                .m-#{$margin-prop} {
+                    margin: $margin-value;
+                }
+            }
+        }
+    }
 }
 
 // SIZING
 // Width
 @each $width-prop, $width-value in $width {
-	.w-#{$width-prop} {
-		width: $width-value;
-	}
+    .w-#{$width-prop} {
+        width: $width-value;
+    }
 }
 
 // Min-Width
 @each $min-width-prop, $min-width-value in $min-width {
-	.min-w-#{$min-width-prop} {
-		min-width: $min-width-value;
-	}
+    .min-w-#{$min-width-prop} {
+        min-width: $min-width-value;
+    }
 }
 
 // Max-Width
 @each $max-width-prop, $max-width-value in $max-width {
-	.max-w-#{$max-width-prop} {
-		max-width: $max-width-value;
-	}
+    .max-w-#{$max-width-prop} {
+        max-width: $max-width-value;
+    }
 }
 
 // Height
 @each $height-prop, $height-value in $height {
-	.h-#{$height-prop} {
-		height: $height-value;
-	}
+    .h-#{$height-prop} {
+        height: $height-value;
+    }
 }
 
 // Min-Height
 @each $min-height-prop, $min-height-value in $min-height {
-	.min-h-#{$min-height-prop} {
-		min-height: $min-height-value;
-	}
+    .min-h-#{$min-height-prop} {
+        min-height: $min-height-value;
+    }
 }
 
 // Max-Height
 @each $max-height-prop, $max-height-value in $max-height {
-	.max-h-#{$max-height-prop} {
-		max-height: $max-height-value;
-	}
+    .max-h-#{$max-height-prop} {
+        max-height: $max-height-value;
+    }
 }
 
 // TYPOGRAPHY
 // Font Family
 @each $font-prop, $font-value in $font {
-	.font-#{$font-prop} {
-		font-family: $font-value;
-	}
+    .font-#{$font-prop} {
+        font-family: $font-value;
+    }
 }
 
 // Font Size
 @each $font-size-prop, $font-size-value in $font-size {
-	.text-#{$font-size-prop} {
-		font-size: $font-size-value;
-	}
+    .text-#{$font-size-prop} {
+        font-size: $font-size-value;
+    }
 }
 
 // Font Smoothing
 @each $font-smoothing-prop, $font-smoothing-value in $font-smoothing {
-	@if $font-smoothing-prop == "antialiased" {
-		.#{$font-smoothing-prop} {
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-	} @else if $font-smoothing-prop == "subpixel-antialiased" {
-		.#{$font-smoothing-prop} {
-			-webkit-font-smoothing: auto;
-			-moz-osx-font-smoothing: auto;
-		}
-	}
+    @if $font-smoothing-prop == "antialiased" {
+        .#{$font-smoothing-prop} {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    } @else if $font-smoothing-prop == "subpixel-antialiased" {
+        .#{$font-smoothing-prop} {
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+        }
+    }
 }
 
 // Font Style
 @each $font-style-prop, $font-style-value in $font-style {
-	.#{$font-style-prop} {
-		font-style: $font-style-value;
-	}
+    .#{$font-style-prop} {
+        font-style: $font-style-value;
+    }
 }
 
 // Font Weight
 @each $font-weight-prop, $font-weight-value in $font-weight {
-	.#{$font-weight-prop} {
-		font-weight: $font-weight-value;
-	}
+    .#{$font-weight-prop} {
+        font-weight: $font-weight-value;
+    }
 }
 
 // Line Height
 @each $line-height-prop, $line-height-value in $line-height {
-	.leading-#{$line-height-prop} {
-		line-height: $line-height-value;
-	}
+    .leading-#{$line-height-prop} {
+        line-height: $line-height-value;
+    }
 }
 
 // Text Alignment
 @each $text-align-prop, $text-align-value in $text-align {
-	.#{$text-align-prop} {
-		text-align: $text-align-value;
-	}
+    .#{$text-align-prop} {
+        text-align: $text-align-value;
+    }
 }
 
 // Text Opacity
@@ -475,273 +458,266 @@
 
 // Text Decoration
 @each $text-decoration-prop, $text-decoration-value in $text-decoration {
-	.#{$text-decoration-prop} {
-		-webkit-text-decoration: $text-decoration-value;
-		text-decoration: $text-decoration-value;
-	}
+    .#{$text-decoration-prop} {
+        -webkit-text-decoration: $text-decoration-value;
+        text-decoration: $text-decoration-value;
+    }
 }
 
 // Text Transform
 @each $text-transform-prop, $text-transform-value in $text-transform {
-	.#{$text-transform-prop} {
-		text-transform: $text-transform-value;
-	}
+    .#{$text-transform-prop} {
+        text-transform: $text-transform-value;
+    }
 }
 
 // Whitespace
 @each $whitespace-prop, $whitespace-value in $whitespace {
-	.#{$whitespace-prop} {
-		white-space: $whitespace-value;
-	}
+    .#{$whitespace-prop} {
+        white-space: $whitespace-value;
+    }
 }
 
 // Word Break
 @each $word-break-prop, $word-break-value in $word-break {
-	.#{$word-break-prop} {
-		word-break: $word-break-value;
-	}
+    .#{$word-break-prop} {
+        word-break: $word-break-value;
+    }
 }
 
 // BACKGROUNDS
 // Background Attachment
 @each $background-attachment-prop, $background-attachment-value in $background-attachment {
-	.#{$background-attachment-prop} {
-		background-attachment: $background-attachment-value;
-	}
+    .#{$background-attachment-prop} {
+        background-attachment: $background-attachment-value;
+    }
 }
 
 // Background Position
 @each $background-position-prop, $background-position-value in $background-position {
-	.#{$background-position-prop} {
-		background-position: $background-position-value;
-	}
+    .#{$background-position-prop} {
+        background-position: $background-position-value;
+    }
 }
 
 // Background Repeat
 @each $background-repeat-prop, $background-repeat-value in $background-repeat {
-	.#{$background-repeat-prop} {
-		background-repeat: $background-repeat-value;
-	}
+    .#{$background-repeat-prop} {
+        background-repeat: $background-repeat-value;
+    }
 }
 
 // Background Size
 @each $background-size-prop, $background-size-value in $background-size {
-	.#{$background-size-prop} {
-		background-size: $background-size-value;
-	}
+    .#{$background-size-prop} {
+        background-size: $background-size-value;
+    }
 }
 
 // Background Image
 @each $background-image-prop, $background-image-value in $background-image {
-	.#{$background-image-prop} {
-		background-image: $background-image-value;
-	}
+    .#{$background-image-prop} {
+        background-image: $background-image-value;
+    }
 }
 
 // BORDERS
 // Border Radius
 @each $border-radius-prop, $border-radius-value in $border-radius {
-	@each $border-radius-directions-prop,
-		$border-radius-directions-value in $border-radius-directions
-	{
-		@if $border-radius-directions-prop == "t" {
-			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
-				border-top-left-radius: $border-radius-value;
-				border-top-right-radius: $border-radius-value;
-			}
-		} @else if $border-radius-directions-prop == "r" {
-			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
-				border-top-right-radius: $border-radius-value;
-				border-bottom-right-radius: $border-radius-value;
-			}
-		} @else if $border-radius-directions-prop == "b" {
-			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
-				border-bottom-right-radius: $border-radius-value;
-				border-bottom-left-radius: $border-radius-value;
-			}
-		} @else if $border-radius-directions-prop == "l" {
-			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
-				border-top-left-radius: $border-radius-value;
-				border-bottom-left-radius: $border-radius-value;
-			}
-		} @else if $border-radius-directions-prop == "tl" {
-			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
-				border-top-left-radius: $border-radius-value;
-			}
-		} @else if $border-radius-directions-prop == "tr" {
-			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
-				border-top-right-radius: $border-radius-value;
-			}
-		} @else if $border-radius-directions-prop == "br" {
-			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
-				border-bottom-right-radius: $border-radius-value;
-			}
-		} @else if $border-radius-directions-prop == "bl" {
-			.rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
-				border-bottom-left-radius: $border-radius-value;
-			}
-		} @else if $border-radius-directions-prop == "default" {
-			.rounded-#{$border-radius-prop} {
-				border-radius: $border-radius-value;
-			}
-		}
-	}
+    @each $border-radius-directions-prop, $border-radius-directions-value in $border-radius-directions {
+        @if $border-radius-directions-prop == "t" {
+            .rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
+                border-top-left-radius: $border-radius-value;
+                border-top-right-radius: $border-radius-value;
+            }
+        } @else if $border-radius-directions-prop == "r" {
+            .rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
+                border-top-right-radius: $border-radius-value;
+                border-bottom-right-radius: $border-radius-value;
+            }
+        } @else if $border-radius-directions-prop == "b" {
+            .rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
+                border-bottom-right-radius: $border-radius-value;
+                border-bottom-left-radius: $border-radius-value;
+            }
+        } @else if $border-radius-directions-prop == "l" {
+            .rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
+                border-top-left-radius: $border-radius-value;
+                border-bottom-left-radius: $border-radius-value;
+            }
+        } @else if $border-radius-directions-prop == "tl" {
+            .rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
+                border-top-left-radius: $border-radius-value;
+            }
+        } @else if $border-radius-directions-prop == "tr" {
+            .rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
+                border-top-right-radius: $border-radius-value;
+            }
+        } @else if $border-radius-directions-prop == "br" {
+            .rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
+                border-bottom-right-radius: $border-radius-value;
+            }
+        } @else if $border-radius-directions-prop == "bl" {
+            .rounded-#{$border-radius-directions-prop}-#{$border-radius-prop} {
+                border-bottom-left-radius: $border-radius-value;
+            }
+        } @else if $border-radius-directions-prop == "default" {
+            .rounded-#{$border-radius-prop} {
+                border-radius: $border-radius-value;
+            }
+        }
+    }
 }
 
 // Border Width
 @each $border-width-prop, $border-width-value in $border-width {
-	@each $border-width-directions-prop, $border-width-directions-value in $border-width-directions
-	{
-		@if $border-width-directions-prop == "t" {
-			.border-#{$border-width-directions-prop}-#{$border-width-prop} {
-				border-top-width: $border-width-value;
-			}
-		} @else if $border-width-directions-prop == "r" {
-			.border-#{$border-width-directions-prop}-#{$border-width-prop} {
-				border-right-width: $border-width-value;
-			}
-		} @else if $border-width-directions-prop == "b" {
-			.border-#{$border-width-directions-prop}-#{$border-width-prop} {
-				border-bottom-width: $border-width-value;
-			}
-		} @else if $border-width-directions-prop == "l" {
-			.border-#{$border-width-directions-prop}-#{$border-width-prop} {
-				border-left-width: $border-width-value;
-			}
-		} @else {
-			.border-#{$border-width-prop} {
-				border-width: $border-width-value;
-			}
-		}
-	}
+    @each $border-width-directions-prop, $border-width-directions-value in $border-width-directions {
+        @if $border-width-directions-prop == "t" {
+            .border-#{$border-width-directions-prop}-#{$border-width-prop} {
+                border-top-width: $border-width-value;
+            }
+        } @else if $border-width-directions-prop == "r" {
+            .border-#{$border-width-directions-prop}-#{$border-width-prop} {
+                border-right-width: $border-width-value;
+            }
+        } @else if $border-width-directions-prop == "b" {
+            .border-#{$border-width-directions-prop}-#{$border-width-prop} {
+                border-bottom-width: $border-width-value;
+            }
+        } @else if $border-width-directions-prop == "l" {
+            .border-#{$border-width-directions-prop}-#{$border-width-prop} {
+                border-left-width: $border-width-value;
+            }
+        } @else {
+            .border-#{$border-width-prop} {
+                border-width: $border-width-value;
+            }
+        }
+    }
 }
 
 // Border Style
 @each $border-style-prop, $border-style-value in $border-style {
-	.#{$border-style-prop} {
-		border-style: $border-style-value;
-	}
+    .#{$border-style-prop} {
+        border-style: $border-style-value;
+    }
 }
 
 // EFFECTS
 // Box Shadow
 @each $box-shadow-prop, $box-shadow-value in $box-shadow {
-	.shadow-#{$box-shadow-prop} {
-		box-shadow: $box-shadow-value;
-	}
+    .shadow-#{$box-shadow-prop} {
+        box-shadow: $box-shadow-value;
+    }
 }
 
 // Opacity
 @each $opacity-prop, $opacity-value in $opacity {
-	.#{$opacity-prop} {
-		opacity: $opacity-value;
-	}
+    .#{$opacity-prop} {
+        opacity: $opacity-value;
+    }
 }
 
 // Hover Opacity
 @each $hover-opacity-prop, $hover-opacity-value in $hover-opacity {
-	.hover\:#{$hover-opacity-prop}\:hover {
-		opacity: $hover-opacity-value;
-	}
+    .hover\:#{$hover-opacity-prop}\:hover {
+        opacity: $hover-opacity-value;
+    }
 }
 
 // Container
 @each $breakpoint-prop, $breakpoint-value in $media {
-	@if $breakpoint-value == 991px {
-		@media (max-width: $breakpoint-value) {
-			// Display
-			@each $display-prop, $display-value in $display {
-				@if $display-prop == "hidden" {
-					.#{$breakpoint-prop}\:#{$display-prop} {
-						display: $display-value;
-					}
-				}
-			}
+    @if $breakpoint-value == 991px {
+        @media (max-width: $breakpoint-value) {
+            // Display
+            @each $display-prop, $display-value in $display {
+                @if $display-prop == "hidden" {
+                    .#{$breakpoint-prop}\:#{$display-prop} {
+                        display: $display-value;
+                    }
+                }
+            }
 
-			// Flex Direction
-			@each $flex-direction-prop, $flex-direction-value in $flex-direction {
-				@if $flex-direction-prop == "flex-col" {
-					.#{$breakpoint-prop}\:#{$flex-direction-prop} {
-						flex-direction: $flex-direction-value;
-					}
-				}
-			}
+            // Flex Direction
+            @each $flex-direction-prop, $flex-direction-value in $flex-direction {
+                @if $flex-direction-prop == "flex-col" {
+                    .#{$breakpoint-prop}\:#{$flex-direction-prop} {
+                        flex-direction: $flex-direction-value;
+                    }
+                }
+            }
 
-			// Width
-			@each $width-prop, $width-value in $width {
-				@if $width-prop == "full" {
-					.#{$breakpoint-prop}\:w-#{$width-prop} {
-						width: $width-value;
-					}
-				}
-			}
+            // Width
+            @each $width-prop, $width-value in $width {
+                @if $width-prop == "full" {
+                    .#{$breakpoint-prop}\:w-#{$width-prop} {
+                        width: $width-value;
+                    }
+                }
+            }
 
-			// Max Width
-			@each $max-width-prop, $max-width-value in $max-width {
-				@if $max-width-prop == "full" {
-					.#{$breakpoint-prop}\:max-w-#{$max-width-prop} {
-						max-width: $max-width-value;
-					}
-				}
-			}
+            // Max Width
+            @each $max-width-prop, $max-width-value in $max-width {
+                @if $max-width-prop == "full" {
+                    .#{$breakpoint-prop}\:max-w-#{$max-width-prop} {
+                        max-width: $max-width-value;
+                    }
+                }
+            }
 
-			// Padding
-			@each $padding-prop, $padding-value in $padding {
-				@if $padding-value == 20px {
-					@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
-						@if $sizing-directions-prop == "y" {
-							.#{$breakpoint-prop}\:p#{$sizing-directions-prop}-#{$padding-prop} {
-								padding-top: $padding-value;
-								padding-bottom: $padding-value;
-							}
-						} @else if $sizing-directions-prop == "x" {
-							.#{$breakpoint-prop}\:p#{$sizing-directions-prop}-#{$padding-prop} {
-								padding-left: $padding-value;
-								padding-right: $padding-value;
-							}
-						}
-					}
-				}
-			}
+            // Padding
+            @each $padding-prop, $padding-value in $padding {
+                @if $padding-value == 20px {
+                    @each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+                        @if $sizing-directions-prop == "y" {
+                            .#{$breakpoint-prop}\:p#{$sizing-directions-prop}-#{$padding-prop} {
+                                padding-top: $padding-value;
+                                padding-bottom: $padding-value;
+                            }
+                        } @else if $sizing-directions-prop == "x" {
+                            .#{$breakpoint-prop}\:p#{$sizing-directions-prop}-#{$padding-prop} {
+                                padding-left: $padding-value;
+                                padding-right: $padding-value;
+                            }
+                        }
+                    }
+                }
+            }
 
-			// Margin
-			@each $margin-prop, $margin-value in $margin {
-				@if $margin-prop == "auto" {
-					.#{$breakpoint-prop}\:mx-auto {
-						margin-left: auto;
-						margin-right: auto;
-					}
-				} @else {
-					@if $margin-value == 10px {
-						@each $sizing-directions-prop,
-							$sizing-directions-value in $sizing-directions
-						{
-							@if $sizing-directions-prop == "y" {
-								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
-									margin-top: $margin-value;
-									margin-bottom: $margin-value;
-								}
-							} @else if $sizing-directions-prop == "x" {
-								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
-									margin-left: $margin-value;
-									margin-right: $margin-value;
-								}
-							}
-						}
-					}
-					@if $margin-value == 50px {
-						@each $sizing-directions-prop,
-							$sizing-directions-value in $sizing-directions
-						{
-							@if $sizing-directions-prop == "t" {
-								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
-									margin-top: $margin-value;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+            // Margin
+            @each $margin-prop, $margin-value in $margin {
+                @if $margin-prop == "auto" {
+                    .#{$breakpoint-prop}\:mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                } @else {
+                    @if $margin-value == 10px {
+                        @each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+                            @if $sizing-directions-prop == "y" {
+                                .#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
+                                    margin-top: $margin-value;
+                                    margin-bottom: $margin-value;
+                                }
+                            } @else if $sizing-directions-prop == "x" {
+                                .#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
+                                    margin-left: $margin-value;
+                                    margin-right: $margin-value;
+                                }
+                            }
+                        }
+                    }
+                    @if $margin-value == 50px {
+                        @each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+                            @if $sizing-directions-prop == "t" {
+                                .#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
+                                    margin-top: $margin-value;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
