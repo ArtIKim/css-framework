@@ -651,43 +651,42 @@
 }
 
 // Container
+@mixin setPropertyPartial($display-prop, $display-value, $set-value, $breakpoint-prop, $css-class-prefix, $css-class) {
+	@if $display-prop == $set-value {
+		@if $css-class-prefix == "" {
+			.#{$breakpoint-prop}\:#{$display-prop} {
+				#{$css-class}: $display-value;
+			}
+		} @else {
+			.#{$breakpoint-prop}\:#{$css-class-prefix}-#{$display-prop} {
+				#{$css-class}: $display-value;
+			}
+		}
+	}
+}
+
 @each $breakpoint-prop, $breakpoint-value in $media {
 	@if $breakpoint-value == 991px {
 		@media (max-width: $breakpoint-value) {
 			// Display
 			@each $display-prop, $display-value in $display {
-				@if $display-prop == "hidden" {
-					.#{$breakpoint-prop}\:#{$display-prop} {
-						display: $display-value;
-					}
-				}
+				@include setPropertyPartial($display-prop, $display-value, "hidden", $breakpoint-prop, "", "display");
 			}
 
 			// Flex Direction
 			@each $flex-direction-prop, $flex-direction-value in $flex-direction {
-				@if $flex-direction-prop == "flex-col" {
-					.#{$breakpoint-prop}\:#{$flex-direction-prop} {
-						flex-direction: $flex-direction-value;
-					}
-				}
+				@include setPropertyPartial($flex-direction-prop, $flex-direction-value, "flex-col", $breakpoint-prop, "", "flex-direction");
 			}
 
 			// Width
 			@each $width-prop, $width-value in $width {
-				@if $width-prop == "full" {
-					.#{$breakpoint-prop}\:w-#{$width-prop} {
-						width: $width-value;
-					}
-				}
+				@include setPropertyPartial($width-prop, $width-value, "full", $breakpoint-prop, "w", "width");
+				@include setPropertyPartial($width-prop, $width-value, "3", $breakpoint-prop, "w", "width");
 			}
 
 			// Max Width
 			@each $max-width-prop, $max-width-value in $max-width {
-				@if $max-width-prop == "full" {
-					.#{$breakpoint-prop}\:max-w-#{$max-width-prop} {
-						max-width: $max-width-value;
-					}
-				}
+				@include setPropertyPartial($max-width-prop, $max-width-value, "full", $breakpoint-prop, "max-w", "max-width");
 			}
 
 			// Padding

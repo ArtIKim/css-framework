@@ -84,7 +84,7 @@ $object-fit: (
 	"object-cover": cover,
 	// "object-fill": fill,
 	// "object-none": none,
-	// "object-scale-down": scale-down,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	"object-scale-down": scale-down,
 );
 
 // Object Position
@@ -554,7 +554,7 @@ $word-break: (
 $background-attachment: (
 	"bg-fixed": fixed,
 	// "bg-local": local,
-	// "bg-scroll": scroll,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	"bg-scroll": scroll,
 );
 
 // Background Clip

@@ -240,6 +240,11 @@ p {
   object-fit: cover;
 }
 
+.object-scale-down {
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -1557,6 +1562,10 @@ p {
   background-attachment: fixed;
 }
 
+.bg-scroll {
+  background-attachment: scroll;
+}
+
 .bg-bottom {
   background-position: bottom;
 }
@@ -1996,6 +2005,9 @@ p {
   }
   .media-991\:w-full {
     width: 100%;
+  }
+  .media-991\:w-3 {
+    width: 3px;
   }
   .media-991\:max-w-full {
     max-width: 100%;
