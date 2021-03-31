@@ -67,13 +67,4 @@ body.dark-mode {
 			pointer-events: none;
 		}
 	}
-
-	&-block {
-		@extend .p-20;
-		@extend .shadow-default;
-		@extend .max-w-500;
-		@extend .rounded-10;
-		@extend .bg-white;
-		@extend .text-primary;
-	}
 }

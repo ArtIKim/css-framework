@@ -13,7 +13,7 @@
 		border-color: $color-value;
 	}
 
-	.hover\:text-#{$color-prop}\:hover {
+	.hover\:text-#{$color-prop}:hover {
 		color: $color-value;
 	}
 }
@@ -349,6 +349,43 @@
 	}
 }
 
+// Margin Negative
+@each $margin-negative-prop, $margin-negative-value in $margin-negative {
+	@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+		@if $sizing-directions-prop == "y" {
+			.-m#{$sizing-directions-prop}#{$margin-negative-prop} {
+				margin-top: $margin-negative-value;
+				margin-bottom: $margin-negative-value;
+			}
+		} @else if $sizing-directions-prop == "x" {
+			.-m#{$sizing-directions-prop}#{$margin-negative-prop} {
+				margin-left: $margin-negative-value;
+				margin-right: $margin-negative-value;
+			}
+		} @else if $sizing-directions-prop == "t" {
+			.-m#{$sizing-directions-prop}#{$margin-negative-prop} {
+				margin-top: $margin-negative-value;
+			}
+		} @else if $sizing-directions-prop == "r" {
+			.-m#{$sizing-directions-prop}#{$margin-negative-prop} {
+				margin-right: $margin-negative-value;
+			}
+		} @else if $sizing-directions-prop == "b" {
+			.-m#{$sizing-directions-prop}#{$margin-negative-prop} {
+				margin-bottom: $margin-negative-value;
+			}
+		} @else if $sizing-directions-prop == "l" {
+			.-m#{$sizing-directions-prop}#{$margin-negative-prop} {
+				margin-left: $margin-negative-value;
+			}
+		} @else {
+			.-m#{$margin-negative-prop} {
+				margin: $margin-negative-value;
+			}
+		}
+	}
+}
+
 // SIZING
 // Width
 @each $width-prop, $width-value in $width {
@@ -393,6 +430,14 @@
 }
 
 // TYPOGRAPHY
+// Font Faces
+@each $font-faces-prop, $font-faces-value in $font-faces {
+	@font-face {
+		font-family: $font-faces-prop;
+		src: $font-faces-value;
+	}
+}
+
 // Font Family
 @each $font-prop, $font-value in $font {
 	.font-#{$font-prop} {
@@ -650,6 +695,16 @@
 	}
 }
 
+// User Select
+@each $user-select-prop, $user-select-value in $user-select {
+	.#{$user-select-prop} {
+		-webkit-user-select: $user-select-value;
+		-moz-user-select: $user-select-value;
+		-ms-user-select: $user-select-value;
+		user-select: $user-select-value;
+	}
+}
+
 // Container
 @mixin setPropertyPartial($display-prop, $display-value, $set-value, $breakpoint-prop, $css-class-prefix, $css-class) {
 	@if $display-prop == $set-value {
@@ -678,6 +733,16 @@
 				@include setPropertyPartial($flex-direction-prop, $flex-direction-value, "flex-col", $breakpoint-prop, "", "flex-direction");
 			}
 
+			// Flex Wrap
+			@each $flex-wrap-prop, $flex-wrap-value in $flex-wrap {
+				@include setPropertyPartial($flex-wrap-prop, $flex-wrap-value, "flex-wrap", $breakpoint-prop, "", "flex-wrap");
+			}
+
+			// Justify Content
+			@each $justify-content-prop, $justify-content-value in $justify-content {
+				@include setPropertyPartial($justify-content-prop, $justify-content-value, "justify-center", $breakpoint-prop, "", "justify-content");
+			}
+
 			// Width
 			@each $width-prop, $width-value in $width {
 				@include setPropertyPartial($width-prop, $width-value, "full", $breakpoint-prop, "w", "width");
@@ -689,21 +754,62 @@
 				@include setPropertyPartial($max-width-prop, $max-width-value, "full", $breakpoint-prop, "max-w", "max-width");
 			}
 
+			// Font Size
+			@each $font-size-prop, $font-size-value in $font-size {
+				@include setPropertyPartial($font-size-prop, $font-size-value, "30", $breakpoint-prop, "text", "font-size");
+				@include setPropertyPartial($font-size-prop, $font-size-value, "28", $breakpoint-prop, "text", "font-size");
+			}
+
+			// Margin
+			@each $margin-prop, $margin-value in $margin {
+				@if $margin-prop == "auto" {
+					.#{$breakpoint-prop}\:mx-auto {
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+			}
+
+			// Margin
+			@each $margin-prop, $margin-value in $margin {
+				@include setPropertyPartial($margin-prop, $margin-value, "0", $breakpoint-prop, "m", "margin");
+			}
+
+			// Text Alignment
+			@each $text-align-prop, $text-align-value in $text-align {
+				@include setPropertyPartial($text-align-prop, $text-align-value, "text-center", $breakpoint-prop, "", "text-align");
+			}
+		}
+	} @else if $breakpoint-value == 1400px {
+		@media (max-width: $breakpoint-value) {
 			// Padding
 			@each $padding-prop, $padding-value in $padding {
-				@if $padding-value == 20px {
+				@if $padding-value == 40px {
 					@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
-						@if $sizing-directions-prop == "y" {
-							.#{$breakpoint-prop}\:p#{$sizing-directions-prop}-#{$padding-prop} {
-								padding-top: $padding-value;
-								padding-bottom: $padding-value;
-							}
-						} @else if $sizing-directions-prop == "x" {
+						@if $sizing-directions-prop == "x" {
 							.#{$breakpoint-prop}\:p#{$sizing-directions-prop}-#{$padding-prop} {
 								padding-left: $padding-value;
 								padding-right: $padding-value;
 							}
 						}
+					}
+				}
+			}
+
+			// Flex Direction
+			@each $flex-direction-prop, $flex-direction-value in $flex-direction {
+				@if $flex-direction-value == "column" {
+					.#{$breakpoint-prop}\:#{$flex-direction-prop} {
+						flex-direction: $flex-direction-value;
+					}
+				}
+			}
+
+			// Justify Content
+			@each $justify-content-prop, $justify-content-value in $justify-content {
+				@if $justify-content-value == "center" {
+					.#{$breakpoint-prop}\:#{$justify-content-prop} {
+						justify-content: $justify-content-value;
 					}
 				}
 			}
@@ -716,29 +822,46 @@
 						margin-right: auto;
 					}
 				} @else {
-					@if $margin-value == 10px {
-						@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
-							@if $sizing-directions-prop == "y" {
-								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
-									margin-top: $margin-value;
-									margin-bottom: $margin-value;
-								}
-							} @else if $sizing-directions-prop == "x" {
-								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
-									margin-left: $margin-value;
-									margin-right: $margin-value;
-								}
-							}
-						}
-					}
-					@if $margin-value == 50px {
+					@if $margin-value == 40px {
 						@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
 							@if $sizing-directions-prop == "t" {
 								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
 									margin-top: $margin-value;
 								}
+							} @else if $sizing-directions-prop == "default" {
+								.#{$breakpoint-prop}\:m-#{$margin-prop} {
+									margin: $margin-value;
+								}
 							}
 						}
+					} @else if $margin-value == 0 {
+						@each $sizing-directions-prop, $sizing-directions-value in $sizing-directions {
+							@if $sizing-directions-prop == "l" {
+								.#{$breakpoint-prop}\:m#{$sizing-directions-prop}-#{$margin-prop} {
+									margin: $margin-value;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	} @else if $breakpoint-value == 1190px {
+		@media (max-width: $breakpoint-value) {
+			// Align Items
+			@each $align-items-prop, $align-items-value in $align-items {
+				@if $align-items-value == "center" {
+					.#{$breakpoint-prop}\:#{$align-items-prop} {
+						align-items: $align-items-value;
+					}
+				}
+			}
+
+			// Flex Direction
+			@each $flex-direction-prop, $flex-direction-value in $flex-direction {
+				@if $flex-direction-value == "column" {
+					.#{$breakpoint-prop}\:#{$flex-direction-prop} {
+						flex-direction: $flex-direction-value;
 					}
 				}
 			}
