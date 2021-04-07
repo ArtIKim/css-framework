@@ -5,16 +5,16 @@
 }
 
 body {
-	font-family: var(--font-roboto);
+	font-family: var(--font-segoe-bold);
 	font-size: 16px;
-	color: var(--clr-secondary-2);
+	color: var(--clr-primary);
 	overflow-x: hidden;
+	padding: 0 42px;
+	background-color: var(--clr-white);
 
-	background-color: var(--clr-background);
-}
-
-body {
-	transition: background-color linear 80ms;
+	@include max-media(580px) {
+		padding: 0 20px;
+	}
 }
 
 input,
@@ -40,10 +40,11 @@ span {
 }
 
 a {
-	color: var(--clr-primary);
+	color: var(--clr-white);
+	text-decoration: none;
 
 	&:hover {
-		color: #fff;
+		color: var(--clr-white);
 		text-decoration: none;
 	}
 }
@@ -63,6 +64,16 @@ ul {
 		li {
 			&::before {
 				background-color: var(--clr-primary);
+			}
+		}
+	}
+
+	&.default {
+		padding: 0;
+
+		li {
+			&::before {
+				display: none;
 			}
 		}
 	}

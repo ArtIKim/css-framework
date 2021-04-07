@@ -2,257 +2,291 @@
 
 // ROOT
 :root {
-    --clr-primary: #000;
-    --clr-secondary: #57b8d5;
+	--clr-primary: #000;
+	--clr-secondary: #57b8d5;
 
-    --clr-gray: #e9e9e9;
-    --clr-brown: #2b1f1d;
-    --clr-pink-100: #f5e7d2;
-    --clr-pink-200: #d8bb9e;
-    --clr-green: #74941b;
+	--clr-gray: #e9e9e9;
+	--clr-gray-2: #7b7b7b;
+	--clr-brown: #2b1f1d;
+	--clr-pink-100: #f5e7d2;
+	--clr-pink-200: #d8bb9e;
+	--clr-green: #74941b;
+	--clr-strawberry: #c53560;
+	--clr-pina-colada: #2073a5;
+	--clr-sex-on-the-beach: #e28318;
+	--clr-cosmopolitan: #c73135;
+	--clr-long-island-iced-tea: #c58418;
+	--clr-passion-fruit-martini: #9b1679;
+	--clr-mai-tai: #ea6123;
+	--clr-negroni: #a82e33;
+	--clr-espresso-martini: #6d4a2d;
+	--clr-white-russian: #8a6a52;
+	--clr-whiskey-sour-cocktail: #315e31;
+	--clr-amaretto-sour: #ac5020;
+	--clr-tequila-sunrise: #efa312;
 
-    --clr-white: #fff;
-    --clr-black: #000;
-    --clr-black-800: #3b3b3b;
+	--clr-white: #fff;
+	--clr-black: #000;
+	--clr-black-800: #3b3b3b;
 
-    --font-segoe: "segoe";
-    --font-segoe-bold: "segoe-bold";
-    --font-segoe-light: "segoe-light";
-    --font-segoe-black: "segoe-black";
-    --font-acid: "acid";
-    --font-railroad: "railroad";
-    --font-trebuchet-regular: "trebuchet-regular";
-    --font-trebuchet-bold: "trebuchet-bold";
-    --font-futura: "futura";
-    --font-futura-bold: "futura-bold";
-    --font-roboto-slab-bold: "'Roboto Slab', serif";
+	--font-segoe: "segoe";
+	--font-segoe-bold: "segoe-bold";
+	--font-segoe-light: "segoe-light";
+	--font-segoe-light-italic: "segoe-light-italic";
+	--font-segoe-black: "segoe-black";
+	--font-acid: "acid";
+	--font-railroad: "railroad";
+	--font-trebuchet-regular: "trebuchet-regular";
+	--font-trebuchet-bold: "trebuchet-bold";
+	--font-futura: "futura";
+	--font-futura-bold: "futura-bold";
+	--font-roboto-slab-bold: "'Roboto Slab', serif";
 }
 
 // LAYOUT
 // Colors
 $colors: (
-    "white": var(--clr-white),
-    "black": var(--clr-black),
-    "black-800": var(--clr-black-800),
-    "gray": var(--clr-gray),
-    "brown": var(--clr-brown),
-    "pink-100": var(--clr-pink-100),
-    "pink-200": var(--clr-pink-200),
-    "green": var(--clr-green),
-    "primary": var(--clr-primary),
-    "secondary": var(--clr-secondary),
+	"white": var(--clr-white),
+	"black": var(--clr-black),
+	"black-800": var(--clr-black-800),
+	"gray": var(--clr-gray),
+	"gray-2": var(--clr-gray-2),
+	"brown": var(--clr-brown),
+	"pink-100": var(--clr-pink-100),
+	"pink-200": var(--clr-pink-200),
+	"green": var(--clr-green),
+	"strawberry": var(--clr-strawberry),
+	"pina-colada": var(--clr-pina-colada),
+	"sex-on-the-beach": var(--clr-sex-on-the-beach),
+	"cosmopolitan": var(--clr-cosmopolitan),
+	"long-island-iced-tea": var(--clr-long-island-iced-tea),
+	"passion-fruit-martini": var(--clr-passion-fruit-martini),
+	"mai-tai": var(--clr-mai-tai),
+	"negroni": var(--clr-negroni),
+	"espresso-martini": var(--clr-espresso-martini),
+	"white-russian": var(--clr-white-russian),
+	"whiskey-sour-cocktail": var(--clr-whiskey-sour-cocktail),
+	"amaretto-sour": var(--clr-amaretto-sour),
+	"tequila-sunrise": var(--clr-tequila-sunrise),
+	"primary": var(--clr-primary),
+	"secondary": var(--clr-secondary),
 );
 
 // Container
 $media: (
-    "media-1400": 1400px,
-    "media-1190": 1190px,
-    "media-991": 991px,
+	"media-1800": 1800px,
+	"media-1700": 1700px,
+	"media-1400": 1400px,
+	"media-1300": 1300px,
+	"media-1190": 1190px,
+	"media-1090": 1090px,
+	"media-991": 991px,
+	"media-776": 776px,
+	"media-580": 580px,
 );
 
 // Box Sizing
 $box-sizing: (
-    "border": border-box,
-    "content": content-box,
+	"border": border-box,
+	"content": content-box,
 );
 
 // Display
 $display: (
-    "block": block,
-    // "inline-block": inline-block,
-    "inline": inline,
-    "flex": flex,
-    // "inline-flex": inline-flex,
-    // "table": table,
-    // "table-caption": table-caption,
-    // "table-cell": table-cell,
-    // "table-column": table-column,
-    // "table-column-group": table-column-group,
-    // "table-footer-group": table-footer-group,
-    // "table-header-group": table-header-group,
-    // "table-row-group": table-row-group,
-    // "table-row": table-row,
-    // "flow-root": flow-root,
-    "grid": grid,
-    // "inline-grid": inline-grid,
-    // "contents": contents,
-    "hidden": none,
+	"block": block,
+	// "inline-block": inline-block,
+	"inline": inline,
+	"flex": flex,
+	// "inline-flex": inline-flex,
+	// "table": table,
+	// "table-caption": table-caption,
+	// "table-cell": table-cell,
+	// "table-column": table-column,
+	// "table-column-group": table-column-group,
+	// "table-footer-group": table-footer-group,
+	// "table-header-group": table-header-group,
+	// "table-row-group": table-row-group,
+	// "table-row": table-row,
+	// "flow-root": flow-root,
+	"grid": grid,
+	// "inline-grid": inline-grid,
+	// "contents": contents,
+	"hidden": none,
 );
 
 // Floats
 $floats: (
-    // "float-right": right,
-    // "float-left": left,
-    // "float-none": none,
+	// "float-right": right,
+	// "float-left": left,
+	// "float-none": none,
 );
 
 // Clear
 $clear: (
-    // "clear-left": left,
-    // "clear-right": right,
-    // "clear-both": both,
-    // "clear-none": none,
+	// "clear-left": left,
+	// "clear-right": right,
+	// "clear-both": both,
+	// "clear-none": none,
 );
 
 // Object Fit
 $object-fit: (
-    "object-contain": contain,
-    "object-cover": cover,
-    // "object-fill": fill,
-    // "object-none": none,
-    "object-scale-down": scale-down,
+	"object-contain": contain,
+	"object-cover": cover,
+	// "object-fill": fill,
+	// "object-none": none,
+	"object-scale-down": scale-down,
 );
 
 // Object Position
 $object-position: (
-    // "object-bottom": bottom,
-    // "object-center": center,
-    // "object-left": left,
-    // "object-left-bottom": left bottom,
-    // "object-left-top": left top,
-    // "object-right": right,
-    // "object-right-bottom": right bottom,
-    // "object-right-top": right top,
-    // "object-top": top,
+	// "object-bottom": bottom,
+	// "object-center": center,
+	// "object-left": left,
+	// "object-left-bottom": left bottom,
+	// "object-left-top": left top,
+	// "object-right": right,
+	// "object-right-bottom": right bottom,
+	// "object-right-top": right top,
+	// "object-top": top,
 );
 
 // Overflow
 $overflow: (
-    "overflow-auto": auto,
-    "overflow-hidden": hidden,
-    "overflow-visible": visible,
-    "overflow-scroll": scroll,
-    "overflow-x-auto": auto,
-    "overflow-y-auto": auto,
-    "overflow-x-hidden": hidden,
-    "overflow-y-hidden": hidden,
-    "overflow-x-visible": visible,
-    "overflow-y-visible": visible,
-    "overflow-x-scroll": scroll,
-    "overflow-y-scroll": scroll,
+	"overflow-auto": auto,
+	"overflow-hidden": hidden,
+	"overflow-visible": visible,
+	"overflow-scroll": scroll,
+	"overflow-x-auto": auto,
+	"overflow-y-auto": auto,
+	"overflow-x-hidden": hidden,
+	"overflow-y-hidden": hidden,
+	"overflow-x-visible": visible,
+	"overflow-y-visible": visible,
+	"overflow-x-scroll": scroll,
+	"overflow-y-scroll": scroll,
 );
 
 // Overscroll Behavior
 $overscroll-behavior: (
-    // "overscroll-auto": auto,
-    // "overscroll-contain": contain,
-    // "overscroll-none": none,
-    // "overscroll-y-auto": auto,
-    // "overscroll-y-contain": contain,
-    // "overscroll-y-none": none,
-    // "overscroll-x-auto": auto,
-    // "overscroll-x-contain": contain,
-    // "overscroll-x-none": none,
+	// "overscroll-auto": auto,
+	// "overscroll-contain": contain,
+	// "overscroll-none": none,
+	// "overscroll-y-auto": auto,
+	// "overscroll-y-contain": contain,
+	// "overscroll-y-none": none,
+	// "overscroll-x-auto": auto,
+	// "overscroll-x-contain": contain,
+	// "overscroll-x-none": none,
 );
 
 // Position
 $position: (
-    "static": static,
-    "fixed": fixed,
-    "absolute": absolute,
-    "relative": relative,
-    "sticky": sticky,
+	"static": static,
+	"fixed": fixed,
+	"absolute": absolute,
+	"relative": relative,
+	"sticky": sticky,
 );
 
 // Position Settings
-$position-directions: (
-    "t": top,
-    "r": right,
-    "b": bottom,
-    "l": left,
-);
-
-$position-coords: (
-    "0": 0,
+$position-values: (
+	"t-0": 0,
+	"t-10": 10px,
+	"r-0": 0,
+	"r-45": 45px,
+	"b-0": 0,
+	"-b-7": -7px,
+	"l-0": 0,
 );
 
 // Z-Index
 $z-index: (
-    "-z-2": -2,
-    "-z-1": -1,
-    "z-0": 0,
-    "z-10": 10,
-    "z-auto": auto,
+	"-z-1": -1,
+	"z-0": 0,
+	"z-1": 1,
+	"z-auto": auto,
 );
 
 // Visibility
 $visibility: (
-    "visible": visible,
-    "invisible": hidden,
+	"visible": visible,
+	"invisible": hidden,
 );
 
 // FLEXBOX
 // Flex Direction
 $flex-direction: (
-    "flex-row": row,
-    "flex-row-reverse": row-reverse,
-    "flex-col": column,
-    "flex-col-reverse": column-reverse,
+	"flex-row": row,
+	"flex-row-reverse": row-reverse,
+	"flex-col": column,
+	"flex-col-reverse": column-reverse,
 );
 
 // Flex Wrap
 $flex-wrap: (
-    "flex-wrap": wrap,
-    "flex-wrap-reverse": wrap-reverse,
-    "flex-nowrap": nowrap,
+	"flex-wrap": wrap,
+	"flex-wrap-reverse": wrap-reverse,
+	"flex-nowrap": nowrap,
 );
 
 // Flex
 $flex: (
-    "flex-1": 1 1 0%,
-    "flex-auto": 1 1 auto,
-    "flex-initial": 0 1 auto,
-    "flex-none": none,
+	"flex-1": 1 1 0%,
+	"flex-auto": 1 1 auto,
+	"flex-initial": 0 1 auto,
+	"flex-none": none,
 );
 
 // Flex Grow
 $flex-grow: (
-    "flex-grow-0": 0,
-    "flex-grow": 1,
+	"flex-grow-0": 0,
+	"flex-grow": 1,
 );
 
 // Flex Shrink
 $flex-shrink: (
-    "flex-shrink-0": 0,
-    "flex-shrink": 1,
+	"flex-shrink-0": 0,
+	"flex-shrink": 1,
 );
 
 // Order
 $order: (
-    "-order-1": -1,
-    "order-0": 0,
-    "order-1": 1,
+	"-order-1": -1,
+	"order-0": 0,
+	"order-1": 1,
 );
 
 // GRID
 // Grid Template Columns
 $grid-template-columns: (
-    "grid-cols-1": 1,
-    "grid-cols-2": 2,
-    "grid-cols-3": 3,
-    "grid-cols-4": 4,
-    "grid-cols-5": 5,
-    "grid-cols-none": none,
+	"grid-cols-1": 1,
+	"grid-cols-2": 2,
+	"grid-cols-3": 3,
+	"grid-cols-4": 4,
+	"grid-cols-5": 5,
+	"grid-cols-none": none,
+	"grid-cols-auto-fit-360": repeat(auto-fit, minmax(360px, 1fr)),
 );
 
 // Grid Column Start / End
 $col-span: (
-    "col-span-full": 1 / -1,
+	"col-span-full": 1 / -1,
 );
 
 // Grid Template Rows
 $grid-template-rows: (
-    "grid-rows-1": 1,
-    "grid-rows-2": 2,
-    "grid-rows-3": 3,
-    "grid-rows-4": 4,
-    "grid-rows-5": 5,
-    "grid-rows-none": none,
+	"grid-rows-1": 1,
+	"grid-rows-2": 2,
+	"grid-rows-3": 3,
+	"grid-rows-4": 4,
+	"grid-rows-5": 5,
+	"grid-rows-none": none,
 );
 
 // Grid Row Start / End
 $row-span: (
-    "row-span-full": 1 / -1,
+	"row-span-full": 1 / -1,
 );
 
 // Grid Auto Flow
@@ -266,296 +300,323 @@ $auto-rows: ();
 
 // Gap
 $gap: (
-    "30": 30px,
-    "50": 50px,
-    "x-30": 30px,
-    "x-100": 100px,
-    "y-15": 15px,
-    "y-30": 30px,
+	"30": 30px,
+	"50": 50px,
+	"70": 70px,
+	"x-30": 30px,
+	"x-100": 100px,
+	"y-15": 15px,
+	"y-30": 30px,
 );
 
 // BOX ALIGNMENT
 // Justify Content
 $justify-content: (
-    "justify-start": flex-start,
-    "justify-end": flex-end,
-    "justify-center": center,
-    "justify-between": space-between,
-    "justify-around": space-around,
-    "justify-evenly": space-evenly,
+	"justify-start": flex-start,
+	"justify-end": flex-end,
+	"justify-center": center,
+	"justify-between": space-between,
+	"justify-around": space-around,
+	"justify-evenly": space-evenly,
 );
 
 // Justify Items
 $justify-items: (
-    "justify-items-auto": auto,
-    "justify-items-start": start,
-    "justify-items-end": end,
-    "justify-items-center": center,
-    "justify-items-stretch": stretch,
+	"justify-items-auto": auto,
+	"justify-items-start": start,
+	"justify-items-end": end,
+	"justify-items-center": center,
+	"justify-items-stretch": stretch,
 );
 
 // Justify Self
 $justify-self: (
-    "justify-self-auto": auto,
-    "justify-self-start": start,
-    "justify-self-end": end,
-    "justify-self-center": center,
-    "justify-self-stretch": stretch,
+	"justify-self-auto": auto,
+	"justify-self-start": start,
+	"justify-self-end": end,
+	"justify-self-center": center,
+	"justify-self-stretch": stretch,
 );
 
 // Align Content
 $align-content: (
-    "content-center": center,
-    "content-start": flex-start,
-    "content-end": flex-end,
-    "content-between": space-between,
-    "content-around": space-around,
-    "content-evenly": space-evenly,
+	"content-center": center,
+	"content-start": flex-start,
+	"content-end": flex-end,
+	"content-between": space-between,
+	"content-around": space-around,
+	"content-evenly": space-evenly,
 );
 
 // Align Items
 $align-items: (
-    "items-start": flex-start,
-    "items-end": flex-end,
-    "items-center": center,
-    "items-baseline": baseline,
-    "items-stretch": stretch,
+	"items-start": flex-start,
+	"items-end": flex-end,
+	"items-center": center,
+	"items-baseline": baseline,
+	"items-stretch": stretch,
 );
 
 // Align Self
 $align-self: (
-    "self-auto": auto,
-    "self-start": flex-start,
-    "self-end": flex-end,
-    "self-center": center,
-    "self-stretch": stretch,
+	"self-auto": auto,
+	"self-start": flex-start,
+	"self-end": flex-end,
+	"self-center": center,
+	"self-stretch": stretch,
 );
 
 // Place Content
 $place-content: (
-    "place-content-center": center,
-    "place-content-start": start,
-    "place-content-end": end,
-    "place-content-between": space-between,
-    "place-content-around": space-around,
-    "place-content-evenly": space-evenly,
-    "place-content-stretch": stretch,
+	"place-content-center": center,
+	"place-content-start": start,
+	"place-content-end": end,
+	"place-content-between": space-between,
+	"place-content-around": space-around,
+	"place-content-evenly": space-evenly,
+	"place-content-stretch": stretch,
 );
 
 // Place Items
 $place-items: (
-    "place-items-auto": auto,
-    "place-items-start": start,
-    "place-items-end": end,
-    "place-items-center": center,
-    "place-items-stretch": stretch,
+	"place-items-auto": auto,
+	"place-items-start": start,
+	"place-items-end": end,
+	"place-items-center": center,
+	"place-items-stretch": stretch,
 );
 
 // Place Self
 $place-self: (
-    "place-self-auto": auto,
-    "place-self-start": start,
-    "place-self-end": end,
-    "place-self-center": center,
-    "place-self-stretch": stretch,
+	"place-self-auto": auto,
+	"place-self-start": start,
+	"place-self-end": end,
+	"place-self-center": center,
+	"place-self-stretch": stretch,
 );
 
 // SPACING
 $sizing-directions: (
-    "y": y,
-    "x": x,
-    "t": top,
-    "r": right,
-    "b": bottom,
-    "l": left,
-    "default": "",
+	"y": y,
+	"x": x,
+	"t": top,
+	"r": right,
+	"b": bottom,
+	"l": left,
+	"default": "",
 );
 
 // Padding
 $padding: (
-    "0": 0,
-    "10": 10px,
-    "20": 20px,
-    "40": 40px,
-    "45": 45px,
-    "50": 50px,
-    "75": 75px,
-    "90": 90px,
-    "95": 95px,
-    "y-10": 10px,
-    "y-20": 20px,
-    "y-40": 40px,
-    "y-45": 45px,
-    "y-50": 50px,
-    "y-75": 75px,
-    "y-90": 90px,
-    "y-95": 95px,
-    "x-10": 10px,
-    "x-20": 20px,
-    "x-40": 40px,
-    "x-45": 45px,
-    "x-50": 50px,
-    "x-75": 75px,
-    "x-90": 90px,
-    "x-95": 95px,
-    "t-10": 10px,
-    "t-20": 20px,
-    "t-40": 40px,
-    "t-45": 45px,
-    "t-50": 50px,
-    "t-75": 75px,
-    "t-90": 90px,
-    "t-95": 95px,
-    "r-10": 10px,
-    "r-20": 20px,
-    "r-40": 40px,
-    "r-45": 45px,
-    "r-50": 50px,
-    "r-75": 75px,
-    "r-90": 90px,
-    "r-95": 95px,
-    "b-10": 10px,
-    "b-20": 20px,
-    "b-40": 40px,
-    "b-45": 45px,
-    "b-50": 50px,
-    "b-75": 75px,
-    "b-90": 90px,
-    "b-95": 95px,
-    "l-10": 10px,
-    "l-20": 20px,
-    "l-40": 40px,
-    "l-45": 45px,
-    "l-50": 50px,
-    "l-75": 75px,
-    "l-90": 90px,
-    "l-95": 95px,
+	"0": 0,
+	"10": 10px,
+	"20": 20px,
+	"30": 30px,
+	"40": 40px,
+	"45": 45px,
+	"50": 50px,
+	"75": 75px,
+	"90": 90px,
+	"95": 95px,
+	"y-10": 10px,
+	"y-20": 20px,
+	"y-40": 40px,
+	"y-45": 45px,
+	"y-50": 50px,
+	"y-75": 75px,
+	"y-80": 80px,
+	"y-90": 90px,
+	"y-95": 95px,
+	"y-100": 100px,
+	"y-160": 160px,
+	"x-10": 10px,
+	"x-20": 20px,
+	"x-40": 40px,
+	"x-45": 45px,
+	"x-50": 50px,
+	"x-75": 75px,
+	"x-90": 90px,
+	"x-95": 95px,
+	"t-10": 10px,
+	"t-20": 20px,
+	"t-40": 40px,
+	"t-45": 45px,
+	"t-50": 50px,
+	"t-75": 75px,
+	"t-80": 80px,
+	"t-90": 90px,
+	"t-95": 95px,
+	"t-105": 105px,
+	"t-160": 160px,
+	"r-10": 10px,
+	"r-20": 20px,
+	"r-40": 40px,
+	"r-45": 45px,
+	"r-50": 50px,
+	"r-75": 75px,
+	"r-90": 90px,
+	"r-95": 95px,
+	"b-10": 10px,
+	"b-20": 20px,
+	"b-40": 40px,
+	"b-45": 45px,
+	"b-50": 50px,
+	"b-60": 60px,
+	"b-75": 75px,
+	"b-90": 90px,
+	"b-95": 95px,
+	"b-160": 160px,
+	"b-190": 190px,
+	"l-10": 10px,
+	"l-20": 20px,
+	"l-40": 40px,
+	"l-45": 45px,
+	"l-50": 50px,
+	"l-75": 75px,
+	"l-90": 90px,
+	"l-95": 95px,
 );
 
 // Margin
 $margin: (
-    "auto": auto,
-    "0": 0,
-    "1": 1px,
-    "4": 4px,
-    "10": 10px,
-    "11": 11px,
-    "20": 20px,
-    "22": 22px,
-    "25": 25px,
-    "30": 30px,
-    "35": 35px,
-    "40": 40px,
-    "45": 45px,
-    "55": 55px,
-    "80": 80px,
-    "120": 120px,
-    "130": 130px,
-    "177": 177px,
-    "200": 200px,
-    "y-1": 1px,
-    "y-4": 4px,
-    "y-10": 10px,
-    "y-11": 11px,
-    "y-20": 20px,
-    "y-22": 22px,
-    "y-25": 25px,
-    "y-30": 30px,
-    "y-35": 35px,
-    "y-40": 40px,
-    "y-45": 45px,
-    "y-55": 55px,
-    "y-80": 80px,
-    "y-120": 120px,
-    "y-130": 130px,
-    "y-177": 177px,
-    "y-200": 200px,
-    "x-1": 1px,
-    "x-4": 4px,
-    "x-10": 10px,
-    "x-11": 11px,
-    "x-20": 20px,
-    "x-22": 22px,
-    "x-25": 25px,
-    "x-30": 30px,
-    "x-35": 35px,
-    "x-40": 40px,
-    "x-45": 45px,
-    "x-55": 55px,
-    "x-80": 80px,
-    "x-120": 120px,
-    "x-130": 130px,
-    "x-177": 177px,
-    "x-200": 200px,
-    "-t-400": 400px,
-    "t-1": 1px,
-    "t-4": 4px,
-    "t-10": 10px,
-    "t-11": 11px,
-    "t-20": 20px,
-    "t-22": 22px,
-    "t-25": 25px,
-    "t-30": 30px,
-    "t-35": 35px,
-    "t-40": 40px,
-    "t-45": 45px,
-    "t-55": 55px,
-    "t-80": 80px,
-    "t-120": 120px,
-    "t-130": 130px,
-    "t-177": 177px,
-    "t-200": 200px,
-    "r-1": 1px,
-    "r-4": 4px,
-    "r-10": 10px,
-    "r-11": 11px,
-    "r-20": 20px,
-    "r-22": 22px,
-    "r-25": 25px,
-    "r-30": 30px,
-    "r-35": 35px,
-    "r-40": 40px,
-    "r-45": 45px,
-    "r-55": 55px,
-    "r-80": 80px,
-    "r-120": 120px,
-    "r-130": 130px,
-    "r-177": 177px,
-    "r-200": 200px,
-    "b-1": 1px,
-    "b-4": 4px,
-    "b-10": 10px,
-    "b-11": 11px,
-    "b-20": 20px,
-    "b-22": 22px,
-    "b-25": 25px,
-    "b-30": 30px,
-    "b-35": 35px,
-    "b-40": 40px,
-    "b-45": 45px,
-    "b-55": 55px,
-    "b-80": 80px,
-    "b-120": 120px,
-    "b-130": 130px,
-    "b-177": 177px,
-    "b-200": 200px,
-    "l-1": 1px,
-    "l-4": 4px,
-    "l-10": 10px,
-    "l-11": 11px,
-    "l-20": 20px,
-    "l-22": 22px,
-    "l-25": 25px,
-    "l-30": 30px,
-    "l-35": 35px,
-    "l-40": 40px,
-    "l-45": 45px,
-    "l-55": 55px,
-    "l-80": 80px,
-    "l-120": 120px,
-    "l-130": 130px,
-    "l-177": 177px,
-    "l-200": 200px,
+	"auto": auto,
+	"0": 0,
+	"1": 1px,
+	"4": 4px,
+	"10": 10px,
+	"11": 11px,
+	"20": 20px,
+	"22": 22px,
+	"25": 25px,
+	"30": 30px,
+	"35": 35px,
+	"40": 40px,
+	"45": 45px,
+	"55": 55px,
+	"80": 80px,
+	"120": 120px,
+	"130": 130px,
+	"177": 177px,
+	"200": 200px,
+	"y-1": 1px,
+	"y-4": 4px,
+	"y-7": 7px,
+	"y-10": 10px,
+	"y-11": 11px,
+	"y-20": 20px,
+	"y-22": 22px,
+	"y-25": 25px,
+	"y-30": 30px,
+	"y-35": 35px,
+	"y-40": 40px,
+	"y-45": 45px,
+	"y-55": 55px,
+	"y-80": 80px,
+	"y-120": 120px,
+	"y-130": 130px,
+	"y-160": 160px,
+	"y-177": 177px,
+	"y-200": 200px,
+	"x-1": 1px,
+	"x-4": 4px,
+	"x-10": 10px,
+	"x-11": 11px,
+	"x-20": 20px,
+	"x-22": 22px,
+	"x-25": 25px,
+	"x-30": 30px,
+	"x-35": 35px,
+	"x-40": 40px,
+	"x-45": 45px,
+	"x-55": 55px,
+	"x-80": 80px,
+	"x-120": 120px,
+	"x-130": 130px,
+	"x-177": 177px,
+	"x-200": 200px,
+	"-t-22": 22px,
+	"-t-45": 45px,
+	"-t-205": 205px,
+	"-t-400": 400px,
+	"t-1": 1px,
+	"t-4": 4px,
+	"t-10": 10px,
+	"t-11": 11px,
+	"t-15": 15px,
+	"t-20": 20px,
+	"t-22": 22px,
+	"t-23": 23px,
+	"t-25": 25px,
+	"t-30": 30px,
+	"t-35": 35px,
+	"t-40": 40px,
+	"t-45": 45px,
+	"t-55": 55px,
+	"t-80": 80px,
+	"t-90": 90px,
+	"t-120": 120px,
+	"t-130": 130px,
+	"t-150": 150px,
+	"t-177": 177px,
+	"t-200": 200px,
+	"t-210": 210px,
+	"r-1": 1px,
+	"r-4": 4px,
+	"r-10": 10px,
+	"r-11": 11px,
+	"r-20": 20px,
+	"r-22": 22px,
+	"r-25": 25px,
+	"r-30": 30px,
+	"r-35": 35px,
+	"r-40": 40px,
+	"r-45": 45px,
+	"r-55": 55px,
+	"r-80": 80px,
+	"r-120": 120px,
+	"r-130": 130px,
+	"r-177": 177px,
+	"r-190": 190px,
+	"r-200": 200px,
+	"-r-30": 30px,
+	"b-1": 1px,
+	"b-4": 4px,
+	"b-10": 10px,
+	"b-11": 11px,
+	"b-15": 15px,
+	"b-20": 20px,
+	"b-22": 22px,
+	"b-25": 25px,
+	"b-30": 30px,
+	"b-35": 35px,
+	"b-40": 40px,
+	"b-45": 45px,
+	"b-55": 55px,
+	"b-80": 80px,
+	"b-90": 90px,
+	"b-100": 100px,
+	"b-120": 120px,
+	"b-130": 130px,
+	"b-177": 177px,
+	"b-200": 200px,
+	"l-1": 1px,
+	"l-4": 4px,
+	"l-10": 10px,
+	"l-11": 11px,
+	"l-12": 12px,
+	"l-20": 20px,
+	"l-22": 22px,
+	"l-25": 25px,
+	"l-30": 30px,
+	"l-35": 35px,
+	"l-40": 40px,
+	"l-45": 45px,
+	"l-55": 55px,
+	"l-80": 80px,
+	"l-120": 120px,
+	"l-130": 130px,
+	"l-177": 177px,
+	"l-200": 200px,
 );
 
 // Space Between
@@ -564,126 +625,148 @@ $space-between: ();
 // SIZING
 // Width
 $width: (
-    "full": 100%,
-    "3": 3px,
-    "12": 12px,
-    "200": 200px,
-    "216": 216px,
+	"full": 100%,
+	"12": 12px,
+	"200": 200px,
+	"216": 216px,
+	"253": 253px,
 );
 
 // Min-Width
 $min-width: (
-    "1": 1px,
+	"1": 1px,
 );
 
 // Max-Width
 $max-width: (
-    "full": 100%,
-    "307": 307px,
-    "395": 395px,
-    "400": 400px,
-    "900": 900px,
-    "950": 950px,
-    "1100": 1100px,
-    "1260": 1260px,
+	"full": 100%,
+	"170": 170px,
+	"307": 307px,
+	"310": 310px,
+	"360": 360px,
+	"395": 395px,
+	"400": 400px,
+	"465": 465px,
+	"840": 840px,
+	"900": 900px,
+	"950": 950px,
+	"1050": 1050px,
+	"1000": 1000px,
+	"1100": 1100px,
+	"1220": 1220px,
+	"1260": 1260px,
 );
 
 // Height
 $height: (
-    "screen": 100vh,
-    "full": 100%,
-    "1": 1px,
-    "2": 2px,
-    "12": 12px,
-    "34": 34px,
-    "520": 520px,
-    "620": 620px,
-    "740": 740px,
-    "800": 800px,
+	"screen": 100vh,
+	"full": 100%,
+	"1": 1px,
+	"2": 2px,
+	"12": 12px,
+	"34": 34px,
+	"42": 42px,
+	"71": 71px,
+	"234": 234px,
+	"285": 285px,
+	"520": 520px,
+	"620": 620px,
+	"740": 740px,
+	"800": 800px,
 );
 
 // Min-Height
 $min-height: (
-    "1": 1px,
+	"1": 1px,
 );
 
 // Max-Height
 $max-height: (
-    "1": 1px,
+	"1": 1px,
+	"full": 100%,
 );
 
 // TYPOGRAPHY
 // Font Faces
 $font-faces: (
-    "segoe": url("/CMS/site/fonts/Segoe-UI/segoeui.ttf") format("truetype"),
-    "segoe-bold": url("/CMS/site/fonts/Segoe-UI/segoeuib.ttf") format("truetype"),
-    "segoe-light": url("/CMS/site/fonts/Segoe-UI/segoeuil.ttf") format("truetype"),
-    "segoe-black": url("/CMS/site/fonts/Segoe-UI/seguibl.ttf") format("truetype"),
-    "acid": url("/CMS/site/fonts/AC-Compacta/AC-Compacta.otf") format("opentype"),
-    "railroad": url("/CMS/site/fonts/Railroad/IFC-RAILROAD.ttf") format("truetype"),
-    "trebuchet-regular": url("/CMS/site/fonts/Trebuchet/trebuc.ttf") format("truetype"),
-    "trebuchet-bold": url("/CMS/site/fonts/Trebuchet/trebucbd.ttf") format("truetype"),
-    "futura": url("/CMS/site/fonts/Futura/PFFuturaNeuBook-Regular.ttf") format("truetype"),
-    "futura-bold": url("/CMS/site/fonts/Futura/PFFuturaNeu-Bold.ttf") format("truetype"),
+	"segoe": url("/CMS/site/fonts/Segoe-UI/segoeui.ttf") format("truetype"),
+	"segoe-bold": url("/CMS/site/fonts/Segoe-UI/segoeuib.ttf") format("truetype"),
+	"segoe-light": url("/CMS/site/fonts/Segoe-UI/segoeuil.ttf") format("truetype"),
+	"segoe-light-italic": url("/CMS/site/fonts/Segoe-UI/seguili.ttf") format("truetype"),
+	"segoe-black": url("/CMS/site/fonts/Segoe-UI/seguibl.ttf") format("truetype"),
+	"acid": url("/CMS/site/fonts/AC-Compacta/AC-Compacta.otf") format("opentype"),
+	"railroad": url("/CMS/site/fonts/Railroad/IFC-RAILROAD.ttf") format("truetype"),
+	"trebuchet-regular": url("/CMS/site/fonts/Trebuchet/trebuc.ttf") format("truetype"),
+	"trebuchet-bold": url("/CMS/site/fonts/Trebuchet/trebucbd.ttf") format("truetype"),
+	"futura": url("/CMS/site/fonts/Futura/PFFuturaNeuBook-Regular.ttf") format("truetype"),
+	"futura-bold": url("/CMS/site/fonts/Futura/PFFuturaNeu-Bold.ttf") format("truetype"),
 );
 
 // Font Family
 $font: (
-    "segoe": var(--font-segoe),
-    "segoe-bold": var(--font-segoe-bold),
-    "segoe-light": var(--font-segoe-light),
-    "segoe-black": var(--font-segoe-black),
-    "acid": var(--font-acid),
-    "railroad": var(--font-railroad),
-    "trebuchet-regular": var(--font-trebuchet-regular),
-    "trebuchet-bold": var(--font-trebuchet-bold),
-    "futura": var(--font-futura),
-    "futura-bold": var(--font-futura-bold),
-    "roboto-slab-bold": "Roboto Slab",
+	"segoe": var(--font-segoe),
+	"segoe-bold": var(--font-segoe-bold),
+	"segoe-light": var(--font-segoe-light),
+	"segoe-light-italic": var(--font-segoe-light-italic),
+	"segoe-black": var(--font-segoe-black),
+	"acid": var(--font-acid),
+	"railroad": var(--font-railroad),
+	"trebuchet-regular": var(--font-trebuchet-regular),
+	"trebuchet-bold": var(--font-trebuchet-bold),
+	"futura": var(--font-futura),
+	"futura-bold": var(--font-futura-bold),
+	"roboto-slab-bold": "Roboto Slab",
 );
 
 // Font Size
 $font-size: (
-    "12": 12px,
-    "13": 13px,
-    "14": 14px,
-    "16": 16px,
-    "18": 18px,
-    "20": 20px,
-    "22": 22px,
-    "25": 25px,
-    "28": 28px,
-    "30": 30px,
-    "32": 32px,
-    "40": 40px,
-    "46": 46px,
-    "48": 48px,
-    "50": 50px,
+	"10": 10px,
+	"12": 12px,
+	"13": 13px,
+	"14": 14px,
+	"16": 16px,
+	"18": 18px,
+	"20": 20px,
+	"22": 22px,
+	"24": 24px,
+	"25": 25px,
+	"28": 28px,
+	"30": 30px,
+	"32": 32px,
+	"40": 40px,
+	"46": 46px,
+	"48": 48px,
+	"50": 50px,
+	"65": 65px,
+	"79": 79px,
+	"100": 100px,
+	"200": 200px,
+	"clamp-200-to-50": clamp(50px, 10vw, 200px),
 );
 
 // Font Smoothing
 $font-smoothing: (
-    "antialiased": antialiased,
-    "subpixel-antialiased": subpixel-antialiased,
+	"antialiased": antialiased,
+	"subpixel-antialiased": subpixel-antialiased,
 );
 
 // Font Style
 $font-style: (
-    "italic": italic,
-    "not-italic": normal,
+	"italic": italic,
+	"not-italic": normal,
 );
 
 // Font Weight
 $font-weight: (
-    "font-thin": 100,
-    "font-extralight": 200,
-    "font-light": 300,
-    "font-normal": 400,
-    "font-medium": 500,
-    "font-semibold": 600,
-    "font-bold": 700,
-    "font-extrabold": 800,
-    "font-black": 900,
+	"font-thin": 100,
+	"font-extralight": 200,
+	"font-light": 300,
+	"font-normal": 400,
+	"font-medium": 500,
+	"font-semibold": 600,
+	"font-bold": 700,
+	"font-extrabold": 800,
+	"font-black": 900,
 );
 
 // Font Variant Numeric
@@ -694,14 +777,15 @@ $letter-spacing: ();
 
 // Line Height
 $line-height: (
-    "24": 24px,
+	"24": 24px,
+	"31": 31px,
 );
 
 // List Style Type
 $list-style-type: (
-    "list-none": none,
-    "list-disc": disc,
-    "list-decimal": decimal,
+	"list-none": none,
+	"list-disc": disc,
+	"list-decimal": decimal,
 );
 
 // List Style Position
@@ -715,10 +799,10 @@ $placeholder-opacity: ();
 
 // Text Alignment
 $text-align: (
-    "text-left": left,
-    "text-center": center,
-    "text-right": right,
-    "text-justify": justify,
+	"text-left": left,
+	"text-center": center,
+	"text-right": right,
+	"text-justify": justify,
 );
 
 // Text Color
@@ -726,23 +810,23 @@ $text-color: ("loop over colors");
 
 // Text Opacity
 $text-opacity: (
-    "text-opacity-0": 0,
-    "text-opacity-5": 0.5,
+	"text-opacity-0": 0,
+	"text-opacity-5": 0.5,
 );
 
 // Text Decoration
 $text-decoration: (
-    "underline": underline,
-    "line-through": line-through,
-    "no-underline": none,
+	"underline": underline,
+	"line-through": line-through,
+	"no-underline": none,
 );
 
 // Text Transform
 $text-transform: (
-    "uppercase": uppercase,
-    "lowercase": lowercase,
-    "capitalize": capitalize,
-    "normal-case": none,
+	"uppercase": uppercase,
+	"lowercase": lowercase,
+	"capitalize": capitalize,
+	"normal-case": none,
 );
 
 // Text Overflow
@@ -753,26 +837,26 @@ $vertical-align: ();
 
 // Whitespace
 $whitespace: (
-    "whitespace-normal": normal,
-    "whitespace-nowrap": nowrap,
-    "whitespace-pre": pre,
-    "whitespace-pre-line": pre-line,
-    "whitespace-pre-wrap": pre-wrap,
+	"whitespace-normal": normal,
+	"whitespace-nowrap": nowrap,
+	"whitespace-pre": pre,
+	"whitespace-pre-line": pre-line,
+	"whitespace-pre-wrap": pre-wrap,
 );
 
 // Word Break
 $word-break: (
-    "break-normal": normal,
-    "break-words": break-word,
-    "break-all": break-all,
+	"break-normal": normal,
+	"break-words": break-word,
+	"break-all": break-all,
 );
 
 // BACKGROUNDS
 // Background Attachment
 $background-attachment: (
-    "bg-fixed": fixed,
-    // "bg-local": local,
-    "bg-scroll": scroll,
+	"bg-fixed": fixed,
+	// "bg-local": local,
+	"bg-scroll": scroll,
 );
 
 // Background Clip
@@ -786,37 +870,37 @@ $background-opacity: ();
 
 // Background Position
 $background-position: (
-    "bg-bottom": bottom,
-    "bg-center": center,
-    "bg-left": left,
-    "bg-left-bottom": left bottom,
-    "bg-left-top": left top,
-    "bg-right": right,
-    "bg-right-bottom": right bottom,
-    "bg-right-top": right top,
-    "bg-top": top,
+	"bg-bottom": bottom,
+	"bg-center": center,
+	"bg-left": left,
+	"bg-left-bottom": left bottom,
+	"bg-left-top": left top,
+	"bg-right": right,
+	"bg-right-bottom": right bottom,
+	"bg-right-top": right top,
+	"bg-top": top,
 );
 
 // Background Repeat
 $background-repeat: (
-    "bg-repeat": repeat,
-    "bg-no-repeat": no-repeat,
-    "bg-repeat-x": repeat-x,
-    "bg-repeat-y": repeat-y,
-    "bg-repeat-round": round,
-    "bg-repeat-space": space,
+	"bg-repeat": repeat,
+	"bg-no-repeat": no-repeat,
+	"bg-repeat-x": repeat-x,
+	"bg-repeat-y": repeat-y,
+	"bg-repeat-round": round,
+	"bg-repeat-space": space,
 );
 
 // Background Size
 $background-size: (
-    "bg-auto": auto,
-    "bg-cover": cover,
-    "bg-contain": contain,
+	"bg-auto": auto,
+	"bg-cover": cover,
+	"bg-contain": contain,
 );
 
 // Background Image
 $background-image: (
-    "bg-none": none,
+	"bg-none": none,
 );
 
 // Gradient Color Stops
@@ -825,26 +909,26 @@ $gradient-color-stops: ();
 // BORDERS
 // Border Radius
 $border-radius: (
-    "none": 0,
-    "full": 50%,
-    "1": 1px,
-    "t-1": 1px,
-    "r-1": 1px,
-    "b-1": 1px,
-    "l-1": 1px,
-    "tl-1": 1px,
-    "tr-1": 1px,
-    "br-1": 1px,
-    "bl-1": 1px,
+	"none": 0,
+	"full": 50%,
+	"1": 1px,
+	"t-1": 1px,
+	"r-1": 1px,
+	"b-1": 1px,
+	"l-1": 1px,
+	"tl-1": 1px,
+	"tr-1": 1px,
+	"br-1": 1px,
+	"bl-1": 1px,
 );
 
 // Border Width
 $border-width: (
-    "1": 1px,
-    "t-1": 1px,
-    "r-1": 1px,
-    "b-1": 1px,
-    "l-1": 1px,
+	"1": 1px,
+	"t-1": 1px,
+	"r-1": 1px,
+	"b-1": 1px,
+	"l-1": 1px,
 );
 
 // Border Color
@@ -855,52 +939,57 @@ $border-opacity: ();
 
 // Border Style
 $border-style: (
-    "border-solid": solid,
-    "border-dashed": dashed,
-    "border-dotted": dotted,
-    "border-double": double,
-    "border-none": none,
+	"border-solid": solid,
+	"border-dashed": dashed,
+	"border-dotted": dotted,
+	"border-double": double,
+	"border-none": none,
 );
 
 // EFFECTS
 // Box Shadow
 $box-shadow: (
-    "default": 0 0 3px 0 rgba(0, 0, 0, 0.2),
-    "bottom": 0 2px 3px 0 rgba(0, 0, 0, 0.08),
-    "right": 1px 0 3px 0 rgba(0, 0, 0, 0.08),
+	"default": 0 0 3px 0 rgba(0, 0, 0, 0.2),
+	"bottom": 0 2px 3px 0 rgba(0, 0, 0, 0.08),
+	"right": 1px 0 3px 0 rgba(0, 0, 0, 0.08),
+);
+
+// Blend Modes
+$blend-mode: (
+	"multiply": multiply,
 );
 
 // Opacity
 $opacity: (
-    "opacity-0": 0,
-    "opacity-5": 0.05,
-    "opacity-10": 0.1,
-    "opacity-20": 0.2,
-    "opacity-25": 0.25,
-    "opacity-30": 0.3,
-    "opacity-40": 0.4,
-    "opacity-50": 0.5,
-    "opacity-60": 0.6,
-    "opacity-70": 0.7,
-    "opacity-75": 0.75,
-    "opacity-80": 0.8,
-    "opacity-90": 0.9,
-    "opacity-95": 0.95,
-    "opacity-100": 1,
+	"opacity-0": 0,
+	"opacity-5": 0.05,
+	"opacity-10": 0.1,
+	"opacity-20": 0.2,
+	"opacity-25": 0.25,
+	"opacity-30": 0.3,
+	"opacity-40": 0.4,
+	"opacity-50": 0.5,
+	"opacity-60": 0.6,
+	"opacity-70": 0.7,
+	"opacity-75": 0.75,
+	"opacity-80": 0.8,
+	"opacity-90": 0.9,
+	"opacity-95": 0.95,
+	"opacity-100": 1,
 );
 
 // TRANSITIONS AND ANIMATION
 // Transition Property
 $transition: (
-    "default": 80ms linear,
+	"default": 80ms linear,
 );
 
 // Transition Directions
 $transition-directions: (
-    "t": top,
-    "r": right,
-    "b": bottom,
-    "l": left,
+	"t": top,
+	"r": right,
+	"b": bottom,
+	"l": left,
 );
 
 // HOVERS
@@ -909,26 +998,26 @@ $hover-colors: ("loop over colors");
 
 // Hover Opacity
 $hover-opacity: (
-    "opacity-70": 0.7,
+	"opacity-70": 0.7,
 );
 
 // INTERACTIVITY
 // Cursor
 $cursor: (
-    "cursor-auto": auto,
-    "cursor-default": default,
-    "cursor-pointer": pointer,
-    "cursor-wait": wait,
-    "cursor-text": text,
-    "cursor-move": move,
-    "cursor-help": help,
-    "cursor-not-allowed": not-allowed,
+	"cursor-auto": auto,
+	"cursor-default": default,
+	"cursor-pointer": pointer,
+	"cursor-wait": wait,
+	"cursor-text": text,
+	"cursor-move": move,
+	"cursor-help": help,
+	"cursor-not-allowed": not-allowed,
 );
 
 // User Select
 $user-select: (
-    "select-none": none,
-    "select-text": text,
-    "select-all": all,
-    "select-auto": auto,
+	"select-none": none,
+	"select-text": text,
+	"select-all": all,
+	"select-auto": auto,
 );
