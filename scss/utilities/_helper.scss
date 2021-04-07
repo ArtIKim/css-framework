@@ -65,14 +65,6 @@
 }
 
 // Position Settings
-// @each $position-directions-prop, $position-directions-value in $position-directions {
-// 	@each $position-coords-prop, $position-coords-value in $position-coords {
-// 		.#{$position-directions-prop}-#{$position-coords-prop} {
-// 			#{$position-directions-value}: $position-coords-value;
-// 		}
-// 	}
-// }
-
 @each $position-values-prop, $position-values-value in $position-values {
 	$param: str-slice(#{$position-values-prop}, 1, 2);
 
@@ -80,8 +72,20 @@
 		.#{$position-values-prop} {
 			top: $position-values-value;
 		}
+	} @else if $param == "-t" {
+		$new-prop: str-slice(#{$position-values-prop}, 2, -1);
+
+		.-#{$new-prop} {
+			top: $position-values-value;
+		}
 	} @else if $param == "r-" {
 		.#{$position-values-prop} {
+			right: $position-values-value;
+		}
+	} @else if $param == "-r" {
+		$new-prop: str-slice(#{$position-values-prop}, 2, -1);
+
+		.-#{$new-prop} {
 			right: $position-values-value;
 		}
 	} @else if $param == "b-" {
@@ -96,6 +100,12 @@
 		}
 	} @else if $param == "l-" {
 		.#{$position-values-prop} {
+			left: $position-values-value;
+		}
+	} @else if $param == "-l" {
+		$new-prop: str-slice(#{$position-values-prop}, 2, -1);
+
+		.-#{$new-prop} {
 			left: $position-values-value;
 		}
 	}
@@ -363,7 +373,7 @@
 		$new-prop: str-slice(#{$margin-prop}, 2, -1);
 
 		.-m#{$new-prop} {
-			margin-top: -$margin-value;
+			margin-top: $margin-value;
 		}
 	} @else if $param == "r-" {
 		.m#{$margin-prop} {
@@ -373,14 +383,26 @@
 		$new-prop: str-slice(#{$margin-prop}, 2, -1);
 
 		.-m#{$new-prop} {
-			margin-right: -$margin-value;
+			margin-right: $margin-value;
 		}
 	} @else if $param == "b-" {
 		.m#{$margin-prop} {
 			margin-bottom: $margin-value;
 		}
+	} @else if $param == "-b" {
+		$new-prop: str-slice(#{$margin-prop}, 2, -1);
+
+		.-m#{$new-prop} {
+			margin-bottom: $margin-value;
+		}
 	} @else if $param == "l-" {
 		.m#{$margin-prop} {
+			margin-left: $margin-value;
+		}
+	} @else if $param == "-l" {
+		$new-prop: str-slice(#{$margin-prop}, 2, -1);
+
+		.-m#{$new-prop} {
 			margin-left: $margin-value;
 		}
 	} @else if $param == "au" {

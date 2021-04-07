@@ -680,6 +680,10 @@ p {
   top: 10px;
 }
 
+.-t-10 {
+  top: -10px;
+}
+
 .r-0 {
   right: 0;
 }
@@ -688,12 +692,20 @@ p {
   right: 45px;
 }
 
+.-r-45 {
+  right: -45px;
+}
+
 .b-0 {
   bottom: 0;
 }
 
 .-b-7 {
   bottom: -7px;
+}
+
+.-l-5 {
+  left: -5px;
 }
 
 .l-0 {
@@ -1974,6 +1986,10 @@ p {
   margin-bottom: 200px;
 }
 
+.-mb-200 {
+  margin-bottom: -200px;
+}
+
 .ml-1 {
   margin-left: 1px;
 }
@@ -2044,6 +2060,10 @@ p {
 
 .ml-200 {
   margin-left: 200px;
+}
+
+.-ml-200 {
+  margin-left: -200px;
 }
 
 .w-full {
