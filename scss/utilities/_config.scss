@@ -5,88 +5,24 @@
 	--clr-primary: #000;
 	--clr-secondary: #57b8d5;
 
-	--clr-white-2: #fff;
-
-	--clr-background: #fff;
-
-	--clr-gray: #e9e9e9;
-	--clr-gray-2: #7b7b7b;
-	--clr-brown: #2b1f1d;
-	--clr-pink-100: #f5e7d2;
-	--clr-pink-200: #d8bb9e;
-	--clr-green: #74941b;
-	--clr-strawberry: #c53560;
-	--clr-pina-colada: #2073a5;
-	--clr-sex-on-the-beach: #e28318;
-	--clr-cosmopolitan: #c73135;
-	--clr-long-island-iced-tea: #c58418;
-	--clr-passion-fruit-martini: #9b1679;
-	--clr-mai-tai: #ea6123;
-	--clr-negroni: #a82e33;
-	--clr-espresso-martini: #6d4a2d;
-	--clr-white-russian: #8a6a52;
-	--clr-whiskey-sour-cocktail: #315e31;
-	--clr-amaretto-sour: #ac5020;
-	--clr-tequila-sunrise: #efa312;
-
 	--clr-white: #fff;
 	--clr-black: #000;
-	--clr-black-800: #3b3b3b;
 
-	--font-segoe: "segoe";
-	--font-segoe-bold: "segoe-bold";
-	--font-segoe-light: "segoe-light";
-	--font-segoe-light-italic: "segoe-light-italic";
-	--font-segoe-black: "segoe-black";
-	--font-acid: "acid";
-	--font-railroad: "railroad";
-	--font-trebuchet-regular: "trebuchet-regular";
-	--font-trebuchet-bold: "trebuchet-bold";
-	--font-futura: "futura";
-	--font-futura-bold: "futura-bold";
-	--font-roboto-slab-bold: "'Roboto Slab', serif";
+	// --font-segoe: "segoe";
 }
 
 // LAYOUT
 // Colors
 $colors: (
-	"white": var(--clr-white),
-	"black": var(--clr-black),
-	"black-800": var(--clr-black-800),
-	"gray": var(--clr-gray),
-	"gray-2": var(--clr-gray-2),
-	"brown": var(--clr-brown),
-	"pink-100": var(--clr-pink-100),
-	"pink-200": var(--clr-pink-200),
-	"green": var(--clr-green),
-	"strawberry": var(--clr-strawberry),
-	"pina-colada": var(--clr-pina-colada),
-	"sex-on-the-beach": var(--clr-sex-on-the-beach),
-	"cosmopolitan": var(--clr-cosmopolitan),
-	"long-island-iced-tea": var(--clr-long-island-iced-tea),
-	"passion-fruit-martini": var(--clr-passion-fruit-martini),
-	"mai-tai": var(--clr-mai-tai),
-	"negroni": var(--clr-negroni),
-	"espresso-martini": var(--clr-espresso-martini),
-	"white-russian": var(--clr-white-russian),
-	"whiskey-sour-cocktail": var(--clr-whiskey-sour-cocktail),
-	"amaretto-sour": var(--clr-amaretto-sour),
-	"tequila-sunrise": var(--clr-tequila-sunrise),
 	"primary": var(--clr-primary),
 	"secondary": var(--clr-secondary),
+	"white": var(--clr-white),
+	"black": var(--clr-black),
 );
 
 // Container
 $media: (
-	"media-1800": 1800px,
-	"media-1700": 1700px,
-	"media-1400": 1400px,
-	"media-1300": 1300px,
-	"media-1190": 1190px,
-	"media-1090": 1090px,
 	"media-991": 991px,
-	"media-776": 776px,
-	"media-580": 580px,
 );
 
 // Box Sizing
@@ -196,23 +132,17 @@ $position: (
 // Position Settings
 $position-values: (
 	"t-0": 0,
-	"t-10": 10px,
-	"-t-10": -10px,
 	"r-0": 0,
-	"r-45": 45px,
-	"-r-45": -45px,
 	"b-0": 0,
-	"-b-7": -7px,
-	"-l-5": -5px,
 	"l-0": 0,
 );
 
 // Z-Index
 $z-index: (
+	"z-auto": auto,
 	"-z-1": -1,
 	"z-0": 0,
 	"z-1": 1,
-	"z-auto": auto,
 );
 
 // Visibility
@@ -267,12 +197,12 @@ $order: (
 // GRID
 // Grid Template Columns
 $grid-template-columns: (
+	"grid-cols-none": none,
 	"grid-cols-1": 1,
 	"grid-cols-2": 2,
 	"grid-cols-3": 3,
 	"grid-cols-4": 4,
 	"grid-cols-5": 5,
-	"grid-cols-none": none,
 	"grid-cols-auto-fit-360": repeat(auto-fit, minmax(360px, 1fr)),
 );
 
@@ -307,13 +237,9 @@ $auto-rows: ();
 
 // Gap
 $gap: (
-	"30": 30px,
-	"50": 50px,
-	"70": 70px,
-	"x-30": 30px,
-	"x-100": 100px,
-	"y-15": 15px,
-	"y-30": 30px,
+	"1": 1px,
+	"x-1": 1px,
+	"y-1": 1px,
 );
 
 // BOX ALIGNMENT
@@ -402,230 +328,28 @@ $place-self: (
 	"place-self-stretch": stretch,
 );
 
-// SPACING
-$sizing-directions: (
-	"y": y,
-	"x": x,
-	"t": top,
-	"r": right,
-	"b": bottom,
-	"l": left,
-	"default": "",
-);
-
 // Padding
 $padding: (
 	"0": 0,
-	"10": 10px,
-	"20": 20px,
-	"30": 30px,
-	"40": 40px,
-	"45": 45px,
-	"50": 50px,
-	"75": 75px,
-	"90": 90px,
-	"95": 95px,
-	"y-10": 10px,
-	"y-20": 20px,
-	"y-40": 40px,
-	"y-45": 45px,
-	"y-50": 50px,
-	"y-75": 75px,
-	"y-80": 80px,
-	"y-90": 90px,
-	"y-95": 95px,
-	"y-100": 100px,
-	"y-160": 160px,
-	"x-10": 10px,
-	"x-20": 20px,
-	"x-40": 40px,
-	"x-45": 45px,
-	"x-50": 50px,
-	"x-75": 75px,
-	"x-90": 90px,
-	"x-95": 95px,
-	"t-10": 10px,
-	"t-20": 20px,
-	"t-40": 40px,
-	"t-45": 45px,
-	"t-50": 50px,
-	"t-75": 75px,
-	"t-80": 80px,
-	"t-90": 90px,
-	"t-95": 95px,
-	"t-105": 105px,
-	"t-160": 160px,
-	"r-10": 10px,
-	"r-20": 20px,
-	"r-40": 40px,
-	"r-45": 45px,
-	"r-50": 50px,
-	"r-75": 75px,
-	"r-90": 90px,
-	"r-95": 95px,
-	"b-10": 10px,
-	"b-20": 20px,
-	"b-40": 40px,
-	"b-45": 45px,
-	"b-50": 50px,
-	"b-60": 60px,
-	"b-75": 75px,
-	"b-90": 90px,
-	"b-95": 95px,
-	"b-160": 160px,
-	"b-190": 190px,
-	"l-10": 10px,
-	"l-20": 20px,
-	"l-40": 40px,
-	"l-45": 45px,
-	"l-50": 50px,
-	"l-75": 75px,
-	"l-90": 90px,
-	"l-95": 95px,
+	"1" :1px,
+	"y-1": 1px,
+	"x-1": 1px,
+	"t-1": 1px,
+	"r-1": 1px,
+	"b-1": 1px,
+	"l-1": 1px,
 );
 
 // Margin
 $margin: (
 	"auto": auto,
-	"0": 0,
-	"1": 1px,
-	"4": 4px,
-	"10": 10px,
-	"11": 11px,
-	"20": 20px,
-	"22": 22px,
-	"25": 25px,
-	"30": 30px,
-	"35": 35px,
-	"40": 40px,
-	"45": 45px,
-	"55": 55px,
-	"80": 80px,
-	"120": 120px,
-	"130": 130px,
-	"177": 177px,
-	"200": 200px,
+	"1" :1px,
 	"y-1": 1px,
-	"y-4": 4px,
-	"y-7": 7px,
-	"y-10": 10px,
-	"y-11": 11px,
-	"y-20": 20px,
-	"y-22": 22px,
-	"y-25": 25px,
-	"y-30": 30px,
-	"y-35": 35px,
-	"y-40": 40px,
-	"y-45": 45px,
-	"y-55": 55px,
-	"y-80": 80px,
-	"y-120": 120px,
-	"y-130": 130px,
-	"y-160": 160px,
-	"y-177": 177px,
-	"y-200": 200px,
 	"x-1": 1px,
-	"x-4": 4px,
-	"x-10": 10px,
-	"x-11": 11px,
-	"x-20": 20px,
-	"x-22": 22px,
-	"x-25": 25px,
-	"x-30": 30px,
-	"x-35": 35px,
-	"x-40": 40px,
-	"x-45": 45px,
-	"x-55": 55px,
-	"x-80": 80px,
-	"x-120": 120px,
-	"x-130": 130px,
-	"x-177": 177px,
-	"x-200": 200px,
-	"-t-22": -22px,
-	"-t-45": -45px,
-	"-t-205": -205px,
-	"-t-400": -400px,
-	"t-1": 1px,
-	"t-4": 4px,
-	"t-10": 10px,
-	"t-11": 11px,
-	"t-15": 15px,
-	"t-20": 20px,
-	"t-22": 22px,
-	"t-23": 23px,
-	"t-25": 25px,
-	"t-30": 30px,
-	"t-35": 35px,
-	"t-40": 40px,
-	"t-45": 45px,
-	"t-55": 55px,
-	"t-80": 80px,
-	"t-90": 90px,
-	"t-120": 120px,
-	"t-130": 130px,
-	"t-150": 150px,
-	"t-177": 177px,
-	"t-200": 200px,
-	"t-210": 210px,
+	"t-1": 1px, 
 	"r-1": 1px,
-	"r-4": 4px,
-	"r-10": 10px,
-	"r-11": 11px,
-	"r-20": 20px,
-	"r-22": 22px,
-	"r-25": 25px,
-	"r-30": 30px,
-	"r-35": 35px,
-	"r-40": 40px,
-	"r-45": 45px,
-	"r-55": 55px,
-	"r-80": 80px,
-	"r-120": 120px,
-	"r-130": 130px,
-	"r-177": 177px,
-	"r-190": 190px,
-	"r-200": 200px,
-	"-r-30": -30px,
 	"b-1": 1px,
-	"b-4": 4px,
-	"b-10": 10px,
-	"b-11": 11px,
-	"b-15": 15px,
-	"b-20": 20px,
-	"b-22": 22px,
-	"b-25": 25px,
-	"b-30": 30px,
-	"b-35": 35px,
-	"b-40": 40px,
-	"b-45": 45px,
-	"b-55": 55px,
-	"b-80": 80px,
-	"b-90": 90px,
-	"b-100": 100px,
-	"b-120": 120px,
-	"b-130": 130px,
-	"b-177": 177px,
-	"b-200": 200px,
-	"-b-200": -200px,
 	"l-1": 1px,
-	"l-4": 4px,
-	"l-10": 10px,
-	"l-11": 11px,
-	"l-12": 12px,
-	"l-20": 20px,
-	"l-22": 22px,
-	"l-25": 25px,
-	"l-30": 30px,
-	"l-35": 35px,
-	"l-40": 40px,
-	"l-45": 45px,
-	"l-55": 55px,
-	"l-80": 80px,
-	"l-120": 120px,
-	"l-130": 130px,
-	"l-177": 177px,
-	"l-200": 200px,
-	"-l-200": -200px,
 );
 
 // Space Between
@@ -635,10 +359,7 @@ $space-between: ();
 // Width
 $width: (
 	"full": 100%,
-	"12": 12px,
-	"200": 200px,
-	"216": 216px,
-	"253": 253px,
+	"1": 1px,
 );
 
 // Min-Width
@@ -649,21 +370,7 @@ $min-width: (
 // Max-Width
 $max-width: (
 	"full": 100%,
-	"170": 170px,
-	"307": 307px,
-	"310": 310px,
-	"360": 360px,
-	"395": 395px,
-	"400": 400px,
-	"465": 465px,
-	"840": 840px,
-	"900": 900px,
-	"950": 950px,
-	"1050": 1050px,
-	"1000": 1000px,
-	"1100": 1100px,
-	"1220": 1220px,
-	"1260": 1260px,
+	"1": 1px,
 );
 
 // Height
@@ -671,17 +378,6 @@ $height: (
 	"screen": 100vh,
 	"full": 100%,
 	"1": 1px,
-	"2": 2px,
-	"12": 12px,
-	"34": 34px,
-	"42": 42px,
-	"71": 71px,
-	"234": 234px,
-	"285": 285px,
-	"520": 520px,
-	"620": 620px,
-	"740": 740px,
-	"800": 800px,
 );
 
 // Min-Height
@@ -697,34 +393,15 @@ $max-height: (
 
 // TYPOGRAPHY
 // Font Faces
-$font-faces: (
-	"segoe": url("/CMS/site/fonts/Segoe-UI/segoeui.ttf") format("truetype"),
-	"segoe-bold": url("/CMS/site/fonts/Segoe-UI/segoeuib.ttf") format("truetype"),
-	"segoe-light": url("/CMS/site/fonts/Segoe-UI/segoeuil.ttf") format("truetype"),
-	"segoe-light-italic": url("/CMS/site/fonts/Segoe-UI/seguili.ttf") format("truetype"),
-	"segoe-black": url("/CMS/site/fonts/Segoe-UI/seguibl.ttf") format("truetype"),
-	"acid": url("/CMS/site/fonts/AC-Compacta/AC-Compacta.otf") format("opentype"),
-	"railroad": url("/CMS/site/fonts/Railroad/IFC-RAILROAD.ttf") format("truetype"),
-	"trebuchet-regular": url("/CMS/site/fonts/Trebuchet/trebuc.ttf") format("truetype"),
-	"trebuchet-bold": url("/CMS/site/fonts/Trebuchet/trebucbd.ttf") format("truetype"),
-	"futura": url("/CMS/site/fonts/Futura/PFFuturaNeuBook-Regular.ttf") format("truetype"),
-	"futura-bold": url("/CMS/site/fonts/Futura/PFFuturaNeu-Bold.ttf") format("truetype"),
-);
+// $font-faces: (
+// 	"segoe": url("/CMS/site/fonts/Segoe-UI/segoeui.ttf") format("truetype"),
+// 	"acid": url("/CMS/site/fonts/AC-Compacta/AC-Compacta.otf") format("opentype"),
+// );
 
 // Font Family
 $font: (
 	"segoe": var(--font-segoe),
-	"segoe-bold": var(--font-segoe-bold),
-	"segoe-light": var(--font-segoe-light),
-	"segoe-light-italic": var(--font-segoe-light-italic),
-	"segoe-black": var(--font-segoe-black),
 	"acid": var(--font-acid),
-	"railroad": var(--font-railroad),
-	"trebuchet-regular": var(--font-trebuchet-regular),
-	"trebuchet-bold": var(--font-trebuchet-bold),
-	"futura": var(--font-futura),
-	"futura-bold": var(--font-futura-bold),
-	"roboto-slab-bold": "Roboto Slab",
 );
 
 // Font Size

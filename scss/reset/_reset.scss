@@ -5,16 +5,9 @@
 }
 
 body {
-	font-family: var(--font-segoe-bold);
 	font-size: 16px;
 	color: var(--clr-primary);
 	overflow-x: hidden;
-	padding: 0 42px;
-	background-color: var(--clr-background);
-
-	@include max-media(580px) {
-		padding: 0 20px;
-	}
 }
 
 input,
@@ -101,6 +94,16 @@ ol {
 		li {
 			&::before {
 				color: var(--clr-primary);
+			}
+		}
+	}
+
+	&.default {
+		padding: 0;
+
+		li {
+			&::before {
+				display: none;
 			}
 		}
 	}

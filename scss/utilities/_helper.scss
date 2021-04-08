@@ -462,12 +462,12 @@
 
 // TYPOGRAPHY
 // Font Faces
-@each $font-faces-prop, $font-faces-value in $font-faces {
-	@font-face {
-		font-family: $font-faces-prop;
-		src: $font-faces-value;
-	}
-}
+// @each $font-faces-prop, $font-faces-value in $font-faces {
+// 	@font-face {
+// 		font-family: $font-faces-prop;
+// 		src: $font-faces-value;
+// 	}
+// }
 
 // Font Family
 @each $font-prop, $font-value in $font {
