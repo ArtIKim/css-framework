@@ -10,19 +10,19 @@ body.dark-mode {
 
 .css {
 	&-switch {
-		&-input {
-			&:checked {
-				+ .css-switch-label {
-					background-color: var(--clr-primary);
-					opacity: 0.5;
-				}
+		// &-input {
+		// 	&:checked {
+		// 		+ .css-switch-label {
+		// 			background-color: var(--clr-primary);
+		// 			opacity: 0.5;
+		// 		}
 
-				~ .css-switch-ball {
-					transform: translate(12px, -50%);
-					background-color: var(--clr-primary);
-				}
-			}
-		}
+		// 		~ .css-switch-ball {
+		// 			transform: translate(12px, -50%);
+		// 			background-color: var(--clr-primary);
+		// 		}
+		// 	}
+		// }
 
 		&-container {
 			position: relative;
@@ -61,10 +61,20 @@ body.dark-mode {
 			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
 			display: block;
 			height: 16px;
-			transition: transform linear 80ms, background-color linear 80ms;
+			transition: left linear 80ms, background-color linear 80ms;
 			width: 16px;
 			z-index: 1;
 			pointer-events: none;
+
+			&.active {
+				left: 14px;
+			}
+
+			// &-dark-mode {
+			// 	&.active {
+			// 		left: 14px;
+			// 	}
+			// }
 		}
 	}
 }

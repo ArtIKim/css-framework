@@ -10,7 +10,7 @@ body {
 	color: var(--clr-primary);
 	overflow-x: hidden;
 	padding: 0 42px;
-	background-color: var(--clr-white);
+	background-color: var(--clr-background);
 
 	@include max-media(580px) {
 		padding: 0 20px;
