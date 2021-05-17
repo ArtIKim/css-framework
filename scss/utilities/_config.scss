@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 // ROOT
 :root {
-	--clr-primary: #000;
-	--clr-secondary: #57b8d5;
+	--clr-primary: #9fc949;
+	--clr-secondary: #3b6db7;
 
 	--clr-white: #fff;
 	--clr-black: #000;
 
+	--clr-gray: #707a84;
+
 	// --font-segoe: "segoe";
+	--font-roboto: "Roboto", sans-serif;
 }
 
 // LAYOUT
@@ -18,11 +21,16 @@ $colors: (
 	"secondary": var(--clr-secondary),
 	"white": var(--clr-white),
 	"black": var(--clr-black),
+	"gray": var(--clr-gray),
 );
 
 // Container
 $media: (
+	"media-1190": 1200px,
+	"media-1023": 1023px,
 	"media-991": 991px,
+	"media-776": 776px,
+	"media-580": 580px,
 );
 
 // Box Sizing
@@ -55,19 +63,19 @@ $display: (
 );
 
 // Floats
-$floats: (
-	// "float-right": right,
-	// "float-left": left,
-	// "float-none": none,
-);
+// $floats: (
+// 	"float-right": right,
+// 	"float-left": left,
+// 	"float-none": none,
+// );
 
 // Clear
-$clear: (
-	// "clear-left": left,
-	// "clear-right": right,
-	// "clear-both": both,
-	// "clear-none": none,
-);
+// $clear: (
+// 	"clear-left": left,
+// 	"clear-right": right,
+// 	"clear-both": both,
+// 	"clear-none": none,
+// );
 
 // Object Fit
 $object-fit: (
@@ -79,17 +87,17 @@ $object-fit: (
 );
 
 // Object Position
-$object-position: (
-	// "object-bottom": bottom,
-	// "object-center": center,
-	// "object-left": left,
-	// "object-left-bottom": left bottom,
-	// "object-left-top": left top,
-	// "object-right": right,
-	// "object-right-bottom": right bottom,
-	// "object-right-top": right top,
-	// "object-top": top,
-);
+// $object-position: (
+// 	"object-bottom": bottom,
+// 	"object-center": center,
+// 	"object-left": left,
+// 	"object-left-bottom": left bottom,
+// 	"object-left-top": left top,
+// 	"object-right": right,
+// 	"object-right-bottom": right bottom,
+// 	"object-right-top": right top,
+// 	"object-top": top,
+// );
 
 // Overflow
 $overflow: (
@@ -108,17 +116,17 @@ $overflow: (
 );
 
 // Overscroll Behavior
-$overscroll-behavior: (
-	// "overscroll-auto": auto,
-	// "overscroll-contain": contain,
-	// "overscroll-none": none,
-	// "overscroll-y-auto": auto,
-	// "overscroll-y-contain": contain,
-	// "overscroll-y-none": none,
-	// "overscroll-x-auto": auto,
-	// "overscroll-x-contain": contain,
-	// "overscroll-x-none": none,
-);
+// $overscroll-behavior: (
+// 	"overscroll-auto": auto,
+// 	"overscroll-contain": contain,
+// 	"overscroll-none": none,
+// 	"overscroll-y-auto": auto,
+// 	"overscroll-y-contain": contain,
+// 	"overscroll-y-none": none,
+// 	"overscroll-x-auto": auto,
+// 	"overscroll-x-contain": contain,
+// 	"overscroll-x-none": none,
+// );
 
 // Position
 $position: (
@@ -131,6 +139,8 @@ $position: (
 
 // Position Settings
 $position-values: (
+	"t-1\\%": 1%,
+	"-t-1": -1px,
 	"t-0": 0,
 	"r-0": 0,
 	"b-0": 0,
@@ -143,6 +153,7 @@ $z-index: (
 	"-z-1": -1,
 	"z-0": 0,
 	"z-1": 1,
+	"z-2": 2,
 );
 
 // Visibility
@@ -173,6 +184,7 @@ $flex: (
 	"flex-auto": 1 1 auto,
 	"flex-initial": 0 1 auto,
 	"flex-none": none,
+	"flex-basis-48": 48%,
 );
 
 // Flex Grow
@@ -227,13 +239,13 @@ $row-span: (
 );
 
 // Grid Auto Flow
-$grid-flow: ();
+// $grid-flow: ();
 
 // Grid Auto Columns
-$auto-cols: ();
+// $auto-cols: ();
 
 // Grid Auto Rows
-$auto-rows: ();
+// $auto-rows: ();
 
 // Gap
 $gap: (
@@ -328,28 +340,270 @@ $place-self: (
 	"place-self-stretch": stretch,
 );
 
+// SPACING
 // Padding
 $padding: (
-	"0": 0,
-	"1" :1px,
-	"y-1": 1px,
-	"x-1": 1px,
-	"t-1": 1px,
-	"r-1": 1px,
-	"b-1": 1px,
-	"l-1": 1px,
+	"5": 5px,
+	"10": 10px,
+	"15": 15px,
+	"20": 20px,
+	"25": 25px,
+	"30": 30px,
+	"35": 35px,
+	"40": 40px,
+	"45": 45px,
+	"50": 50px,
+	"55": 55px,
+	"60": 60px,
+	"65": 65px,
+	"70": 70px,
+	"75": 75px,
+	"80": 80px,
+	"85": 85px,
+	"90": 90px,
+	"95": 95px,
+	"100": 100px,
+	"y-5": 5px,
+	"y-10": 10px,
+	"y-15": 15px,
+	"y-20": 20px,
+	"y-25": 25px,
+	"y-30": 30px,
+	"y-35": 35px,
+	"y-40": 40px,
+	"y-45": 45px,
+	"y-50": 50px,
+	"y-55": 55px,
+	"y-60": 60px,
+	"y-65": 65px,
+	"y-70": 70px,
+	"y-75": 75px,
+	"y-80": 80px,
+	"y-95": 95px,
+	"y-100": 100px,
+	"x-5": 5px,
+	"x-10": 10px,
+	"x-15": 15px,
+	"x-20": 20px,
+	"x-25": 25px,
+	"x-30": 30px,
+	"x-35": 35px,
+	"x-40": 40px,
+	"x-45": 45px,
+	"x-50": 50px,
+	"x-55": 55px,
+	"x-60": 60px,
+	"x-65": 65px,
+	"x-70": 70px,
+	"x-75": 75px,
+	"x-80": 80px,
+	"x-95": 95px,
+	"x-100": 100px,
+	"t-5": 5px,
+	"t-10": 10px,
+	"t-15": 15px,
+	"t-20": 20px,
+	"t-25": 25px,
+	"t-30": 30px,
+	"t-35": 35px,
+	"t-40": 40px,
+	"t-45": 45px,
+	"t-50": 50px,
+	"t-55": 55px,
+	"t-60": 60px,
+	"t-65": 65px,
+	"t-70": 70px,
+	"t-75": 75px,
+	"t-80": 80px,
+	"t-95": 95px,
+	"t-100": 100px,
+	"r-5": 5px,
+	"r-10": 10px,
+	"r-15": 15px,
+	"r-20": 20px,
+	"r-25": 25px,
+	"r-30": 30px,
+	"r-35": 35px,
+	"r-40": 40px,
+	"r-45": 45px,
+	"r-50": 50px,
+	"r-55": 55px,
+	"r-60": 60px,
+	"r-65": 65px,
+	"r-70": 70px,
+	"r-75": 75px,
+	"r-80": 80px,
+	"r-95": 95px,
+	"r-100": 100px,
+	"b-5": 5px,
+	"b-10": 10px,
+	"b-15": 15px,
+	"b-20": 20px,
+	"b-25": 25px,
+	"b-30": 30px,
+	"b-35": 35px,
+	"b-40": 40px,
+	"b-45": 45px,
+	"b-50": 50px,
+	"b-55": 55px,
+	"b-60": 60px,
+	"b-65": 65px,
+	"b-70": 70px,
+	"b-75": 75px,
+	"b-80": 80px,
+	"b-95": 95px,
+	"b-100": 100px,
+	"l-5": 5px,
+	"l-10": 10px,
+	"l-15": 15px,
+	"l-20": 20px,
+	"l-25": 25px,
+	"l-30": 30px,
+	"l-35": 35px,
+	"l-40": 40px,
+	"l-45": 45px,
+	"l-50": 50px,
+	"l-55": 55px,
+	"l-60": 60px,
+	"l-65": 65px,
+	"l-70": 70px,
+	"l-75": 75px,
+	"l-80": 80px,
+	"l-95": 95px,
+	"l-100": 100px,
 );
 
 // Margin
 $margin: (
 	"auto": auto,
-	"1" :1px,
-	"y-1": 1px,
-	"x-1": 1px,
-	"t-1": 1px, 
-	"r-1": 1px,
-	"b-1": 1px,
-	"l-1": 1px,
+	"5": 5px,
+	"10": 10px,
+	"15": 15px,
+	"20": 20px,
+	"25": 25px,
+	"30": 30px,
+	"35": 35px,
+	"40": 40px,
+	"45": 45px,
+	"50": 50px,
+	"55": 55px,
+	"60": 60px,
+	"65": 65px,
+	"70": 70px,
+	"75": 75px,
+	"80": 80px,
+	"85": 85px,
+	"90": 90px,
+	"95": 95px,
+	"100": 100px,
+	"y-5": 5px,
+	"y-10": 10px,
+	"y-15": 15px,
+	"y-20": 20px,
+	"y-25": 25px,
+	"y-30": 30px,
+	"y-35": 35px,
+	"y-40": 40px,
+	"y-45": 45px,
+	"y-50": 50px,
+	"y-55": 55px,
+	"y-60": 60px,
+	"y-65": 65px,
+	"y-70": 70px,
+	"y-75": 75px,
+	"y-80": 80px,
+	"y-95": 95px,
+	"y-100": 100px,
+	"x-5": 5px,
+	"x-10": 10px,
+	"x-15": 15px,
+	"x-20": 20px,
+	"x-25": 25px,
+	"x-30": 30px,
+	"x-35": 35px,
+	"x-40": 40px,
+	"x-45": 45px,
+	"x-50": 50px,
+	"x-55": 55px,
+	"x-60": 60px,
+	"x-65": 65px,
+	"x-70": 70px,
+	"x-75": 75px,
+	"x-80": 80px,
+	"x-95": 95px,
+	"x-100": 100px,
+	"t-5": 5px,
+	"t-10": 10px,
+	"t-15": 15px,
+	"t-20": 20px,
+	"t-25": 25px,
+	"t-30": 30px,
+	"t-35": 35px,
+	"t-40": 40px,
+	"t-45": 45px,
+	"t-50": 50px,
+	"t-55": 55px,
+	"t-60": 60px,
+	"t-65": 65px,
+	"t-70": 70px,
+	"t-75": 75px,
+	"t-80": 80px,
+	"t-95": 95px,
+	"t-100": 100px,
+	"r-5": 5px,
+	"r-10": 10px,
+	"r-15": 15px,
+	"r-20": 20px,
+	"r-25": 25px,
+	"r-30": 30px,
+	"r-35": 35px,
+	"r-40": 40px,
+	"r-45": 45px,
+	"r-50": 50px,
+	"r-55": 55px,
+	"r-60": 60px,
+	"r-65": 65px,
+	"r-70": 70px,
+	"r-75": 75px,
+	"r-80": 80px,
+	"r-95": 95px,
+	"r-100": 100px,
+	"b-5": 5px,
+	"b-10": 10px,
+	"b-15": 15px,
+	"b-20": 20px,
+	"b-25": 25px,
+	"b-30": 30px,
+	"b-35": 35px,
+	"b-40": 40px,
+	"b-45": 45px,
+	"b-50": 50px,
+	"b-55": 55px,
+	"b-60": 60px,
+	"b-65": 65px,
+	"b-70": 70px,
+	"b-75": 75px,
+	"b-80": 80px,
+	"b-95": 95px,
+	"b-100": 100px,
+	"l-5": 5px,
+	"l-10": 10px,
+	"l-15": 15px,
+	"l-20": 20px,
+	"l-25": 25px,
+	"l-30": 30px,
+	"l-35": 35px,
+	"l-40": 40px,
+	"l-45": 45px,
+	"l-50": 50px,
+	"l-55": 55px,
+	"l-60": 60px,
+	"l-65": 65px,
+	"l-70": 70px,
+	"l-75": 75px,
+	"l-80": 80px,
+	"l-95": 95px,
+	"l-100": 100px,
 );
 
 // Space Between
@@ -359,6 +613,7 @@ $space-between: ();
 // Width
 $width: (
 	"full": 100%,
+	"1\\%": 1%,
 	"1": 1px,
 );
 
@@ -382,26 +637,26 @@ $height: (
 
 // Min-Height
 $min-height: (
+	"full": 100%,
 	"1": 1px,
 );
 
 // Max-Height
 $max-height: (
-	"1": 1px,
 	"full": 100%,
+	"1": 1px,
 );
 
 // TYPOGRAPHY
 // Font Faces
 // $font-faces: (
 // 	"segoe": url("/CMS/site/fonts/Segoe-UI/segoeui.ttf") format("truetype"),
-// 	"acid": url("/CMS/site/fonts/AC-Compacta/AC-Compacta.otf") format("opentype"),
 // );
 
 // Font Family
 $font: (
-	"segoe": var(--font-segoe),
-	"acid": var(--font-acid),
+	// "segoe": var(--font-segoe),
+	"roboto": var(--font-roboto)
 );
 
 // Font Size
@@ -410,24 +665,33 @@ $font-size: (
 	"12": 12px,
 	"13": 13px,
 	"14": 14px,
+	"15": 15px,
 	"16": 16px,
+	"17": 17px,
 	"18": 18px,
+	"19": 19px,
 	"20": 20px,
+	"21": 21px,
 	"22": 22px,
+	"23": 23px,
 	"24": 24px,
 	"25": 25px,
+	"26": 26px,
+	"27": 27px,
 	"28": 28px,
+	"29": 29px,
 	"30": 30px,
+	"31": 31px,
 	"32": 32px,
+	"33": 33px,
+	"34": 34px,
+	"35": 35px,
+	"36": 36px,
+	"37": 37px,
+	"38": 38px,
+	"39": 39px,
 	"40": 40px,
-	"46": 46px,
-	"48": 48px,
-	"50": 50px,
-	"65": 65px,
-	"79": 79px,
-	"100": 100px,
-	"200": 200px,
-	"clamp-200-to-50": clamp(50px, 10vw, 200px),
+	"clamp-50-to-200": clamp(50px, 10vw, 200px),
 );
 
 // Font Smoothing
@@ -459,12 +723,22 @@ $font-weight: (
 $font-variant: ();
 
 // Letter Spacing
-$letter-spacing: ();
+$letter-spacing: (
+	"spacing-1": 1px,
+);
 
 // Line Height
 $line-height: (
+	"16": 16px,
+	"18": 18px,
 	"24": 24px,
+	"30": 30px,
 	"31": 31px,
+	"37": 37px,
+	"38": 38px,
+	"50": 50px,
+	"75": 75px,
+	"140": 140px,
 );
 
 // List Style Type
@@ -475,13 +749,13 @@ $list-style-type: (
 );
 
 // List Style Position
-$list-style-position: ();
+// $list-style-position: ();
 
 // Placeholder Color
-$placeholder-color: ();
+// $placeholder-color: ();
 
 // Placeholder Opacity
-$placeholder-opacity: ();
+// $placeholder-opacity: ();
 
 // Text Alignment
 $text-align: (
@@ -516,10 +790,10 @@ $text-transform: (
 );
 
 // Text Overflow
-$text-overflow: ();
+// $text-overflow: ();
 
 // Vertical Alignment
-$vertical-align: ();
+// $vertical-align: ();
 
 // Whitespace
 $whitespace: (
@@ -546,13 +820,13 @@ $background-attachment: (
 );
 
 // Background Clip
-$background-clip: ();
+// $background-clip: ();
 
 // Background Color
 $background-color: ("from colors");
 
 // Background Opacity
-$background-opacity: ();
+// $background-opacity: ();
 
 // Background Position
 $background-position: (
@@ -590,7 +864,7 @@ $background-image: (
 );
 
 // Gradient Color Stops
-$gradient-color-stops: ();
+// $gradient-color-stops: ();
 
 // BORDERS
 // Border Radius
@@ -618,14 +892,16 @@ $border-width: (
 );
 
 // Border Color
-$border-color: ("loop ocer colors");
+// $border-color: ("loop ocer colors");
 
 // Border Opacity
-$border-opacity: ();
+// $border-opacity: ();
 
 // Border Style
 $border-style: (
 	"border-solid": solid,
+	"border-l-solid": solid,
+	"border-r-solid": solid,
 	"border-dashed": dashed,
 	"border-dotted": dotted,
 	"border-double": double,
@@ -680,11 +956,16 @@ $transition-directions: (
 
 // HOVERS
 // Hover Colors
-$hover-colors: ("loop over colors");
+// $hover-colors: ("loop over colors");
 
 // Hover Opacity
 $hover-opacity: (
 	"opacity-70": 0.7,
+);
+
+// Hover Text Decoration
+$hover-text-decoration: (
+	"underline": underline,
 );
 
 // INTERACTIVITY
@@ -698,6 +979,12 @@ $cursor: (
 	"cursor-move": move,
 	"cursor-help": help,
 	"cursor-not-allowed": not-allowed,
+);
+
+// Pointer Events
+$pointer-events: (
+	"pointer-events-none": none,
+	"pointer-events-auto": auto,
 );
 
 // User Select

@@ -1,3 +1,70 @@
+.LoginArea {
+  position: absolute;
+  top: 85px;
+  right: 200px;
+  z-index: 10;
+}
+
+@media (max-width: 1080px) {
+  .LoginArea {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+.login-layout .widget-box .widget-main {
+  padding: 16px 20px;
+  background: unset;
+}
+
+.login-box,
+.forgot-box {
+  background-color: #fff;
+  border-radius: 9px;
+}
+
+.login_log {
+  padding: 20px 0;
+}
+
+.widget-body-inside input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.widget-body-inside button {
+  width: 100%;
+  height: 40px;
+  border: navajowhite;
+  background-color: var(--clr-primary);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.widget-body-inside button:hover {
+  opacity: 0.7;
+}
+
+#ctl00_DivUserLoggedIn {
+  border-radius: 10px;
+}
+
+.LogedinBtn .fa-power-off:before {
+  background-color: var(--clr-primary);
+}
+
+.banner p {
+  margin: 0;
+}
+
+.banner img {
+  width: 100%;
+}
+
 .upProgressSquare {
   position: absolute;
   top: 0;
@@ -172,26 +239,33 @@
 
 .scroll-to-top {
   position: fixed;
-  bottom: -100px;
-  right: 30px;
+  bottom: 100px;
+  right: 12px;
   -webkit-transition: bottom 300ms ease-in;
   transition: bottom 300ms ease-in;
   z-index: 10;
 }
 
+@media (max-width: 580px) {
+  .scroll-to-top {
+    right: 6px;
+  }
+}
+
 .scroll-to-top.show {
-  bottom: 50px;
+  bottom: 100px;
   -webkit-transition: bottom 300ms ease-in;
   transition: bottom 300ms ease-in;
 }
 
 .scroll-to-top a {
   display: block;
-  width: 40px;
 }
 
-.scroll-to-top a svg {
-  width: 100%;
+@media (max-width: 580px) {
+  .scroll-to-top a svg {
+    width: 8px;
+  }
 }
 
 .masonry__layout {
@@ -265,7 +339,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(81, 192, 173, 0.8);
+  background-color: black;
   z-index: 99999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,7 +421,7 @@
 #cboxClose {
   top: 10px !important;
   right: 10px !important;
-  background: url(/CMS/site/images/colorbox-close.svg) !important;
+  background: unset !important;
   width: 25px !important;
   height: 25px !important;
 }
@@ -438,15 +512,93 @@
           align-items: center;
   font-size: 21px;
   text-decoration: none;
-  color: var(--clr-secondary);
+  color: var(--clr-black);
 }
 
 .pagination .page.current {
   border: 1px solid;
-  color: var(--clr-secondary);
+  color: var(--clr-black);
 }
 
 .pagination .page.next, .pagination .page.last, .pagination .page.first, .pagination .page.prev, .pagination .page.arrow-prev, .pagination .page.arrow-double-prev, .pagination .page.arrow-next, .pagination .page.arrow-double-next {
   display: none;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.css-newsletter-block td {
+  margin: 20px;
+  display: inline-block;
+}
+
+.css-newsletter-block td span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.css-newsletter-block td span label {
+  color: #fff;
+}
+
+.css-newsletter-block td span input {
+  width: initial;
+  margin-left: 10px;
+}
+
+.css-newsletter-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  font-size: 15px;
+  color: #fff;
+  font-family: "segoe-light";
+}
+
+.css-newsletter-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "segoe-light-italic";
+}
+
+.css-newsletter-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "segoe-light-italic";
+}
+
+.css-newsletter-input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "segoe-light-italic";
+}
+
+.css-newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "segoe-light-italic";
+}
+
+.css-newsletter table {
+  width: 100%;
+}
+
+.css-newsletter fieldset {
+  border: unset;
 }
 /*# sourceMappingURL=plugins.css.map */

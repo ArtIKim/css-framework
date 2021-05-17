@@ -5,9 +5,11 @@
 }
 
 body {
+	font-family: var(--font-roboto);
 	font-size: 16px;
-	color: var(--clr-primary);
+	color: var(--clr-gray);
 	overflow-x: hidden;
+	background-color: var(--clr-white);
 }
 
 input,
@@ -15,8 +17,9 @@ select,
 textarea,
 button {
 	&:focus {
-		outline: none;
-		box-shadow: none;
+		outline: none !important;
+		box-shadow: none !important;
+		border-color: unset !important;
 	}
 }
 
@@ -98,16 +101,6 @@ ol {
 		}
 	}
 
-	&.default {
-		padding: 0;
-
-		li {
-			&::before {
-				display: none;
-			}
-		}
-	}
-
 	li {
 		position: relative;
 		counter-increment: li;
@@ -124,7 +117,8 @@ ol {
 
 li,
 p {
-	line-height: 24px;
+	line-height: 28px;
+	font-size: 16px;
 }
 
 .btn-primary {

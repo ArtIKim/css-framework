@@ -1,5 +1,5 @@
 ﻿/***** Mobile Menu *****/
-@media (max-width: 1080px) {
+@media (max-width: 991px) {
 	/***** Mobile Body *****/
 	body {
 		position: relative;
@@ -18,6 +18,8 @@
 		top: 0;
 		background-color: rgba(0, 0, 0, 0.3);
 		z-index: 15;
+		margin-left: -45px;
+		margin-right: -45px;
 	}
 
 	html.mobile-clicked {
@@ -68,9 +70,9 @@
 	#ctl00_pnlMenu .main-menu ul li a {
 		padding: 15px 20px;
 		background-color: #fff;
-		border-bottom: 1px solid var(--clr-secondary);
+		border-bottom: 1px solid var(--clr-black);
 		margin-bottom: 10px;
-		color: var(--clr-secondary-2);
+		color: var(--clr-black);
 		text-align: center !important;
 		font-size: 18px;
 		border-radius: 0 !important;
@@ -88,7 +90,7 @@
 	#ctl00_pnlMenu .main-menu > ul > li.active > a,
 	#ctl00_pnlMenu .main-menu > ul > li > ul > li.active > a,
 	#ctl00_pnlMenu .main-menu > ul > li > ul > li > ul > li.active a {
-		border-bottom: 2px solid var(--clr-primary-light);
+		border-bottom: 2px solid var(--clr-secondary);
 	}
 
 	#ctl00_pnlMenu .main-menu > ul > li.hasChildren i {
@@ -123,6 +125,7 @@
 		display: none;
 		margin: 0 0 0 15px;
 		width: unset;
+		visibility: visible !important;
 	}
 
 	/***** Mobile - Close Button *****/
@@ -150,6 +153,7 @@
 		left: unset !important;
 		top: 50% !important;
 		border-radius: unset !important;
+		display: block !important;
 	}
 
 	.menu-close-icon::before {
@@ -229,7 +233,7 @@
 		z-index: 999;
 		-webkit-clip-path: polygon(10% 0, 0 0, 50% 100%, 100% 0, 90% 0, 50% 80%);
 		clip-path: polygon(10% 0, 0 0, 50% 100%, 100% 0, 90% 0, 50% 80%);
-		background-color: var(--clr-secondary);
+		background-color: var(--clr-primary);
 	}
 }
 
