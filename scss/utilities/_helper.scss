@@ -16,6 +16,10 @@
 	.hover\:text-#{$color-prop}:hover {
 		color: $color-value;
 	}
+
+	.hover\:bg-#{$color-prop}:hover {
+		background-color: $color-value;
+	}
 }
 
 // Box Sizing
@@ -708,13 +712,21 @@
 @each $border-style-prop, $border-style-value in $border-style {
 	$param: str-slice(#{$border-style-prop}, 1, 8);
 
-	@if $param == "border-l" {
+	@if $param == "border-t" {
 		.#{$border-style-prop} {
-			border-left-style: $border-style-value;
+			border-top-style: $border-style-value;
 		}
 	} @else if $param == "border-r" {
 		.#{$border-style-prop} {
 			border-right-style: $border-style-value;
+		}
+	} @else if $param == "border-b" {
+		.#{$border-style-prop} {
+			border-bottom-style: $border-style-value;
+		}
+	} @else if $param == "border-l" {
+		.#{$border-style-prop} {
+			border-left-style: $border-style-value;
 		}
 	} @else {
 		.#{$border-style-prop} {
@@ -870,7 +882,44 @@
 }
 
 @each $breakpoint-prop, $breakpoint-value in $media {
-	@if $breakpoint-value == 1200px {
+	@if $breakpoint-value == 1400px {
+		@media (max-width: $breakpoint-value) {
+			// Display
+			@include setPropertyPartial("display", none, "hidden", $breakpoint-prop);
+			@include setPropertyPartial("display", block, "block", $breakpoint-prop);
+
+			// Flex Direction
+			@include setPropertyPartial("flex-direction", column, "flex-col", $breakpoint-prop);
+
+			// Flex Wrap
+			@include setPropertyPartial("flex-wrap", wrap, "flex-wrap", $breakpoint-prop);
+
+			// Justify Content
+			@include setPropertyPartial("justify-content", center, "justify-center", $breakpoint-prop);
+
+			// Align Items
+			@include setPropertyPartial("align-items", center, "items-center", $breakpoint-prop);
+
+			// Width
+			@include setPropertyPartial("width", 100%, "w-full", $breakpoint-prop);
+
+			// Max Width
+			@include setPropertyPartial("max-width", 100%, "max-w-full", $breakpoint-prop);
+
+			// Margin
+			@include setMargin(" ", 0, "m-0", $breakpoint-prop);
+			@include setMargin("auto", auto, "mx-auto", $breakpoint-prop);
+
+			// Padding
+			@include setPadding("t", 0, "p-0", $breakpoint-prop);
+
+			// Text Alignment
+			@include setPropertyPartial("text-align", center, "text-center", $breakpoint-prop);
+
+			// Grid Template Columns
+			@include setPropertyPartial("grid-template-columns", repeat(1, minmax(0, 1fr)), "grid-cols-1", $breakpoint-prop);
+		}
+	} @else if $breakpoint-value == 1200px {
 		@media (max-width: $breakpoint-value) {
 			// Display
 			@include setPropertyPartial("display", none, "hidden", $breakpoint-prop);
@@ -913,6 +962,9 @@
 			@include setPropertyPartial("display", none, "hidden", $breakpoint-prop);
 			@include setPropertyPartial("display", block, "block", $breakpoint-prop);
 
+			// Flex
+			@include setPropertyPartial("flex", initial, "flex-initial", $breakpoint-prop);
+
 			// Flex Direction
 			@include setPropertyPartial("flex-direction", column, "flex-col", $breakpoint-prop);
 
@@ -936,7 +988,8 @@
 			@include setMargin("auto", auto, "mx-auto", $breakpoint-prop);
 
 			// Padding
-			@include setPadding("t", 0, "p-0", $breakpoint-prop);
+			@include setPadding("x", 30px, "px-30", $breakpoint-prop);
+			@include setPadding("x", 20px, "px-20", $breakpoint-prop);
 
 			// Text Alignment
 			@include setPropertyPartial("text-align", center, "text-center", $breakpoint-prop);
