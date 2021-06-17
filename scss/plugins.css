@@ -13,8 +13,15 @@
   }
 }
 
+@media (max-width: 1054px) {
+  .LoginArea {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
 .login-layout .widget-box .widget-main {
-  padding: 16px 20px;
+  padding: 32px;
   background: unset;
 }
 
@@ -28,29 +35,57 @@
   padding: 20px 0;
 }
 
+.widget-body-inside label {
+  font-weight: 600;
+  color: var(--clr-black);
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
 .widget-body-inside input {
-  height: 40px;
+  height: 45px;
   width: 100%;
-  margin-bottom: 20px;
-  padding: 10px;
+  border: 1px solid var(--clr-gray-3);
+  border-radius: 30px;
+  padding: 0 20px;
 }
 
 .widget-body-inside button {
   width: 100%;
-  height: 40px;
-  border: navajowhite;
+  height: 45px;
+  border: none;
   background-color: var(--clr-primary);
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: 20px;
 }
 
 .widget-body-inside button:hover {
   opacity: 0.7;
 }
 
+.widget-body-inside .block {
+  margin-bottom: 20px;
+}
+
+.widget-body-inside .block.input {
+  margin-bottom: 30px;
+}
+
+.widget-body-inside .forgot-password-link,
+.widget-body-inside .back-to-login-link {
+  color: var(--clr-primary);
+  text-decoration: underline;
+}
+
+.widget-body-inside .toolbar {
+  padding: 0;
+}
+
 #ctl00_DivUserLoggedIn {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .LogedinBtn .fa-power-off:before {
@@ -246,12 +281,6 @@
   z-index: 10;
 }
 
-@media (max-width: 580px) {
-  .scroll-to-top {
-    right: 6px;
-  }
-}
-
 .scroll-to-top.show {
   bottom: 100px;
   -webkit-transition: bottom 300ms ease-in;
@@ -262,10 +291,8 @@
   display: block;
 }
 
-@media (max-width: 580px) {
-  .scroll-to-top a svg {
-    width: 8px;
-  }
+.scroll-to-top a svg {
+  width: 40px;
 }
 
 .masonry__layout {
@@ -600,5 +627,128 @@
 
 .css-newsletter fieldset {
   border: unset;
+}
+
+.social__media {
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__media a {
+  width: 33px;
+  height: 33px;
+  background-color: var(--clr-gray);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__media a:hover {
+  opacity: 0.7;
+}
+
+.social__media a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.accordion-section-content {
+  display: none;
+  width: 94%;
+  margin: 44px auto 0;
+}
+
+.accordion-section-title {
+  background-color: rgba(var(--clr-gray-dest), 0.1);
+  color: var(--clr-primary);
+  font-size: 22px;
+  font-weight: bold;
+  padding: 31px 43px;
+  border-radius: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .accordion-section-title {
+    font-size: 16px;
+    padding: 20px 52px 20px 25px;
+  }
+}
+
+.accordion-section-title .arrows {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 40px;
+}
+
+@media (max-width: 991px) {
+  .accordion-section-title .arrows {
+    right: 20px;
+  }
+}
+
+.accordion-section-title .arrow-props {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.accordion-section-title .arrow-down {
+  background-image: url(/CMS/site/images/accordion-plus-icon.svg);
+}
+
+.accordion-section-title .arrow-up {
+  background-image: url(/CMS/site/images/accordion-minus-icon.svg);
+  display: none;
+}
+
+.accordion-section-title.active .arrow-down {
+  display: none;
+}
+
+.accordion-section-title.active .arrow-up {
+  display: block;
+}
+
+.accordion-section-title:hover {
+  color: var(--clr-primary);
+}
+
+.accordion-section-title-image {
+  height: 48px;
+  width: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 480px) {
+  .accordion-section-title-image {
+    display: none;
+  }
 }
 /*# sourceMappingURL=plugins.css.map */

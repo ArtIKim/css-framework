@@ -575,6 +575,25 @@
 	}
 }
 
+// Text Overflow
+@each $text-overflow-prop, $text-overflow-value in $text-overflow {
+	@if $text-overflow-prop == "truncate" {
+		.#{$text-overflow-prop} {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	} @else if $text-overflow-prop == "overflow-ellipsis" {
+		.#{$text-overflow-prop} {
+			text-overflow: ellipsis;
+		}
+	} @else if $text-overflow-prop == "overflow-clip" {
+		.#{$text-overflow-prop} {
+			text-overflow: clip;
+		}
+	}
+}
+
 // Whitespace
 @each $whitespace-prop, $whitespace-value in $whitespace {
 	.#{$whitespace-prop} {

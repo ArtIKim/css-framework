@@ -2269,6 +2269,20 @@
   text-transform: none;
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.overflow-clip {
+  text-overflow: clip;
+}
+
 .whitespace-normal {
   white-space: normal;
 }
@@ -2646,52 +2660,52 @@
 }
 
 @media (max-width: 1200px) {
-  .media-1190\:hidden {
+  .media-1200\:hidden {
     display: none;
   }
-  .media-1190\:block {
+  .media-1200\:block {
     display: block;
   }
-  .media-1190\:flex-col {
+  .media-1200\:flex-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .media-1190\:flex-wrap {
+  .media-1200\:flex-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .media-1190\:justify-center {
+  .media-1200\:justify-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .media-1190\:items-center {
+  .media-1200\:items-center {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .media-1190\:w-full {
+  .media-1200\:w-full {
     width: 100%;
   }
-  .media-1190\:max-w-full {
+  .media-1200\:max-w-full {
     max-width: 100%;
   }
-  .media-1190\:m-0 {
+  .media-1200\:m-0 {
     margin: 0;
   }
-  .media-1190\:mx-auto {
+  .media-1200\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
-  .media-1190\:p-0 {
+  .media-1200\:p-0 {
     padding-top: 0;
   }
-  .media-1190\:text-center {
+  .media-1200\:text-center {
     text-align: center;
   }
-  .media-1190\:grid-cols-1 {
+  .media-1200\:grid-cols-1 {
     -ms-grid-columns: (minmax(0, 1fr))[1];
         grid-template-columns: repeat(1, minmax(0, 1fr));
   }

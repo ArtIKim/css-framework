@@ -55,31 +55,35 @@ ol {
   list-style: none;
 }
 
-ul.primary li::before {
-  background-color: var(--clr-primary);
-}
-
-ul.default {
-  padding: 0;
-}
-
-ul.default li::before {
-  display: none;
-}
-
 ul li {
   position: relative;
 }
 
-ul li::before {
+ul.primary li::before {
   content: "";
   position: absolute;
-  width: 4px;
-  height: 4px;
-  background-color: var(--clr-secondary);
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   top: 8px;
   left: -15px;
+  background-color: var(--clr-primary);
+}
+
+ul.secondary {
+  padding: 0;
+}
+
+ul.secondary li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 8px;
+  left: -15px;
+  display: none;
+  background-color: var(--clr-secondary);
 }
 
 ol {

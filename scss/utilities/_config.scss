@@ -26,7 +26,7 @@ $colors: (
 
 // Container
 $media: (
-	"media-1190": 1200px,
+	"media-1200": 1200px,
 	"media-1023": 1023px,
 	"media-991": 991px,
 	"media-776": 776px,
@@ -812,7 +812,11 @@ $text-transform: (
 );
 
 // Text Overflow
-// $text-overflow: ();
+$text-overflow: (
+	"truncate": truncate,
+	"overflow-ellipsis": overflow-ellipsis,
+	"overflow-clip": overflow-clip,
+);
 
 // Vertical Alignment
 // $vertical-align: ();
