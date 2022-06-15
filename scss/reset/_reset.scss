@@ -5,10 +5,11 @@
 }
 
 body {
-	font-family: var(--font-roboto);
 	font-size: 16px;
-	color: var(--clr-gray);
 	overflow-x: hidden;
+
+	color: var(--clr-font);
+	font-family: var(--font-arial-regular);
 	background-color: var(--clr-white);
 }
 
@@ -19,7 +20,7 @@ button {
 	&:focus {
 		outline: none !important;
 		box-shadow: none !important;
-		border-color: unset !important;
+		border-color: var(--clr-secondary) !important;
 	}
 }
 
@@ -36,11 +37,11 @@ span {
 }
 
 a {
-	color: var(--clr-white);
+	color: var(--clr-font);
 	text-decoration: none;
 
 	&:hover {
-		color: var(--clr-white);
+		color: var(--clr-primary);
 		text-decoration: none;
 	}
 }
@@ -65,10 +66,10 @@ ul {
 			&::before {
 				content: "";
 				position: absolute;
-				width: 8px;
-				height: 8px;
+				width: 4px;
+				height: 4px;
 				border-radius: 50%;
-				top: 8px;
+				top: 9px;
 				left: -15px;
 				background-color: var(--clr-primary);
 			}
@@ -95,8 +96,6 @@ ul {
 }
 
 ol {
-	counter-reset: li;
-
 	&.primary {
 		li {
 			&::before {
@@ -105,24 +104,26 @@ ol {
 		}
 	}
 
-	li {
-		position: relative;
-		counter-increment: li;
+	&.counter {
+		counter-reset: li;
 
-		&::before {
-			content: counter(li) ".";
-			color: var(--clr-secondary);
-			position: absolute;
-			top: 0px;
-			left: -25px;
+		li {
+			position: relative;
+			counter-increment: li;
+
+			&::before {
+				content: counter(li) ".";
+				position: absolute;
+				left: -20px;
+			}
 		}
 	}
 }
 
 li,
 p {
-	line-height: 28px;
-	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 16px;
 }
 
 .btn-primary {
